@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+.Frame{
+    width: 100%;
+    height: 500%;
+    position: absolute;
+}
+header{
+    position: absolute;
+    height: 53px;
+    width: 100%;
+    background-color: #FFD706;
+    display: flex;
+    align-content: center;
+    justify-content: left;
+}
+.menu{
+    margin: 1.3% 0 0 2%;
+    width: 25.6px;
+    height: 13.24px;
+}
+.deevaLogo{
+    margin-left: 4%;
+}
+
+.search-bar{
+    position: absolute;
+    width: 43.5%;
+    height: 36px;
+    background: #FFFCF8;
+    box-shadow: 0px 1.28443px 2.56886px rgba(71, 71, 71, 0.25);
+    border-radius: 15px;
+    margin: 0.5% 0 0 20%;
+    display: flex;
+    align-content: center;
+    justify-content: left;
+}
+.search{
+    width: 13px;
+    height: 17.91px;
+    margin: 1.75% 0 0 3%;
+}
+.searching{
+    outline: none;
+    border: none;
+    margin: 0 0 0 1.5%;
+    width: 100%;
+    background: #FFFCF8;
+    border-radius: 15px;
+}
+
+.voice-search{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    width: 29px;
+    height: 33px;
+    background: #FFFFFF;
+    box-shadow: 0px 1.28px 2.57px rgba(71, 71, 71, 0.25);
+    border-radius: 15px;
+    margin: 0.65% 0 0 64%;
+    float: left;
+}
+.user{
+    margin: 0 1.5% 0 48.5%;
+}
+.user-text, .budget-store-text, .content-text{
+    float: left;
+    width: 96.91px;
+    height: 19.38px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 14.9092px;
+    line-height: 30px;
+    align-items: center;
+    color: #494848;
+    text-align: right;
+}
+.content-text{
+    width: 82px;
+}
+.user-text{
+    width: 130px;
+}
+.downArrow{
+    float: left;
+    margin: 28px 0 0 2px;
+}
+.cart{
+    width: 47px;
+    height: 24.79px;
+    float: right;
+    margin: 13px 0 0 94.5%;
+    position: absolute;
+}
+.cart-items{
+    position: absolute;
+    font-size: 16px;
+    line-height: 19px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    margin: 27px 0 0 95.85%;
+}
