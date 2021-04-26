@@ -1,0 +1,11 @@
+.body{
+    position: inherit;
+    margin: 2px 0 0 0;
+}
+
+.sale{
+    position: absolute;
+    border-radius: 6px;
+    margin: 0 5px;
+    width: 99%;
+}

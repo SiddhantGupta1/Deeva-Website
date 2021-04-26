@@ -1,0 +1,43 @@
+.user{
+    margin: 0 1.5% 0 49%;
+    background: none;
+    border: none;
+    position: absolute;
+}
+.budget-store{
+    position: absolute;
+    margin: 0 1.5% 0 61.5%;
+    background: none;
+    border: none;
+}
+.content{
+    position: absolute;
+    margin: 0 1.5% 0 67.8%;
+    background: none;
+    border: none;
+}
+.user-text, .budget-store-text, .content-text{
+    float: left;
+    width: 96.91px;
+    height: 19.38px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 30px;
+    align-items: center;
+    color: #494848;
+    text-align: right;
+}
+.user-text{
+    width: 150px;
+}
+
+.downArrow{
+    float: left;
+    margin: 25px 0 0 2px;
+}
+
+.user-dropdown, .budget-store-dropdown, .content-dropdown{
+    background: #FFD706;
+    
+}
