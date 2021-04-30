@@ -1,11 +1,27 @@
 .body{
-    position: inherit;
-    margin: 2px 0 0 0;
+    margin: 0;
+    position: absolute;
 }
 
 .sale{
-    position: absolute;
     border-radius: 6px;
-    margin: 0 5px;
-    width: 99%;
+    margin: 4px 10px 0 10px;
+    width: 98.5%;
+}
+.hidden-card{
+    width: 98.5%;
+    height: 206px;
+    background: #FFFEFD;
+    mix-blend-mode: normal;
+    margin: 3px 10px 30px 10px;
+}
+.card{
+    width: 95.7%;
+    height: 205px;
+    background: #FFFEFD;
+    mix-blend-mode: normal;
+    margin: 5px 30px 0 30px;
+    filter: drop-shadow(0px 1px 6px rgba(0, 0, 0, 0.15));
+    border-radius: 5px;
+    padding: 0;
 }

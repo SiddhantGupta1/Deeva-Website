@@ -9,7 +9,7 @@ function App() {
 
   return (
     <div className="App">
-      <img className="Frame" src={Frame} />
+      <img className="frame" src={Frame} />
       
       <Body />
       <Header />

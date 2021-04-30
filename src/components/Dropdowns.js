@@ -103,7 +103,7 @@ function Dropdowns(){
 
 
     return(
-        <div>
+        <div style={{display:"flex", WebkitFlexDirection:"row"}}>
             <button
             ref={anchorRef}
             aria-controls={open ? 'menu-list-grow' : undefined}
@@ -192,6 +192,40 @@ function Dropdowns(){
                 </Grow>
             )}
             </Popper>
+
+
+            <button
+            ref={anchorRef2}
+            aria-controls={open2 ? 'menu-list-grow' : undefined}
+            aria-haspopup="true"
+            onClick={handleToggle2}
+            className="hidden"
+            style={{display:"none", position:"absolute"}}
+            >
+                <p className="hidden-text">Hidden</p>
+                
+            </button>
+            <Popper open={open2} anchorEl={anchorRef2.current} role={undefined} transition disablePortal>
+            {({ TransitionProps, placement }) => (
+                <Grow
+                {...TransitionProps}
+                style={{ transformOrigin: placement === 'bottom' ? 'center top' : 'center bottom' }}
+                >
+                <Paper>
+                    <ClickAwayListener onClickAway={handleClose2}>
+                    <MenuList className="content-dropdown" autoFocusItem={open2} id="menu-list-grow" onKeyDown={handleListKeyDown2}>
+                        <MenuItem onClick={handleClose2}>Profile</MenuItem>
+                        <MenuItem onClick={handleClose2}>My account</MenuItem>
+                        <MenuItem onClick={handleClose2}>Logout</MenuItem>
+                    </MenuList>
+                    </ClickAwayListener>
+                </Paper>
+                </Grow>
+            )}
+            </Popper>
+
+
+
       </div>
     )
 }

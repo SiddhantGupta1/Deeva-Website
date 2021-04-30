@@ -1,9 +1,9 @@
-import React from 'react'
-import './../styles/Slide.css'
-import DemoPic from './../icons/Saree Pic.svg'
+import React,{useState} from 'react'
+import './../styles/Slides.css'
+import DemoPic from './../icons/Demo.svg'
 import LeftBtn from './../icons/Arrow.svg'
 
-function Slide() {
+function Slides() {
 
     const number=[DemoPic,DemoPic,DemoPic,DemoPic,DemoPic,DemoPic,DemoPic];
     const text=["Taant","Kasavu","Kanjeevaram","Bomkai","Sambalpuri","Paithani","Bandhani"];
@@ -35,4 +35,4 @@ function Slide() {
     );
 }
 
-export default Slide;
+export default Slides;
