@@ -1,5 +1,5 @@
 .user, .budget-store, .content{
-    margin: 0 4% 0 0;
+    margin: 0 9% 0 0;
     background: none;
     border: none;
     padding: 0;
@@ -35,4 +35,5 @@
 
 .user-dropdown, .budget-store-dropdown, .content-dropdown{
     background: #FFD706;
+    float: left;
 }

@@ -1,0 +1,85 @@
+.Cards{
+    width: 95.7%;
+    margin: 0 30px;
+    height: 420px;
+    float: left;
+    display: flex;
+    justify-content: space-between;
+}
+
+.recommended, .top-picks{
+    float: left;
+    width: 294px;
+    height: 401px;
+    filter: drop-shadow(0px 1px 6px rgba(0, 0, 0, 0.15));
+    border-radius: 5px;
+    background: #FFFEFD;
+}
+
+.recommended-heading, .top-picks-heading{
+    height: 27.41px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 17.1191px;
+    line-height: 26px;
+    display: flex;
+    align-items: center;
+    color: #784E08;
+    float: left;
+}
+
+.recommended-rope, .top-picks-rope{
+    float: left;
+    border: 2.1037px solid #FFC056;
+    background-color: #FFC056;
+    margin: 22px 0 0 10px;
+}
+
+.recommended-content, .top-picks-content{
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+}
+/*________________________________________________________________________________*/
+/*________________________________________________________________________________*/
+.recommended{
+    margin: 16px 0 0 0;
+}
+.top-picks{
+    margin: 16px 0 0 0;
+}
+/*_______________________________*/
+.recommended-heading{
+    width: 203px;
+    margin: 8.84px 0 0 10.47px;
+}
+.top-picks-heading{
+    width: 81.29px;
+    margin: 9.45px 0 0 12.38px;
+}
+/*_______________________________*/
+.recommended-rope{
+    width: 23.99%;
+}
+.top-picks-rope{
+    width: 64.74%;
+}
+
+.Cards-contents{
+    float: left;
+    width: 105.94px;
+    height: 130.92px;
+    margin: 60px 0 -44px 26.5px;
+    filter: drop-shadow(0px 1.53322px 3.06645px rgba(71, 71, 71, 0.25));
+    border-radius: 7.66611px;
+}
+.Cards-btn{
+    border-radius: 50%;
+    background: none;
+    border: none;
+    float: left;
+    position: absolute;
+    bottom: 18px;
+    right: 30px;
+}

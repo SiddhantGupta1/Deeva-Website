@@ -1,3 +1,7 @@
+.wardrobe{
+    overflow: auto;
+    overflow-y: hidden;
+}
 .wardrobe-heading{
     width: 88.45px;
     height: 27.27px;
@@ -12,9 +16,9 @@
     padding: 8px 0 0 13.6px;
     float: left;
 }
-.rope{
+.wardrobe-rope{
     float: left;
-    width: 91.039%;
+    width: 91.85%;
     border: 2.1037px solid #FFC056;
     background-color: #FFC056;
     margin: 20px 0 0 30px;
@@ -81,14 +85,14 @@
 /*________________________________________________________________________________*/
 
 .trending-frame{
-    left: 58px;
+    left: 59px;
 }
 .ethnic-frame{
-    left: 379px;
+    left: 387.57px;
 }
 .party-frame{
-    left: 700px;
+    left: 716.13px;
 }
 .puja-frame{
-    left: 1021px;
+    left: 1044.7px;
 }

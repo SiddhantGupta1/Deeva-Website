@@ -1,27 +1,71 @@
 .body{
     margin: 0;
     position: absolute;
+    width: 100%;
 }
 
 .sale{
+    float: left;
     border-radius: 6px;
-    margin: 4px 10px 0 10px;
+    margin: 0 10px 0 10px;
     width: 98.5%;
+    height: 100%;
 }
-.hidden-card{
-    width: 98.5%;
-    height: 206px;
-    background: #FFFEFD;
-    mix-blend-mode: normal;
-    margin: 3px 10px 30px 10px;
-}
-.card{
+
+.wardrobe-frame{
+    float: left;
     width: 95.7%;
     height: 205px;
     background: #FFFEFD;
     mix-blend-mode: normal;
-    margin: 5px 30px 0 30px;
+    margin: 18px 30px 0 30px;
     filter: drop-shadow(0px 1px 6px rgba(0, 0, 0, 0.15));
     border-radius: 5px;
     padding: 0;
+    overflow: auto;
+    overflow-y: hidden;
+}
+
+.User{
+    float: left;
+    width: 294.77px;
+    height: 260.98px;
+    background: #FFFEFD;
+    filter: drop-shadow(0px 1px 6px rgba(0, 0, 0, 0.15));
+    border-radius: 5px;
+    margin: 18px 0 0 30px;
+}
+.User-heading{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20.6528px;
+    line-height: 31px;
+    color: #000000;
+    margin: 12.2px 0 0 91.06px;
+}
+.User-content{
+    display: flex;
+    width: 118.28px;
+    height: 85.43px;
+    background: #F8DB54;
+    margin: 13.2px -14.9px -6.57px 23.35px;
+}
+.User-content-text{
+    width: 100%;
+    height: 19.71px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13.1427px;
+    line-height: 20px;
+    text-align: center;
+    color: #636363;
+    margin: 13.2px 0 0 0;
+}
+
+.AD{
+    width: 78.5%;
+    height: 261px;
+    margin: 18px 0 0 0;
 }
