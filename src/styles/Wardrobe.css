@@ -11,14 +11,13 @@
     line-height: 26px;
     align-items: center;
     color: #784E08;
-    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 8px 0 0 13.6px;
     float: left;
 }
 .wardrobe-rope{
     float: left;
-    width: 91.85%;
+    width: 1335.42px;
     border: 2.1037px solid #FFC056;
     background-color: #FFC056;
     margin: 20px 0 0 30px;
@@ -54,7 +53,6 @@
     width: 125.79px;
     height: 40.37px;
     left: 124.86px;
-    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 27.5503px;
@@ -70,7 +68,6 @@
     height: 16.9px;
     left: 168.04px;
     top: 60px;
-    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 7.5101px;

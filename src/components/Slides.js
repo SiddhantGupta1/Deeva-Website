@@ -33,6 +33,15 @@ function Slides() {
       image: DemoPic,
       text: "Bandhani",
     },
+    {
+      image: DemoPic,
+      text: "Bandhani",
+    },
+    {
+      image: DemoPic,
+      text: "Bandhani",
+    },
+    
   ];
 
   return (

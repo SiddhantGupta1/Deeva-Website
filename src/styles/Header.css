@@ -4,6 +4,7 @@ header{
     position: fixed;
     height: 53px;
     width: 100%;
+    min-width: 1440px;
     background: #FFD706;
     display: flex;
     align-content: center;
@@ -19,7 +20,6 @@ header{
     border: none;
 }
 .menu-text{
-    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 20.1333px;
@@ -87,7 +87,6 @@ header{
 .cart-items{
     font-size: 16px;
     line-height: 19px;
-    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: normal;
     margin: -16px 0 0 41%;
@@ -101,7 +100,6 @@ header{
     background-image: url("./../icons/Frame.svg");
 }
 .MuiTypography-body1{
-    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 17.7814px;

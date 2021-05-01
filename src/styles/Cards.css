@@ -1,5 +1,6 @@
 .Cards{
     width: 95.7%;
+    min-width: 1440px;
     margin: 0 30px;
     height: 420px;
     float: left;
@@ -18,7 +19,6 @@
 
 .recommended-heading, .top-picks-heading{
     height: 27.41px;
-    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 17.1191px;

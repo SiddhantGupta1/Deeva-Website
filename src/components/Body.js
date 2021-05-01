@@ -3,7 +3,9 @@ import './../styles/Body.css'
 import Slides from './Slides'
 import Sale from './../icons/Sale.svg'
 import Wardrobe from './Wardrobe'
-import Cards from './Cards'
+import Section1 from './Cards'
+import Section3 from './ForYou'
+import Section4 from './Section4'
 import AD from './../icons/Since 1964.svg'
 
 function Body(){
@@ -21,28 +23,30 @@ function Body(){
             <div className="wardrobe-frame">
                 <Wardrobe />
             </div>
-            <Cards /> 
-            <div className="User">
-                <div className="User-heading">Hi Ankush!</div>
-                <div style={{display:"flex", flexWrap:"wrap"}}>
-                    <div className="User-content">
-                        <div className="User-content-text">Your Orders</div>
-                    </div>
-                    <div className="User-content">
-                        <div className="User-content-text">Saved</div>
-                    </div>
-                    <div className="User-content">
-                        <div className="User-content-text">Your Wishlist</div>
-                    </div>
-                    <div className="User-content">
-                        <div className="User-content-text">Your Hanger</div>
+            <Section1 />
+
+            <div className="Section2">
+                <div className="User">
+                    <div className="User-heading">Hi Ankush!</div>
+                    <div style={{display:"flex", flexWrap:"wrap"}}>
+                        <div className="User-content">
+                            <div className="User-content-text">Your Orders</div>
+                        </div>
+                        <div className="User-content">
+                            <div className="User-content-text">Saved</div>
+                        </div>
+                        <div className="User-content">
+                            <div className="User-content-text">Your Wishlist</div>
+                        </div>
+                        <div className="User-content">
+                            <div className="User-content-text">Your Hanger</div>
+                        </div>
                     </div>
                 </div>
-            </div>
-
-            
                 <img className="AD" src={AD} />
-            
+            </div>
+            <Section3 />
+            <Section4 />
 
         </div>
     )

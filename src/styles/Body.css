@@ -2,6 +2,7 @@
     margin: 0;
     position: absolute;
     width: 100%;
+    min-width: 1440px;
 }
 
 .sale{
@@ -9,12 +10,14 @@
     border-radius: 6px;
     margin: 0 10px 0 10px;
     width: 98.5%;
+    min-width: 1440px;
     height: 100%;
 }
 
 .wardrobe-frame{
     float: left;
-    width: 95.7%;
+    width: 1454px;
+    min-width: 1440px;
     height: 205px;
     background: #FFFEFD;
     mix-blend-mode: normal;
@@ -25,7 +28,15 @@
     overflow: auto;
     overflow-y: hidden;
 }
-
+/*_____________________________________________________________________________*/
+.Section2{
+    float: left;
+    width: 100%;
+    min-width: 1440px;
+    height: 261px;
+    display: flex;
+    margin: 18px 0 0 0;
+}
 .User{
     float: left;
     width: 294.77px;
@@ -33,10 +44,9 @@
     background: #FFFEFD;
     filter: drop-shadow(0px 1px 6px rgba(0, 0, 0, 0.15));
     border-radius: 5px;
-    margin: 18px 0 0 30px;
+    margin: 0 0 0 30px;
 }
 .User-heading{
-    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 20.6528px;
@@ -54,7 +64,6 @@
 .User-content-text{
     width: 100%;
     height: 19.71px;
-    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 13.1427px;
@@ -67,5 +76,5 @@
 .AD{
     width: 78.5%;
     height: 261px;
-    margin: 18px 0 0 0;
+    margin: 0;
 }
