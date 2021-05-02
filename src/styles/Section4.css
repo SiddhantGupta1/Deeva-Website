@@ -1,7 +1,12 @@
 .Section4{
     float: left;
+    width: 95.7%;
+    margin: 17px 0 0 30px;
+    display: flex;
+    justify-content: space-between;
 }
 .specials-frame{
+    float: left;
     width: 526.34px;
     height: 413px;
     filter: drop-shadow(0px 1px 6px rgba(0, 0, 0, 0.15));
@@ -9,11 +14,64 @@
     background: #FFFFFF;
 }
 .specials-heading{
-
+    float: left;
+    height: 22.51px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14.1568px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    color: #784E08;
+    margin: 8.54px 0 0 9.32px;
 }
 .specials-rope{
-
+    float: left;
+    border: 2.1037px solid #FFC056;
+    background-color: #FFC056;
+    width: 75.42%;
+    margin: 19px 0 0 10px;
 }
 .specials{
+    float: left;
+    height: 313.63px;
+    padding: 50px 0 0 70.65px;
+    position: absolute;
+}
+.specials-img{
+    margin: 0 13px 2px 0;
+}
+.specials-btn{
+    float: right;
+    width: 51.84px;
+    height: 51.84px;
+    border-radius: 50%;
+    background: #FFD389;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translate(-60px,-30px);
+}
 
+.wedding{
+    float: left;
+}
+
+.App-frame{
+    float: left;
+    width: 243.82px;
+    height: 413.1px;
+    background: #FFFCF8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Deeva-App{
+    width: 206.24px;
+    height: 349.43px;
+    background: #FFE4A9;
+    display: grid;
+    justify-content: center;
+    place-items: center;
 }

@@ -78,3 +78,12 @@
     height: 261px;
     margin: 0;
 }
+.AD1{
+    width: 95.9%;
+    min-width: 1440px;
+    height: 100%;
+    margin: 16px 0 0 30px;
+    filter: drop-shadow(0px 1px 6px rgba(0, 0, 0, 0.15));
+    /*box-shadow: 0px 0.953483px 1.90697px rgba(71, 71, 71, 0.25);*/
+    border-radius: 4.76741px;
+}

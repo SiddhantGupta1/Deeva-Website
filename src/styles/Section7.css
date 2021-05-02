@@ -1,12 +1,13 @@
-.ForYou-frame{
+.Section7-frame{
     float: left;
     width: 1454px;
     height: 251px;
-    background: #FFFFFF;
+    background: #FFFCF8;
     border-radius: 5px;
     margin: 17px 30px 0 30px;
+    filter: drop-shadow(0px 1px 6px rgba(0, 0, 0, 0.15));
 }
-.ForYou-heading{
+.Section7-heading{
     float: left;
     font-style: normal;
     font-weight: 600;
@@ -15,60 +16,47 @@
     display: flex;
     align-items: center;
     color: #784E08;
-    margin: 10px 0 0 12px;
+    margin: 8px 0 0 42px;
 }
-.ForYou{
-    margin: 11px 31px 0 9px;
+.Section7-rope{
     float: left;
-    width: 1337px;
-    height: 229px;
-    overflow-x: scroll;
-    border-radius: 10px;
-    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.25);
-    background: #F8F6ED;
-}
-.ForYou::-webkit-scrollbar{
-    display: none;
-}
-.ForYou-rope{
-    float: left;
-    width: 100%;
-    border: 1.2px solid #FFC056;
+    width: 87.44%;
+    border: 2px solid #FFC056;
     background-color: #FFC056;
-    margin: 16.31px 0 0 0;
+    margin: 16.31px 0 0 11px;
 }
-.ForYou-content{
+.Section7-contents{
     float: left;
-    width: 100%;
+    width: 87%;
     height: 200px;
     display: flex;
-    padding: 0 0 0 14.85px;
+    padding: 0 0 0 5px;
+    overflow: auto;
+    overflow-y: hidden;
+    margin: 15px 0 0 140px;
 }
-.ForYou-hanger{
-    float: left;
-    width: 102.3px;
-    height: 52.97px;
-    transform: translate(0,-6.2px);
+.Section7-contents::-webkit-scrollbar{
+    display: none;
 }
-.ForYou-img{
+
+.Section7-img{
     float: left;
     width: 115.75px;
     height: 146.15px;
-    transform: translate(-7px,-15px);
     filter: drop-shadow(0px 1.96178px 3.92357px rgba(71, 71, 71, 0.25));
     border-radius: 9.80892px;
     z-index: -1;
 }
-.ForYou-prices{
+.Section7-prices{
     float: left;
     width: 52.97px;
     height: 29.43px;
     background: #FFD389;
     box-shadow: 0px 2.94268px 3.92357px rgba(0, 0, 0, 0.25);
     border-radius: 29.4268px;
-    transform: translate(26px,-30px);
+    transform: translate(32px,-15px);
 }
-.ForYou-price{
+.Section7-price{
     width: 20.6px;
     height: 10.79px;
     font-style: normal;
@@ -79,7 +67,7 @@
     margin: 2px 0 0 15.69px;
     text-decoration: line-through;
 }
-.ForYou-Dprice{
+.Section7-Dprice{
     width: 27.46px;
     height: 11.77px;
     font-style: normal;
@@ -89,4 +77,17 @@
     color: #000000;
     margin: 0;
     margin: -2px 0 0 12.75px;
+}
+.Section7-comments{
+    width: 56px;
+    height: 9.33px;
+    font-family: 'Roboto', sans-serif;    
+    font-style: normal;
+    font-weight: 500;
+    font-size: 8.16667px;
+    line-height: 10px;
+    color: #707070;
+    display: flex;
+    text-align: center;
+    transform: translate(-23px,23px);
 }

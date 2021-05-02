@@ -49,7 +49,7 @@ function Slides() {
         <button className="types-left-btn">
             <img src={LeftBtn} />
         </button>
-        <div className="type-list">
+        <div className="types-list">
             {items.map((item) => (
                 <div className="types">
                     <img className="types-img" src={item.image} />

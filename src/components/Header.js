@@ -7,7 +7,7 @@ import Mic from './../icons/Mic.svg'
 import Cart from './../icons/Hanger.svg'
 import MenuFrame from './../icons/Frame.svg'
 import Dropdowns from './Dropdowns'
-import {Drawer, List, ListItem, ListItemText, Divider} from '@material-ui/core';
+import {Drawer, List, ListItem, ListItemText} from '@material-ui/core';
 import clsx from 'clsx'
 import { makeStyles } from '@material-ui/core/styles';
 import { StylesProvider } from "@material-ui/core/styles";
