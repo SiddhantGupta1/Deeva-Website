@@ -120,7 +120,7 @@ function Dropdowns(){
                 {...TransitionProps}
                 style={{ transformOrigin: placement === 'bottom' ? 'center top' : 'center bottom' }}
                 >
-                <Paper>
+                
                     <ClickAwayListener onClickAway={handleClose}>
                     <MenuList className="user-dropdown" autoFocusItem={open} id="menu-list-grow" onKeyDown={handleListKeyDown}>
                         <MenuItem onClick={handleClose}>Profile</MenuItem>
@@ -128,7 +128,7 @@ function Dropdowns(){
                         <MenuItem onClick={handleClose}>Logout</MenuItem>
                     </MenuList>
                     </ClickAwayListener>
-                </Paper>
+                
                 </Grow>
             )}
             </Popper>
@@ -150,7 +150,7 @@ function Dropdowns(){
                 {...TransitionProps}
                 style={{ transformOrigin: placement === 'bottom' ? 'center top' : 'center bottom' }}
                 >
-                <Paper>
+                
                     <ClickAwayListener onClickAway={handleClose1}>
                     <MenuList className="budget-store-dropdown" autoFocusItem={open1} id="menu-list-grow" onKeyDown={handleListKeyDown1}>
                         <MenuItem onClick={handleClose1}>Profile</MenuItem>
@@ -158,7 +158,7 @@ function Dropdowns(){
                         <MenuItem onClick={handleClose1}>Logout</MenuItem>
                     </MenuList>
                     </ClickAwayListener>
-                </Paper>
+                
                 </Grow>
             )}
             </Popper>
@@ -174,44 +174,13 @@ function Dropdowns(){
                 <p className="content-text">Content</p>
                 <img className="downArrow" src={DownArrow} />
             </button>
-            <Popper open={open2} anchorEl={anchorRef2.current} role={undefined} transition disablePortal>
+            <Popper open={open2} anchorEl={anchorRef2.current} role={undefined} transition disablePortal >
             {({ TransitionProps, placement }) => (
                 <Grow
                 {...TransitionProps}
                 style={{ transformOrigin: placement === 'bottom' ? 'center top' : 'center bottom' }}
                 >
-                <Paper>
-                    <ClickAwayListener onClickAway={handleClose2}>
-                    <MenuList className="content-dropdown" autoFocusItem={open2} id="menu-list-grow" onKeyDown={handleListKeyDown2}>
-                        <MenuItem onClick={handleClose2}>Profile</MenuItem>
-                        <MenuItem onClick={handleClose2}>My account</MenuItem>
-                        <MenuItem onClick={handleClose2}>Logout</MenuItem>
-                    </MenuList>
-                    </ClickAwayListener>
-                </Paper>
-                </Grow>
-            )}
-            </Popper>
-
-
-            <button
-            ref={anchorRef2}
-            aria-controls={open2 ? 'menu-list-grow' : undefined}
-            aria-haspopup="true"
-            onClick={handleToggle2}
-            className="hidden"
-            style={{display:"none", position:"absolute"}}
-            >
-                <p className="hidden-text">Hidden</p>
                 
-            </button>
-            <Popper open={open2} anchorEl={anchorRef2.current} role={undefined} transition disablePortal>
-            {({ TransitionProps, placement }) => (
-                <Grow
-                {...TransitionProps}
-                style={{ transformOrigin: placement === 'bottom' ? 'center top' : 'center bottom' }}
-                >
-                <Paper>
                     <ClickAwayListener onClickAway={handleClose2}>
                     <MenuList className="content-dropdown" autoFocusItem={open2} id="menu-list-grow" onKeyDown={handleListKeyDown2}>
                         <MenuItem onClick={handleClose2}>Profile</MenuItem>
@@ -219,12 +188,10 @@ function Dropdowns(){
                         <MenuItem onClick={handleClose2}>Logout</MenuItem>
                     </MenuList>
                     </ClickAwayListener>
-                </Paper>
+                
                 </Grow>
             )}
             </Popper>
-
-
 
       </div>
     )

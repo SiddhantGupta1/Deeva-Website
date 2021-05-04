@@ -44,7 +44,7 @@ function Header() {
       role="presentation"
       onClick={toggleDrawer(anchor, false)}
       onKeyDown={toggleDrawer(anchor, false)}
-      style={{background:{MenuFrame}, height:"100%" }}
+      style={{backgroundImage:{MenuFrame}, height:"100%" }}
     >
       <div className="menu-text">
         Hello Ankush

@@ -1,0 +1,100 @@
+.Footer{
+    margin: 75px 0 0 0;
+    float: left;
+    width: 100%;
+    height: 600px;
+}
+
+.Footer1{
+    float: left;
+    width: 100%;
+    height: 260px;
+    background: #3E3A23;
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 180px 0 200px;
+}
+
+
+.Know-Us, .Help, .Collaborate, .Socials{
+    display: flex;
+    flex-direction: column;
+    width: 223px;
+    height: 151px;
+}
+.Know-Us-heading, .Help-heading, .Collaborate-heading, .Socials-heading{
+    width: 162px;
+    height: 21px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    color: #FFC157;
+    margin: 0 0 10px 0;
+}
+.Know-Us-content, .Help-content, .Collaborate-content, .Socials-content{
+    width: 189px;
+    height: 20px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    margin: 0 0 5px 0;
+}
+
+.Footer1-logo{
+    float: left;
+    width: 100%;
+    height: 116px;
+    background: #3E3A23;
+}
+.Footer1-Divider{
+    float: left;
+    width: 100%;
+    height: 0;
+    border: 0.5px solid rgba(255, 193, 87, 0.5);
+}
+
+
+.Footer2{
+    float: left;
+    width: 100%;
+    height: 230px;
+    background: #221F13;
+    display: flex;
+    padding: 40px 256px 0 256px;
+    justify-content: space-between;
+}
+.Mail-Us{
+    width: 223px;
+    height: 151px;
+    justify-content: center;
+}
+.Mail-Us-heading{
+    width: 56.5px;
+    height: 16.95px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12.9148px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    color: #FFC157;
+    margin: 0 0 10px 0;
+}
+.Mail-Us-content{
+    width: 219px;
+    height: 122px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10.4933px;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;    
+}

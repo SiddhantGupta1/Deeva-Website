@@ -30,7 +30,7 @@
     text-align: center;
     height: 81.3px;
 }
-.type-list::-webkit-scrollbar{
+.types-list::-webkit-scrollbar{
     display: none;
 }
 
