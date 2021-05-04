@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import "./../styles/Slides.css";
-import DemoPic from "./../icons/Demo.svg";
-import LeftBtn from "./../icons/Arrow.svg";
+import "./../../styles/HomePageCSS/Slides.css";
+import DemoPic from "./../../icons/Demo.svg";
+import LeftBtn from "./../../icons/Arrow.svg";
 
 function Slides() {
   const items = [

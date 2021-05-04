@@ -1,7 +1,7 @@
 import React from 'react'
-import './../styles/Cards.css'
-import Demo from './../icons/Saree Pic.svg'
-import Btn from './../icons/Arrow.svg'
+import './../../styles/HomePageCSS/Cards.css'
+import Demo from './../../icons/Saree Pic.svg'
+import Btn from './../../icons/Arrow.svg'
 
 function Cards(){
 

@@ -1,11 +1,61 @@
 import React,{useState, useEffect} from 'react'
-import './../styles/ForYou.css'
-import Demo from './../icons/Saree Pic.svg'
-import Hanger from './../icons/Golden Hanger.svg'
+import './../../styles/HomePageCSS/ForYou.css'
+import Demo from './../../icons/Saree Pic.svg'
+import Hanger from './../../icons/Golden Hanger.svg'
 
 function ForYou() {
     
     const items = [
+        {
+            img: Demo,
+            price: 1500,
+            dprice: 999,
+        },
+        {
+            img: Demo,
+            price: 1500,
+            dprice: 999,
+        },
+        {
+            img: Demo,
+            price: 1500,
+            dprice: 999,
+        },
+        {
+            img: Demo,
+            price: 1500,
+            dprice: 999,
+        },
+        {
+            img: Demo,
+            price: 1500,
+            dprice: 999,
+        },
+        {
+            img: Demo,
+            price: 1500,
+            dprice: 999,
+        },
+        {
+            img: Demo,
+            price: 1500,
+            dprice: 999,
+        },
+        {
+            img: Demo,
+            price: 1500,
+            dprice: 999,
+        },
+        {
+            img: Demo,
+            price: 1500,
+            dprice: 999,
+        },
+        {
+            img: Demo,
+            price: 1500,
+            dprice: 999,
+        },
         {
             img: Demo,
             price: 1500,

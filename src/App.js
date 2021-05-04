@@ -2,7 +2,7 @@ import './App.css';
 import React from 'react'
 import Frame from './Frame.png'
 import Header from './components/Header'
-import Body from './components/Body'
+import Body from './components/HomePage/Body'
 
 function App() {
 

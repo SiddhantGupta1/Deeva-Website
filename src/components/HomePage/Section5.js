@@ -1,11 +1,61 @@
 import React,{useState, useEffect} from 'react'
-import './../styles/Section5.css'
-import Demo from './../icons/Saree Pic.svg'
-import Hanger from './../icons/Golden Hanger.svg'
+import './../../styles/HomePageCSS/Section5.css'
+import Demo from './../../icons/Saree Pic.svg'
+import Hanger from './../../icons/Golden Hanger.svg'
 
 function Section5() {
     
     const items = [
+        {
+            img: Demo,
+            price: 1500,
+            dprice: 999,
+        },
+        {
+            img: Demo,
+            price: 1500,
+            dprice: 999,
+        },
+        {
+            img: Demo,
+            price: 1500,
+            dprice: 999,
+        },
+        {
+            img: Demo,
+            price: 1500,
+            dprice: 999,
+        },
+        {
+            img: Demo,
+            price: 1500,
+            dprice: 999,
+        },
+        {
+            img: Demo,
+            price: 1500,
+            dprice: 999,
+        },
+        {
+            img: Demo,
+            price: 1500,
+            dprice: 999,
+        },
+        {
+            img: Demo,
+            price: 1500,
+            dprice: 999,
+        },
+        {
+            img: Demo,
+            price: 1500,
+            dprice: 999,
+        },
+        {
+            img: Demo,
+            price: 1500,
+            dprice: 999,
+        },
         {
             img: Demo,
             price: 1500,

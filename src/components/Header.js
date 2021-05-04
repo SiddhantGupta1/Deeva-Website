@@ -1,12 +1,12 @@
 import React,{useState, useRef, useEffect} from 'react';
-import './../styles/Header.css';
+import './../styles/Header.css'
 import DeevaLogo from './../icons/deeva purple 1.svg'
 import Menu from './../icons/Union.svg'
 import Search from './../icons/Search.svg'
 import Mic from './../icons/Mic.svg'
 import Cart from './../icons/Hanger.svg'
 import MenuFrame from './../icons/Frame.svg'
-import Dropdowns from './Dropdowns'
+import Dropdowns from './HomePage/Dropdowns'
 import {Drawer, List, ListItem, ListItemText} from '@material-ui/core';
 import clsx from 'clsx'
 import { makeStyles } from '@material-ui/core/styles';

@@ -1,7 +1,7 @@
 import React,{useEffect, useState} from 'react'
-import './../styles/Section6.css'
-import LeftBtn from "./../icons/Arrow.svg";
-import Brand from "./../icons/Brand.svg";
+import './../../styles/HomePageCSS/Section6.css'
+import LeftBtn from "./../../icons/Arrow.svg";
+import Brand from "./../../icons/Brand.svg";
 
 function Section6(){
 

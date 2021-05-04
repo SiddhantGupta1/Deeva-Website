@@ -1,7 +1,7 @@
 import React,{useState,useEffect} from 'react'
-import './../styles/Body.css'
+import './../../styles/HomePageCSS/Body.css'
 import Slides from './Slides'
-import Sale from './../icons/Sale.svg'
+import Sale from './../../icons/Sale.svg'
 import Wardrobe from './Wardrobe'
 import Section1 from './Cards'
 import Section3 from './ForYou'
@@ -9,9 +9,9 @@ import Section4 from './Section4'
 import Section5 from './Section5'
 import Section6 from './Section6'
 import Section7 from './Section7'
-import Footer from './Footer'
-import AD from './../icons/Since 1964.svg'
-import AD1 from './../icons/Paytm.svg'
+import Footer from '../Footer'
+import AD from './../../icons/Since 1964.svg'
+import AD1 from './../../icons/Paytm.svg'
 
 function Body(){
 

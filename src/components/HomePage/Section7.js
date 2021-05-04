@@ -1,6 +1,6 @@
 import React,{useState, useEffect} from 'react'
-import './../styles/Section7.css'
-import Demo from './../icons/Saree Pic.svg'
+import './../../styles/HomePageCSS/Section7.css'
+import Demo from './../../icons/Saree Pic.svg'
 
 function Section7() {
     

@@ -1,13 +1,13 @@
 import React from 'react'
-import './../styles/Section4.css'
-import Special1 from './../icons/Special 1.svg'
-import Special2 from './../icons/Special 2.svg'
-import Special3 from './../icons/Special 3.svg'
-import Arrow from './../icons/Arrow.svg'
-import Wedding from './../icons/Exclusive wedding.svg'
-import AppHeading from './../icons/App Heading.svg'
-import App from './../icons/App.svg'
-import AppContent from './../icons/App Content.svg'
+import './../../styles/HomePageCSS/Section4.css'
+import Special1 from './../../icons/Special 1.svg'
+import Special2 from './../../icons/Special 2.svg'
+import Special3 from './../../icons/Special 3.svg'
+import Arrow from './../../icons/Arrow.svg'
+import Wedding from './../../icons/Exclusive wedding.svg'
+import AppHeading from './../../icons/App Heading.svg'
+import App from './../../icons/App.svg'
+import AppContent from './../../icons/App Content.svg'
 
 function Section4() {
 

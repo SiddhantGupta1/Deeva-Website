@@ -1,4 +1,4 @@
-.Section5-frame{
+.ForYou-frame{
     float: left;
     width: 1454px;
     height: 251px;
@@ -6,7 +6,7 @@
     border-radius: 5px;
     margin: 17px 30px 0 30px;
 }
-.Section5-heading{
+.ForYou-heading{
     float: left;
     font-style: normal;
     font-weight: 600;
@@ -17,40 +17,41 @@
     color: #784E08;
     margin: 10px 0 0 12px;
 }
-.Section5{
+.ForYou{
     margin: 11px 31px 0 9px;
     float: left;
-    width: 1294px;
+    width: 1337px;
     height: 229px;
-    overflow-x: scroll;
+    overflow: scroll;
     border-radius: 10px;
     box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.25);
     background: #F8F6ED;
 }
-.Section5::-webkit-scrollbar{
+.ForYou::-webkit-scrollbar{
     display: none;
 }
-.Section5-rope{
+.ForYou-rope{
+    display: flex;
     float: left;
-    width: 100%;
-    border: 1.1037px solid #FFC056;
+    width: 240%;
+    border: 1.2px solid #FFC056;
     background-color: #FFC056;
     margin: 16.31px 0 0 0;
 }
-.Section5-content{
+.ForYou-content{
     float: left;
     width: 100%;
     height: 200px;
     display: flex;
     padding: 0 0 0 14.85px;
 }
-.Section5-hanger{
+.ForYou-hanger{
     float: left;
     width: 102.3px;
     height: 52.97px;
-    transform: translate(0,-6.5px);
+    transform: translate(0,-6.2px);
 }
-.Section5-img{
+.ForYou-img{
     float: left;
     width: 115.75px;
     height: 146.15px;
@@ -59,7 +60,7 @@
     border-radius: 9.80892px;
     z-index: -1;
 }
-.Section5-prices{
+.ForYou-prices{
     float: left;
     width: 52.97px;
     height: 29.43px;
@@ -68,7 +69,7 @@
     border-radius: 29.4268px;
     transform: translate(26px,-30px);
 }
-.Section5-price{
+.ForYou-price{
     width: 20.6px;
     height: 10.79px;
     font-style: normal;
@@ -79,7 +80,7 @@
     margin: 2px 0 0 15.69px;
     text-decoration: line-through;
 }
-.Section5-Dprice{
+.ForYou-Dprice{
     width: 27.46px;
     height: 11.77px;
     font-style: normal;

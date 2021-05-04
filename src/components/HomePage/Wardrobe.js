@@ -1,7 +1,7 @@
 import React from 'react';
-import './../styles/Wardrobe.css'
-import Trending from './../icons/Trending.svg'
-import TrendingBG from './../icons/TrendingBG.svg'
+import './../../styles/HomePageCSS/Wardrobe.css'
+import Trending from './../../icons/Trending.svg'
+import TrendingBG from './../../icons/TrendingBG.svg'
 
 function Wardrobe(){
 
