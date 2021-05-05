@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./../../styles/HomePageCSS/Slides.css";
+import "./Slides.css";
 import DemoPic from "./../../icons/Demo.svg";
 import LeftBtn from "./../../icons/Arrow.svg";
 

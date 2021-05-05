@@ -84,6 +84,7 @@ header{
     border: none;
     background: none;
 }
+.cart:active{transform: translateY(2px);}
 .cart-items{
     font-size: 16px;
     line-height: 19px;

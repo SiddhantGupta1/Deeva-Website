@@ -1,5 +1,5 @@
 import React,{useState,useEffect} from 'react'
-import './../../styles/HomePageCSS/Body.css'
+import './Home.css'
 import Slides from './Slides'
 import Sale from './../../icons/Sale.svg'
 import Wardrobe from './Wardrobe'
@@ -15,14 +15,17 @@ import AD1 from './../../icons/Paytm.svg'
 
 function Body(){
 
+    const pics = [Sale, AD, Sale, AD1];
 
     return(
         <div className="body">
             <h1 style={{color:"white", margin:"0 0 5px 0" }}>Deeva</h1>
             <Slides />
 
-            <div style={{background:"#FFFCF8", float:"left", width:"100%", height:"100%"}}>
-                <img className="sale" src={Sale} />
+            <div className="carousel">
+                {pics.map(pics => (
+                    <img className="sale" src={pics} />
+                ))}
             </div>
 
             <div className="wardrobe-frame">

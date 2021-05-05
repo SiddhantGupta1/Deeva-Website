@@ -1,5 +1,5 @@
 import React,{useState, useEffect} from 'react'
-import './../../styles/HomePageCSS/Section7.css'
+import './Section7.css'
 import Demo from './../../icons/Saree Pic.svg'
 
 function Section7() {

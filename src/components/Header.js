@@ -1,5 +1,5 @@
 import React,{useState, useRef, useEffect} from 'react';
-import './../styles/Header.css'
+import './Header.css'
 import DeevaLogo from './../icons/deeva purple 1.svg'
 import Menu from './../icons/Union.svg'
 import Search from './../icons/Search.svg'
@@ -11,6 +11,7 @@ import {Drawer, List, ListItem, ListItemText} from '@material-ui/core';
 import clsx from 'clsx'
 import { makeStyles } from '@material-ui/core/styles';
 import { StylesProvider } from "@material-ui/core/styles";
+import { Link } from 'react-router-dom'
 
 function Header() {
 
@@ -99,11 +100,11 @@ function Header() {
         </button>
         
         <Dropdowns />
-    
-        <button className="cart">
+            
+        <Link to='/cart' className="cart">
             <img src={Cart} />
             <p className="cart-items">2</p>
-        </button>
+        </Link>
 
       </header>
   );

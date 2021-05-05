@@ -1,5 +1,5 @@
 import React,{useEffect, useState} from 'react'
-import './../../styles/HomePageCSS/Section6.css'
+import './Section6.css'
 import LeftBtn from "./../../icons/Arrow.svg";
 import Brand from "./../../icons/Brand.svg";
 

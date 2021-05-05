@@ -1,5 +1,5 @@
 import React from 'react'
-import './../../styles/HomePageCSS/Cards.css'
+import './Cards.css'
 import Demo from './../../icons/Saree Pic.svg'
 import Btn from './../../icons/Arrow.svg'
 

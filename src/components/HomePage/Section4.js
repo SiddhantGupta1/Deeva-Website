@@ -1,5 +1,5 @@
 import React from 'react'
-import './../../styles/HomePageCSS/Section4.css'
+import './Section4.css'
 import Special1 from './../../icons/Special 1.svg'
 import Special2 from './../../icons/Special 2.svg'
 import Special3 from './../../icons/Special 3.svg'
