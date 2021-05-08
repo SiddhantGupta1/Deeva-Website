@@ -83,6 +83,7 @@ header{
     margin: 8px 0 0 7%;
     border: none;
     background: none;
+    text-decoration: none;
 }
 .cart:active{transform: translateY(2px);}
 .cart-items{

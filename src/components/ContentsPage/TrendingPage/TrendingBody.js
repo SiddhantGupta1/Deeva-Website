@@ -8,7 +8,6 @@ import { StylesProvider } from "@material-ui/core/styles";
 import StarBorderIcon from '@material-ui/icons/StarBorder';
 import LeftBtn from './../../../icons/Arrow.svg'
 
-
 function  TrendingBody(){
 
     const cards = [
@@ -236,18 +235,35 @@ function  TrendingBody(){
             dprice: 999,
             price: 1550,
         },
-        
       ];
     
-    const pages = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]
+    const pages = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]
 
+    function handleRightBtn(){
+
+        for(var i=0; i<pages.length;i++)
+        {
+            const btn = document.getElementById(pages[i]);
+            btn.style.transform = "translateX(-628px)";
+        }
+
+    }
+
+    function handleLeftBtn(){
+
+        for(var i=0; i<pages.length;i++)
+        {
+            const btn = document.getElementById(pages[i]);
+            btn.style.transform = "translateX(0px)";
+        }
+    }
 
     return(
         <div className="TrendingBody">
-             <div className="trend-head">Showing 3500 Trending Products</div>
-             <div className="trend-sub-head">Page 1 of 175</div>
-             <img className="trend-AD" src={AD}/>
-             <div className="trend-cards">
+            <div className="trend-head">Showing 3500 Trending Products</div>
+            <div className="trend-sub-head">Page 1 of 175</div>
+            <img className="trend-AD" src={AD}/>
+            <div className="trend-cards">
                 {cards.map(e=> (
                     <div className="card">
                         <img className="card-img" src={e.image}/>
@@ -274,22 +290,25 @@ function  TrendingBody(){
 
                     </div>
                 ))}
-             </div>
-
-             <div className="trend-pages">
-                    <button className="trend-left-btn">
-                        <img src={LeftBtn}/>
-                    </button>
-                    <div className="trend-list">
-                        {pages.map(pages => (
-                            <button className="trend-pages-btn">{pages}</button>
-                        ))}
-                    </div>
-
-                    <button className="trend-right-btn">
-                        <img style={{transform:"rotate(180deg)"}} src={LeftBtn}/>
-                    </button>
-             </div>
+            </div>
+            
+            <div className="trend-pages">
+                <button onClick={handleLeftBtn} className="trend-left-btn">
+                    <img src={LeftBtn} />
+                </button>
+                <div className="trend-list">
+                    {pages.map(pages => (
+                        <div style={{marginRight:"23px"}}>
+                            <button id={pages} className="trend-pages-btn">{pages}</button>
+                        </div>
+                    ))}
+                </div>
+            
+                <button onClick={handleRightBtn} className="trend-right-btn">
+                    <img style={{transform: "rotate(180deg)"}} src={LeftBtn} />
+                </button>
+            </div>
+             
         </div>
     )
 }
