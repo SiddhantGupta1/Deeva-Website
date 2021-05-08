@@ -56,7 +56,7 @@ function Slides() {
                     <p className="types-text">{item.text}</p>
                 </div>
             ))}
-      </div>
+        </div>
       
         <button className="types-right-btn">
             <img style={{transform: "rotate(180deg)"}} src={LeftBtn} />

@@ -57,7 +57,7 @@ function Section6(){
                 </button>
                 <div className="brands-list">
                     {items.map((item) => (
-                        <div className="brands">
+                        <div className="brands-home">
                             <img className="brands-img" src={item.image} />
                             <p className="brands-text">{item.text}</p>
                         </div>
