@@ -9,7 +9,11 @@
     min-width: 1440px;
     height: 555%;
     position: absolute;
-    background: #F8F6ED;
+    background: #F6F6F6;
+}
+button{
+    border: none;
+    background: none;
 }
 button:active{
     transform: translateY(2px);

@@ -1,0 +1,120 @@
+.Individual{
+    margin: 0;
+    box-sizing: border-box;
+    position: absolute;
+    background: #F8F6ED;
+    margin-top: 53px;
+}
+.productBG{
+    float: left;
+    width: 100%;
+    height: 444px;
+    background: #FFDF37;
+    display: flex;
+    justify-content: center;
+}
+.product-images{
+    position: absolute;
+    float: left;   
+    width: 100%;
+    height: 440px;
+    margin-top: -40px;
+}
+
+.product-img{
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    width: 100%;
+    height: 420px;
+    align-items: center;
+}
+.product-img::-webkit-scrollbar{
+    display: none;
+}
+.product-image{
+    width: 254px;
+    height: 257px;
+    margin: 50px 48px 0 0;
+    filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.5));
+    transition: 1s;
+}
+
+.slide{
+    transition: 1s;
+}
+.slide.active{
+    transition: 1s;
+    transform: scale(1.2);
+}
+
+
+
+
+
+
+
+
+
+
+
+#product-left-btn, #product-right-btn{
+    position: absolute;
+    width: 51.84px;
+    height: 51.84px;
+    border-radius: 50%;
+    background: #F8F6ED;
+    filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.25));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+    z-index: 2;
+    top: 200px;
+}
+#product-left-btn{
+    left: 25px;
+}
+#product-right-btn{
+    right: 25px;
+}
+
+#product-like-btn{
+    float: left;
+    width: 47px;
+    height: 47px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #FFFFFF;
+    margin: -20px 0 0 24px;
+}
+.product-like-btn{
+    width: 24px;
+    height: 22px;
+}
+#add-to-cart-btn, #buy-now-btn{
+    float: right;
+    width: 214px;
+    height: 47px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;    
+    background: #F8F6ED;
+    box-shadow: 0px 1px 4px rgba(71, 71, 71, 0.25);
+    border-radius: 35px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+    margin: -20px 20px 0 0;
+}
+#buy-now-btn{
+    width: 214px;
+    height: 47px;
+    background: #FFFFFF;
+    margin: -20px 26px 0 0;   
+}

@@ -5,7 +5,7 @@ function  TrendingFilter(){
 
     function toggle1(){
         const slide = document.getElementById('filter');
-        slide.style.transform = 'translateX(100%)';
+        slide.style.transform = 'translateX(101%)';
 
         const filter = document.getElementById('filter-content');
         const sort = document.getElementById('sort-content');

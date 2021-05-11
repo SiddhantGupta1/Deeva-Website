@@ -58,6 +58,8 @@
     background: #FCFCFC;
     box-shadow: 0px 0.944444px 2.83333px rgba(112, 111, 110, 0.25);
     margin: 0 0 28px 0;
+    text-decoration: none;
+
 }
 .card-btn{
     position: absolute;
@@ -83,7 +85,6 @@
   font-weight: 500;
   font-size: 13.2222px;
   line-height: 20px;
-  display: flex;
   align-items: center;
   color: #525151;
   margin: 2px 0 40px 0;
@@ -189,36 +190,3 @@
 .trend-pages-btn:focus{
   background: #FFD389;
 }
-
-
-
-
-
-
-/*.card-like {
-    background-color: red;
-    height: 15px;
-    width: 15px;
-    transform: rotate(-45deg);
-    transition: background-color 1s;
-  }
-  
-  .card-like::before,
-  .card-like::after {
-    content: '';
-    background-color: red;
-    height: 15px;
-    width: 15px;
-    border-radius: 50%;
-    position: absolute;
-    transition: background-color 1s;
-  }
-  
-  .card-like::before {
-    top: -7.5px;
-    left: 0
-  }
-  
-  .card-like::after {
-    left: 7.5px;
-  }*/

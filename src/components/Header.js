@@ -7,7 +7,7 @@ import Mic from './../icons/Mic.svg'
 import Cart from './../icons/Hanger.svg'
 import MenuFrame from './../icons/Frame.svg'
 import Dropdowns from './HomePage/Dropdowns'
-import {Drawer, List, ListItem, ListItemText} from '@material-ui/core';
+import {Drawer, List, ListItem} from '@material-ui/core';
 import clsx from 'clsx'
 import { makeStyles } from '@material-ui/core/styles';
 import { StylesProvider } from "@material-ui/core/styles";
@@ -23,6 +23,63 @@ function Header() {
       width: 'auto',
     },
   });
+
+  const link1 = [
+    {
+      name: "Home",
+      links: "home"
+    },
+    {
+      name: "Categories",
+      links: "ethnic"
+    },
+    {
+      name: "Wardrobe",
+      links: "trending"
+    },
+
+  ];
+
+  const link2 = [
+    {
+      name: "Your Orders",
+      links: "party"
+    },
+    {
+      name: "My Hanger",
+      links: "cart"
+    },
+    {
+      name: "Profile",
+      links: "puja"
+    },
+
+  ];
+
+  const link3 = [
+    {
+      name: "Login",
+      links: "party"
+    },
+    {
+      name: "Register",
+      links: "cart"
+    },
+    {
+      name: "Settings",
+      links: "puja"
+    },
+    {
+      name: "Help and Contact",
+      links: "contact us"
+    },
+    {
+      name: "Sign Out",
+      links: "puja"
+    },
+
+  ];
+
 
   const classes = useStyles();
   const [state, setState] = React.useState({
@@ -45,29 +102,29 @@ function Header() {
       role="presentation"
       onClick={toggleDrawer(anchor, false)}
       onKeyDown={toggleDrawer(anchor, false)}
-      style={{backgroundImage:{MenuFrame}, height:"100%" }}
+      style={{backgroundImage:{MenuFrame}, height:"100%", width:"320px" }}
     >
       <div className="menu-text">
         Hello Ankush
       </div>
       <List>
-        {['Home', 'Categories' ,'Wardrobe'].map((text, index) => (
-          <ListItem style={{padding:"0 16px 0 16px", fontFamily:"'Poppins','sans-serif'"}} button key={text}>
-            <ListItemText primary={text} />
+        {link1.map((text, index) => (
+          <ListItem style={{padding:"0 16px"}} button key={text.name}>
+            <Link className="menu-text-links" to={`/${text.links}`}> {text.name} </Link>
           </ListItem>
         ))}
       </List>
       <List>
-        {['Your Orders', 'My Hanger', 'Profile'].map((text, index) => (
-          <ListItem style={{padding:"0 16px 0 16px", fontFamily:"'Poppins','sans-serif'"}} button key={text}>
-            <ListItemText primary={text} />
+        {link2.map((text, index) => (
+          <ListItem style={{padding:"0 16px"}} button key={text.name}>
+            <Link className="menu-text-links" to={`/${text.links}`}>{text.name} </Link>
           </ListItem>
         ))}
       </List>
       <List>
-        {['Login', 'Register' ,'Settings', 'Help and Contact', 'Sign Out'].map((text, index) => (
-          <ListItem style={{padding:"0 16px 0 16px", fontFamily:"'Poppins','sans-serif'"}} button key={text}>
-            <ListItemText primary={text} />
+        {link3.map((text, index) => (
+          <ListItem style={{padding:"0 16px"}} button key={text.name}>
+            <Link className="menu-text-links" to={`/${text.links}`}> {text.name} </Link>
           </ListItem>
         ))}
       </List>

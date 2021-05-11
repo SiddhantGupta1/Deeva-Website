@@ -7,6 +7,7 @@ import Rating from '@material-ui/lab/Rating';
 import { StylesProvider } from "@material-ui/core/styles";
 import StarBorderIcon from '@material-ui/icons/StarBorder';
 import LeftBtn from './../../../icons/Arrow.svg'
+import { Link } from 'react-router-dom'
 
 function  TrendingBody(){
 
@@ -265,7 +266,7 @@ function  TrendingBody(){
             <img className="trend-AD" src={AD}/>
             <div className="trend-cards">
                 {cards.map(e=> (
-                    <div className="card">
+                    <Link to='/products' className="card">
                         <img className="card-img" src={e.image}/>
                         <button className="card-btn">
                             <img className="card-like" src={CardLike} />
@@ -288,7 +289,7 @@ function  TrendingBody(){
                             <div className="card-price">&#8377;{e.price}</div>
                         </div>
 
-                    </div>
+                    </Link>
                 ))}
             </div>
             

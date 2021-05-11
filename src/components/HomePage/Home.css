@@ -17,23 +17,23 @@
 }
 .carousel > *{
     position: absolute;
-    top: 100%;
+    bottom: 100%;
     left: 0;
-    animation: 16s autoplay1 infinite ease-in-out;
+    animation: 24s autoplay1 infinite ease-in-out;
 }
 @keyframes autoplay1 {
-    0% {top: 100%;}
-    4% {top: 0%}
-    25% {top: 0%}
-    29% {top: -100%}
-    50% {top: -100%}
-    54% {top: -200%}
-    100% {top: -200%}
+    0% {bottom: 100%;}
+    4% {bottom: 0%}
+    25% {bottom: 0%}
+    29% {bottom: -100%}
+    50% {bottom: -100%}
+    54% {bottom: -200%}
+    100% {bottom: -200%}
 }
 .carousel >:nth-child(1) {animation-delay: 0s;}
-.carousel >:nth-child(2) {animation-delay: 4s;}
-.carousel >:nth-child(3) {animation-delay: 8s;}
-.carousel >:nth-child(4) {animation-delay: 12s;}
+.carousel >:nth-child(2) {animation-delay: 6s;}
+.carousel >:nth-child(3) {animation-delay: 12s;}
+.carousel >:nth-child(4) {animation-delay: 18s;}
 
 .sale{
     margin: 0 30px 0 40px;
