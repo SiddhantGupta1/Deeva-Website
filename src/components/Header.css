@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+header{
+    position: fixed;
+    height: 53px;
+    width: 100%;
+    min-width: 1440px;
+    background: #FFD706;
+    display: flex;
+    align-content: center;
+    justify-content: left;
+    margin: 0;
+}
+
+.menu{
+    margin: 20px 0 0 1.7%;
+    width: 25.6px;
+    height: 13.24px;
+    background: none;
+    border: none;
+}
+.menu-text{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20.1333px;
+    line-height: 30px;
+    padding: 11px 0 12px 15px;
+    background: #FFD706;
+}
+.menu-list{
+    font-weight: 600;
+}
+.deevaLogo{
+    margin: 0 0 0 4.2%;
+    padding: 0;
+}
+
+.search-bar{
+    width: 43.5%;
+    min-width: 150px;
+    height: 36px;
+    background: #FFFCF8;
+    box-shadow: 0px 1.28443px 2.56886px rgba(71, 71, 71, 0.25);
+    border-radius: 15px;
+    margin: 7.5px 0 0 2.9%;
+    display: flex;
+    align-content: center;
+    justify-content: left;
+    float: left;
+}
+.search{
+    width: 13px;
+    height: 17.91px;
+    margin: 10px 0 0 3%;
+    float: left;
+}
+.searching{
+    outline: none;
+    border: none;
+    margin: 0 0 0 1.5%;
+    width: 100%;
+    font-size: 15px;
+    background: #FFFCF8;
+    border-radius: 15px;
+}
+
+.voice-search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    width: 29px;
+    height: 33px;
+    background: #FFFFFF;
+    box-shadow: 0px 1.28px 2.57px rgba(71, 71, 71, 0.25);
+    border-radius: 15px;
+    margin: 8.5px 0 0 0.5%;
+}
+
+.cart{
+    width: 47px;
+    height: 24.79px;
+    margin: 8px 0 0 7%;
+    border: none;
+    background: none;
+}
+.cart-items{
+    font-size: 16px;
+    line-height: 19px;
+    font-style: normal;
+    font-weight: normal;
+    margin: -16px 0 0 41%;
+    color: #433B11;
+}
+
+.MuiDrawer-paper{
+    flex-direction: row;
+}
+.MuiPaper-root{
+    background-image: url("./../icons/Frame.svg");
+}
+.MuiTypography-body1{
+    font-style: normal;
+    font-weight: 300;
+    font-size: 17.7814px;
+    line-height: 27px;
+}

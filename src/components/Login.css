@@ -1,0 +1,218 @@
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+.bg{
+    position: absolute;
+    width: 1024px;
+    height: 1024px;
+    left: 661px;
+    top: 0px;
+
+    background: url(image18.png);
+}
+
+.Logo-position{
+    position: absolute;
+    left: 3%;
+    right: 89.97%;
+    top: 0%;
+    bottom: 92.79%;
+
+    background: url(DeevaLogo.png) no-repeat top center;
+
+}
+
+.above-cred{
+    /* U just let in, We’ll make sure u stay in there! 😌 */
+
+    position: absolute;
+    left: 6.53%;
+    right: 58%;
+    top: 10%;
+    bottom: 76.46%;
+
+    font-family: Glamor;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+
+    color: #35250B;
+
+
+}
+
+.forget{
+    position: absolute;
+    width: 153.42px;
+    height: 220.12px;
+    left: 139.58px;
+    top: 270.88px;
+    
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15.5074px;
+    line-height: 19px;
+    
+    color: #D19900;
+    
+    mix-blend-mode: normal;
+    
+}
+
+
+.input-config{
+    position: absolute;
+    width: 236.84px;
+    height: 19.74px;
+    left: 50.58px;
+    top: 180.86px;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 17.6061px;
+    line-height: 21px;
+
+    color: #D19900;
+
+    mix-blend-mode: normal;
+}
+body {
+    overflow-y: hidden; /* Hide vertical scrollbar */
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+  }
+
+.login-btn{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+
+    position: absolute;
+    width: 312px;
+    height: 46px;
+    left: 127px;
+    top: 217px;
+
+    background: #FFD706;
+    box-shadow: 0px 1px 6px rgba(132, 111, 17, 0.5);
+    border-radius: 11.32px;
+}
+.main-bg{
+    position: absolute;
+    width: 1288px;
+    height: 1024px;
+    left: 0px;
+    top: 0px;
+
+    /* background: #C4C4C4; */
+}
+
+
+.below-cred{
+    position: absolute;
+    width: 432px;
+    height: 42px;
+    left: 100px;
+    top: 500px;
+
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+
+    color: #35250B;
+}
+
+.input-email{
+    position: absolute;
+    width: 311.88px;
+    height: 57.85px;
+    left: 127px;
+    top: 77px;
+
+    background: rgba(248, 248, 246, 0.5);
+    border: 2px solid #E3BF02;
+    box-sizing: border-box;
+    backdrop-filter: blur(15px);
+    /* Note: backdrop-filter has minimal browser support */
+
+    border-radius: 11.3182px;
+}
+
+.input-paswd{
+    position: absolute;
+    width: 311.88px;
+    height: 57.85px;
+    left: 127px;
+    top: 147px;
+
+    background: rgba(248, 248, 246, 0.5);
+    border: 2px solid #E3BF02;
+    box-sizing: border-box;
+    backdrop-filter: blur(15px);
+    /* Note: backdrop-filter has minimal browser support */
+
+    border-radius: 11.3182px;
+}
+
+.google-btn{
+    position: absolute;
+    width: 120px;
+    height: 46px;
+    left: 187px;
+    top: 600px;
+
+    /* background-image: url(Frame232.svg); */
+    background: #55A5F5;
+    border: 1px solid #3A9DFF;
+    box-sizing: border-box;
+    border-radius: 20px;
+}
+
+.fb-btn{
+    position: relative;
+    width: 120px;
+    height: 46px;
+    left: 317px;
+    top: 600px;
+
+    /* background-image: url(icons8-facebook-48\ 3.svg); */
+    background: #0680DD;
+    border: 1px solid #0680DD;
+    box-sizing: border-box;
+    border-radius: 25px;
+}
+
+.g-logo{
+    position: static;
+    left: 3.75%;
+    right: 3.75%;
+    top: 3.65%;
+    bottom: 3.65%;
+
+    background: url(Frame232.svg);
+    mix-blend-mode: normal;
+
+    /* Inside Auto Layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 9px;
+}
