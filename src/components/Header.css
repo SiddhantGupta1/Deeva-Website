@@ -10,6 +10,8 @@ header{
     align-content: center;
     justify-content: left;
     margin: 0;
+    top: 0;
+    filter: drop-shadow(0px 1px 6px rgba(106, 91, 14, 0.24));
 }
 
 .menu{
@@ -26,10 +28,18 @@ header{
     line-height: 30px;
     padding: 11px 0 12px 15px;
     background: #FFD706;
+    margin-bottom: 10px;
 }
-.menu-list{
-    font-weight: 600;
+.menu-text-links{
+    font-style: normal;
+    font-weight: 300;
+    font-size: 17.7814px;
+    line-height: 27px;
+    color: #61420C;
+    text-decoration: none;
+    margin-bottom: 7px;
 }
+
 .deevaLogo{
     margin: 0 0 0 4.2%;
     padding: 0;
@@ -83,6 +93,7 @@ header{
     margin: 8px 0 0 7%;
     border: none;
     background: none;
+    text-decoration: none;
 }
 .cart:active{transform: translateY(2px);}
 .cart-items{

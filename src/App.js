@@ -6,9 +6,12 @@ import Ethnic from './components/ContentsPage/EthnicPage/EthnicPage'
 import Party from './components/ContentsPage/PartyPage/PartyPage'
 import Puja from './components/ContentsPage/PujaPage/PujaPage'
 import Cart from './components/CartPage/CartPage'
+import ContactUs from './components/ContactUs/ContactUs'
+import Individual from './components/IndividualPage/IndividualPage'
 import Frame from './Frame.png'
 import Header from './components/Header'
 import Body from './components/HomePage/Home'
+import ScrollToTop from './ScrollToTop'
 
 function App() {
 
@@ -17,14 +20,18 @@ function App() {
     <Router>
       <div className="App">
       <img className="frame" src={Frame} />
+      <ScrollToTop />
         <Switch>
 
           <Route path="/" exact component={Home} />
+          <Route path="/home" component={Home} />
           <Route path="/trending" component={Trending} />
           <Route path="/ethnic" component={Ethnic} />
           <Route path="/party" component={Party} />
           <Route path="/puja" component={Puja} />
-          <Route path="/cart" component={Cart}/>
+          <Route path="/cart" component={Cart} />
+          <Route path="/contact us" component={ContactUs} />
+          <Route path="/products" component={Individual} />
 
         </Switch>
       </div>

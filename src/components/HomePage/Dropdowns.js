@@ -1,5 +1,5 @@
 import React,{useState, useRef, useEffect}  from 'react';
-import {Popper, ClickAwayListener, Paper, MenuItem, MenuList, Grow } from '@material-ui/core';
+import {Popper, ClickAwayListener, MenuItem, MenuList, Grow } from '@material-ui/core';
 import './Dropdowns.css';
 import DownArrow from './../../icons/Down Arrow.svg'
 

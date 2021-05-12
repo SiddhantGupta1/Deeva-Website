@@ -5,6 +5,7 @@ import Footer from './../../Footer'
 import Body from './TrendingBody'
 import Filter from './TrendingFilter'
 import Section from './LastSection'
+import { Link } from 'react-router-dom'
 
 function TrendingPage(){
 
@@ -15,7 +16,7 @@ function TrendingPage(){
             
                 <div className="Trend-headings">
                     {headings.map(e => (
-                        <div className="Trend-heading">{e}</div>
+                        <Link to={e} className="Trend-heading">{e}</Link>
                     ))}
                 </div>
 
@@ -23,7 +24,8 @@ function TrendingPage(){
                 <Body />
 
                 <div className="Trend-help">
-                        
+                    <div className="trend-help-heading">Help or Having trouble in finding what you want ?</div>
+                    <Link to="/contact us" className="trend-help-link">Contact us and Ask your Queries</Link>
                 </div>
                     
                 <Section />

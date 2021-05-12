@@ -13,6 +13,9 @@
     height: 43px;
     display: flex;
     margin-bottom: 17px;
+    background: #FFFAF2;
+    border-radius: 15px;
+    box-shadow: 0px 1.16129px 4.64516px rgba(0, 0, 0, 0.25);
 }
 .filter, .sort{
     width: 107px;
@@ -22,6 +25,7 @@
 }
 .filter{
     background: #FFD706;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1);
 }
 .filter-btn, .sort-btn{
     position: absolute;
@@ -36,7 +40,6 @@
     line-height: 24px;
     text-align: center;
     color: #000000;
-    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1);
     border-radius: 15px;
     border: none;
     background: none;
@@ -49,14 +52,57 @@
 }
 
 .filter-content, .sort-content{
-    display: flex;
     float: left;
-    transition: 1s ease-in-out;
+    transition: transform 1s ease-in-out;
     width: 216px;
     height: 1000px;
-    background: #FFD706;
     padding: 0 180px 0 0;
 }
-.sort-content{
-    background: blue;
+
+
+.price-heading, .brand-heading, .delivery-heading, .style-heading, .weave-heading{
+    float: left;
+    width: 100px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+    margin: 25px 0 12px 2px;
+}
+.price-heading{
+    margin: 0 0 15px 2px;
+}
+
+
+.price, .brand, .delivery, .style ,.weave, .featured{
+    float: left;
+    display: flex;
+    flex-wrap: wrap;
+    width: 215px;
+    margin-left: 2px;
+}
+.prices, .brands, .deliverys, .styles, .weaves, .featureds{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25px;
+    margin: 0 6px 11px 0;
+    padding: 8.5px;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    border: none;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    color: #000000;
+    background: #FFFAF2;
+}
+
+.featured{
+    margin: 5px 0 0 2px;
+}
+.featureds{
+    margin: 0 20px 11px 0;
 }
