@@ -59,7 +59,7 @@ function Header() {
   const link3 = [
     {
       name: "Login",
-      links: "party"
+      links: "login"
     },
     {
       name: "Register",
