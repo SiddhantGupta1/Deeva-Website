@@ -4,13 +4,10 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-.App{
-    background: #F6F6F6;
-}
+
 .frame{
     width: 100%;
     min-width: 1440px;
-    height: 555%;
     position: absolute;
     background: #F6F6F6;
 }

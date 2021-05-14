@@ -106,14 +106,35 @@ function Section5() {
             price: 1500,
             dprice: 999,
         },
+        {
+            img: Demo,
+            price: 1500,
+            dprice: 999,
+        },
+        {
+            img: Demo,
+            price: 1500,
+            dprice: 999,
+        },
+        {
+            img: Demo,
+            price: 1500,
+            dprice: 999,
+        },
+        {
+            img: Demo,
+            price: 1500,
+            dprice: 999,
+        },
     ];
 
     return(
 
         <div className="Section5-frame">
             <div className="Section5-heading">New in Store</div>
+            <div className="Section5-rope"></div>
             <div className="Section5">
-                <div className="Section5-rope"></div>
+                
                 <div className="Section5-content">
                     {items.map(e => (
                         <div style={{margin:"0 46px 0 0"}}>

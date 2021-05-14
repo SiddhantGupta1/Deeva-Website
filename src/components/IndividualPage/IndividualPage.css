@@ -2,8 +2,11 @@
     margin: 0;
     box-sizing: border-box;
     position: absolute;
-    background: #F8F6ED;
     margin-top: 53px;
+    background-image: url(./../../Frame.png);
+    background-size: cover;
+    background-repeat: repeat-y;
+    background-color: #F8F6ED;
 }
 .productBG{
     float: left;

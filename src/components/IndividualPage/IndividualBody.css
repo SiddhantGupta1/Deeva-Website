@@ -174,14 +174,6 @@
     height: 35px;
 }
 
-
-
-
-
-
-
-
-
 .Individual-product-delivery-to{
     font-weight: 500;
     font-size: 18px;
@@ -199,6 +191,38 @@
     box-shadow: 0px 2px 4px rgba(71, 71, 71, 0.25);
     border-radius: 9px;
     margin: 9px 0 0 5px;
+    display: flex;
+    align-items: center;
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 4px;
+    color: #272727;
+    white-space: nowrap;
+    padding: 0 5px;
+    overflow: hidden;
+    text-overflow: clip;
+}
+#Individual-product-delivery-to bold{
+    font-weight: 500;
+}
+#Individual-product-delivery-to img{
+    position: absolute;
+    margin-left: 268px;
+    background: #EDE1CE;
+    padding: 7px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+#Individual-product-delivery-to span{
+    font-weight: 500;
+    margin: 0 0 0 100px;
+    font-size: 12px;
+}
+.Individual-product-delivery-dropdown{
+    background: #EDE1CE;
+    width: 300px;
+    opacity: 0.8;
+    border-radius: 10px;
 }
 
 .Individual-product-rate-review{
@@ -246,7 +270,53 @@
     margin: 15px 0 0 5px;
     border: 1px solid #BBB5AA;
     box-sizing: border-box;
+    overflow: auto;
+    overflow-x: hidden;
 }
+.Individual-product-experiences::-webkit-scrollbar{
+    display: none;
+}
+
+.Individual-product-experiences bold{
+    float: left;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    color: #000000;
+    margin: 10px 400px 10px 10px;
+}
+
+#Individual-product-experiences{
+    width: 278px;
+    height: 114px;
+    margin-left: 10px;
+    float: left;
+}
+#Individual-product-experiences div{
+    width: 25px;
+    height: 25px;
+    background: #C4C4C4;
+    border-radius: 50%;
+    float: left;
+}
+#Individual-product-experiences a{
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 18p;
+    color: #000000;
+    margin: 0 14px 0 8px;
+}
+#Individual-product-experiences p{
+    font-weight: normal;
+    font-size: 10.5px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    color: #000000;
+    margin: 10px 0 20px 33px;
+}
+
+
 #Individual-product-divider{
     float: left;
     width: 1110px;

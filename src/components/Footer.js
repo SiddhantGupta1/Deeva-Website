@@ -1,6 +1,7 @@
 import React from 'react'
 import './Footer.css'
 import Logo from './../icons/Deeva Short Logo.svg'
+import { Link } from 'react-router-dom'
 
 function Footer(){
 
@@ -32,10 +33,10 @@ function Footer(){
 
                 <div className="Socials">
                     <div className="Socials-heading">Deeva Socials</div>
-                    <div className="Socials-content">Instagram</div>
-                    <div className="Socials-content">Facebook</div>
-                    <div className="Socials-content">Twitter</div>
-                    <div className="Socials-content">LinkedIn</div>
+                    <a href="https://instagram.com/thedeeva.in?igshid=134ken4lhc7mb" className="Socials-content">Instagram</a>
+                    <a href="" className="Socials-content">Facebook</a>
+                    <a href="https://twitter.com/Deeva56098887" className="Socials-content">Twitter</a>
+                    <a href="https://www.linkedin.com/company/thedeeva/" className="Socials-content">LinkedIn</a>
                 </div>
 
             </div>

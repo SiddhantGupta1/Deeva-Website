@@ -20,7 +20,7 @@ function App() {
   return (
     <Router>
       <div className="App">
-      <img className="frame" src={Frame} alt=""/>
+      
       <ScrollToTop />
         <Switch>
 

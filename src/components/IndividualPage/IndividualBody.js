@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useState, useEffect, useRef} from 'react'
 import './IndividualBody.css'
 import Rating from '@material-ui/lab/Rating';
 import { StylesProvider } from "@material-ui/core/styles";
@@ -7,25 +7,69 @@ import Demo from './../../icons/Individual Demo.svg'
 import Star from './../../icons/Star.svg'
 import Assured from './../../icons/Deeva Assured.svg'
 import Return from './../../icons/30 Days Return.svg'
+import DownArrow from './../../icons/Down Arrow.svg'
+import {Popper, ClickAwayListener, MenuItem, MenuList, Grow } from '@material-ui/core';
 
-const IndividualBody = () => {
-    const about = ["Care Instructions: Dry in Shade<br />Fabric : Banarasi Silk , Pattern/Print Type : Woven Design Saree Length:-5.5Mtr,Blouse Length:-0.8Mtr. Blouse is attached with saree. No Separate Blouse. Blouse to be cut from saree. Blouse is an unstitched Fabric.", "Banarasi sarees originate from the city of Varanasi (Uttar Pradesh). These are well known for the Mughal Era inspired designs in golden as well as silver brocade or Zari.", "Sarees are never out of trend and made for every occasion and setting in a huge variety on the basis of fabric, design, purpose and colour.They easily glam up your look on any and every occasion. Sarees do take a little extra time to be draped but it has a matchless comparison when it comes to elegance and style. They are a must have clothing item in every woman's wardrobe."]
-    const product = {
-        name: "Neeva",
-        fullName: "Neeva Yellow Taant Fashion",
-        rating: 4.1,
-        discount: 35,
-        price: 1550,
-        reviews: 2504,
-        stock: true,
-    }
-    const dprice = Math.round( product.price - (product.price*product.discount/100) );
+
+const IndividualBody = ({about , product, dprice, user}) => {
+    
+    const reviews = [
+        {
+            name: "Siddhant Gupta",
+            rating: 3.5,
+            description: "Good floral design with beautiful colour combination and attractive colour which looks great on many occasions and functions at home. The material is soft and comfortable.",
+
+        },
+        {
+            name: "Siddhant Gupta",
+            rating: 3.5,
+            description: "Good floral design with beautiful colour combination and attractive colour which looks great on many occasions and functions at home. The material is soft and comfortable.",
+
+        },
+    ]
+
+
     
     let newDate = new Date()
     let date = newDate.getDate();
     let month = newDate.getMonth()+1;
     let day = newDate.getDay();
     console.log(day,date,month)
+
+{/*________________________________________DROPDOWN________________________________________________________________ */}
+    const [open, setOpen] = useState(false);
+    const anchorRef = useRef(null);
+
+    const handleToggle = () => {
+        setOpen((prevOpen) => !prevOpen);
+    };
+
+    const handleClose = (event) => {
+        if (anchorRef.current && anchorRef.current.contains(event.target)) {
+        return;
+        }
+
+        setOpen(false);
+    };
+
+    function handleListKeyDown(event) {
+        if (event.key === 'Tab') {
+        event.preventDefault();
+        setOpen(false);
+        }
+    }
+
+    const prevOpen = useRef(open);
+    useEffect(() => {
+        if (prevOpen.current === true && open === false) {
+        anchorRef.current.focus();
+        }
+
+        prevOpen.current = open;
+    }, [open]);
+
+{/*_____________________________________________________________________________________________________________________________________ */}
+
 
     return (
         <div className="IndividualBody">
@@ -85,9 +129,35 @@ const IndividualBody = () => {
                 </ul>
 
                 <div className="Individual-product-delivery-to">Delivery to</div>
-                <div id="Individual-product-delivery-to">
 
-                </div>
+
+                <button
+                    ref={anchorRef}
+                    aria-controls={open ? 'menu-list-grow' : undefined}
+                    aria-haspopup="true"
+                    onClick={handleToggle}
+                    id="Individual-product-delivery-to"
+                    >
+                            { user.address==[] ? <span>Add Address</span> : <a><bold>{user.userName} - </bold>{user.address}</a> }
+                            { user.address==[] ? <img style={{display:"none"}} src={DownArrow} alt=""/> : <img src={DownArrow} alt=""/>}
+                </button>
+                <Popper open={open} anchorEl={anchorRef.current} role={undefined} transition disablePortal>
+                    {({ TransitionProps, placement }) => (
+                        <Grow
+                        {...TransitionProps}
+                        style={{ transformOrigin: placement === 'bottom' ? 'center top' : 'center bottom' }}
+                        >
+                        
+                            <ClickAwayListener onClickAway={handleClose}>
+                            <MenuList className="Individual-product-delivery-dropdown" autoFocusItem={open} id="menu-list-grow" onKeyDown={handleListKeyDown}>
+                                { user.address!=[] ? user.address.map(e =>( <MenuItem><option>{e}</option></MenuItem> )) : <a>Add Address here</a>}
+                            </MenuList>
+                            </ClickAwayListener>
+                        
+                        </Grow>
+                    )}
+                </Popper>
+
 
                 <div className="Individual-product-rate-review">Rate & Review the Product</div>
                 <button className="Individual-product-rate">Rate the Product</button>
@@ -95,7 +165,24 @@ const IndividualBody = () => {
 
                 <div className="Individual-product-experiences-heading">Read all the Customer Experiences with the Product</div>
                 <div className="Individual-product-experiences">
-
+                    <bold>Top Reviews</bold>
+                    {reviews.map((review) => (
+                        <div id="Individual-product-experiences">
+                            <div></div>
+                            <a>{review.name}</a>
+                            <StylesProvider injectFirst>
+                                <Rating 
+                                    defaultValue={review.rating}
+                                    precision={0.1} 
+                                    size="small" 
+                                    readOnly 
+                                    emptyIcon={<StarBorderIcon fontSize="inherit" />} 
+                                />
+                            </StylesProvider>
+                            <p>{review.description}</p>
+                        </div>
+                    ))}
+                    
                 </div>
 
             </div>
@@ -106,3 +193,49 @@ const IndividualBody = () => {
 }
 
 export default IndividualBody;
+
+{/*
+            <button
+            ref={anchorRef}
+            aria-controls={open ? 'menu-list-grow' : undefined}
+            aria-haspopup="true"
+            onClick={handleToggle}
+            id="Individual-product-delivery-to"
+            >
+                    { user.address!=[] ? <span>Add Address</span> : <a><bold>{user.userName} - </bold>{user.address}</a> }
+                    { user.address==[] ? <img style={{display:"none"}} src={DownArrow} alt=""/> : <img src={DownArrow} alt=""/>}
+            </button>
+            <Popper open={open} anchorEl={anchorRef.current} role={undefined} transition disablePortal>
+            {({ TransitionProps, placement }) => (
+                <Grow
+                {...TransitionProps}
+                style={{ transformOrigin: placement === 'bottom' ? 'center top' : 'center bottom' }}
+                >
+                
+                    <ClickAwayListener onClickAway={handleClose}>
+                    <MenuList className="user-dropdown" autoFocusItem={open} id="menu-list-grow" onKeyDown={handleListKeyDown}>
+                        <MenuItem onClick={handleClose}>Profile</MenuItem>
+                        <MenuItem onClick={handleClose}>My account</MenuItem>
+                        <MenuItem onClick={handleClose}>Logout</MenuItem>
+                    </MenuList>
+                    </ClickAwayListener>
+                
+                </Grow>
+            )}
+            </Popper>
+*/}
+
+
+
+
+
+
+
+
+{/*
+
+<div id="Individual-product-delivery-to">
+                    { user.address!=[] ? <span>Add Address</span> : <a><bold>{user.userName} - </bold>{user.address}</a> }
+                    { user.address==[] ? <img style={{display:"none"}} src={DownArrow} alt=""/> : <img src={DownArrow} alt=""/>}
+                </div>
+*/}

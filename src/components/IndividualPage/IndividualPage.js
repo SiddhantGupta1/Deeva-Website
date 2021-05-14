@@ -17,6 +17,23 @@ var likeNumber = 1;
 var slideNumber = -1;
 function Individual() {
 
+    const about = ["Care Instructions: Dry in Shade<br />Fabric : Banarasi Silk , Pattern/Print Type : Woven Design Saree Length:-5.5Mtr,Blouse Length:-0.8Mtr. Blouse is attached with saree. No Separate Blouse. Blouse to be cut from saree. Blouse is an unstitched Fabric.", "Banarasi sarees originate from the city of Varanasi (Uttar Pradesh). These are well known for the Mughal Era inspired designs in golden as well as silver brocade or Zari.", "Sarees are never out of trend and made for every occasion and setting in a huge variety on the basis of fabric, design, purpose and colour.They easily glam up your look on any and every occasion. Sarees do take a little extra time to be draped but it has a matchless comparison when it comes to elegance and style. They are a must have clothing item in every woman's wardrobe."]
+    const product = {
+        name: "Neeva",
+        fullName: "Neeva Yellow Taant Fashion",
+        rating: 4.1,
+        discount: 35,
+        price: 1550,
+        reviews: 2504,
+        stock: true,
+    }
+    const dprice = Math.round( product.price - (product.price*product.discount/100) );
+
+    const user = {
+        userName: "Ankush",
+        address: ["delhi street, europe city, vizag nagaram ", "bombay street, europe city, vizag nagaram "]
+    }
+
     const [pics, setPics] = useState([product1,product2, product1,product2,product1,product2]);
     const [current, setCurrent] = useState(0)
     const [like, setLike] = useState(LikeBtn)
@@ -91,7 +108,7 @@ function Individual() {
                 <Link 
                     to={{
                         pathname: '/ethnic',
-                        query: {id: 'hello', ids: 'HELLO'}
+                        product , dprice, user
                     }} 
                     id="buy-now-btn"
                 >
@@ -104,7 +121,7 @@ function Individual() {
                 </button>
 
             </div>
-            <Body />
+            <Body product = {product} about={about} dprice = {dprice} user={user}/>
             <Section />
             <div style={{float:"left", marginBottom:"60px", width:"100%", height:"10px"}}></div>
             <Footer />
