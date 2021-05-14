@@ -1,4 +1,4 @@
-import React,{useState, useEffect} from 'react'
+import React from 'react'
 import './Section5.css'
 import Demo from './../../icons/Saree Pic.svg'
 import Hanger from './../../icons/Golden Hanger.svg'
@@ -117,8 +117,8 @@ function Section5() {
                 <div className="Section5-content">
                     {items.map(e => (
                         <div style={{margin:"0 46px 0 0"}}>
-                            <img className="Section5-hanger" src={Hanger} />
-                            <img className="Section5-img" src={e.img} />
+                            <img className="Section5-hanger" src={Hanger} alt="Golden Hanger" />
+                            <img className="Section5-img" src={e.img} alt="Product" />
                             <div className="Section5-prices">
                                 <div className="Section5-price">&#8377;{e.price}</div>
                                 <div className="Section5-Dprice">&#8377;{e.dprice}</div>

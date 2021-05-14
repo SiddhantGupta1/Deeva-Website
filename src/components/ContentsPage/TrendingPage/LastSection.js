@@ -1,4 +1,4 @@
-import React,{useState, useEffect} from 'react'
+import React from 'react'
 import './LastSection.css'
 import Demo from './../../../icons/Saree Pic.svg'
 
@@ -78,7 +78,7 @@ function LastSection() {
                     <div className="LastSection-contents">
                         {items.map(e => (
                             <div style={{margin:"0 46px 0 0"}}>
-                                <img className="LastSection-img" src={e.img} />
+                                <img className="LastSection-img" src={e.img} alt=""/>
                                 <div className="LastSection-prices">
                                     <div className="LastSection-price">&#8377;{e.price}</div>
                                     <div className="LastSection-Dprice">&#8377;{e.dprice}</div>
@@ -97,7 +97,7 @@ function LastSection() {
                     <div className="LastSection-contents">
                         {items.map(e => (
                             <div style={{margin:"0 46px 0 0"}}>
-                                <img className="LastSection-img" src={e.img} />
+                                <img className="LastSection-img" src={e.img} alt=""/>
                                 <div className="LastSection-prices">
                                     <div className="LastSection-price">&#8377;{e.price}</div>
                                     <div className="LastSection-Dprice">&#8377;{e.dprice}</div>

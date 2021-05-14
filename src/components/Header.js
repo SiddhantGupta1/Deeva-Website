@@ -1,4 +1,4 @@
-import React,{useState, useRef, useEffect} from 'react';
+import React from 'react';
 import './Header.css'
 import DeevaLogo from './../icons/deeva purple 1.svg'
 import Menu from './../icons/Union.svg'
@@ -138,7 +138,7 @@ function Header() {
           {['left'].map((anchor) => (
             <React.Fragment key={anchor}>
               <button onClick={toggleDrawer(anchor, true)} className="menu"> 
-                <img src={Menu} /> 
+                <img src={Menu} alt=""/> 
               </button>
               <Drawer anchor={anchor} open={state[anchor]} onClose={toggleDrawer(anchor, false)}>
                 {list(anchor)}
@@ -147,19 +147,19 @@ function Header() {
           ))}
         </StylesProvider>
 
-        <img className="deevaLogo" src={DeevaLogo}/>
+        <img className="deevaLogo" src={DeevaLogo} alt=""/>
         <div className="search-bar">
-          <img className="search" src={Search}/>
+          <img className="search" src={Search} alt=""/>
           <input className="searching" type="text" placeholder="Search" />
         </div>
         <button className="voice-search">
-            <img src={Mic} />
+            <img src={Mic} alt=""/>
         </button>
         
         <Dropdowns />
             
         <Link to='/cart' className="cart">
-            <img src={Cart} />
+            <img src={Cart} alt=""/>
             <p className="cart-items">2</p>
         </Link>
 

@@ -20,33 +20,33 @@ function Section4() {
                 <div className="specials-rope"></div>
                 <div className="specials">
                     {pics.map(pics => (
-                        <img className="specials-img" src={pics} />
+                        <img className="specials-img" src={pics} alt=""/>
                     ))
                     }
                     <button className="specials-btn">
-                        <img style={{transform:"rotate(180deg)"}} src={Arrow} />
+                        <img style={{transform:"rotate(180deg)"}} src={Arrow} alt=""/>
                     </button>
                 </div>
             </div>
 
             <div className="wedding">
-                    <img src={Wedding} />
+                    <img src={Wedding} alt="" />
             </div>
 
             <div className="App-frame">
                 <div className="Deeva-App">
-                    <img src={AppHeading}/>
-                    <img src={AppContent}/>
-                    <img src={App}/>
+                    <img src={AppHeading} alt=""/>
+                    <img src={AppContent} alt=""/>
+                    <img src={App} alt=""/>
                 </div>  
             </div>
 
             <div className="App-frame">
                 <div className="App-heading">
                     <div className="Deeva-App">
-                        <img src={AppHeading}/>
-                        <img src={AppContent}/>
-                        <img src={App}/>
+                        <img src={AppHeading} alt=""/>
+                        <img src={AppContent} alt=""/>
+                        <img src={App} alt=""/>
                     </div>
                 </div>  
             </div>

@@ -112,7 +112,7 @@ function Dropdowns(){
             className="user"
             >
                 <p className="user-text">Hiii Ankush</p>
-                <img className="downArrow" src={DownArrow} />
+                <img className="downArrow" src={DownArrow} alt="" />
             </button>
             <Popper open={open} anchorEl={anchorRef.current} role={undefined} transition disablePortal>
             {({ TransitionProps, placement }) => (
@@ -142,7 +142,7 @@ function Dropdowns(){
             className="budget-store"
             >
                 <p className="budget-store-text">Budget Store</p>
-                <img className="downArrow" src={DownArrow} />
+                <img className="downArrow" src={DownArrow} alt="" />
             </button>
             <Popper open={open1} anchorEl={anchorRef1.current} role={undefined} transition disablePortal>
             {({ TransitionProps, placement }) => (
@@ -172,7 +172,7 @@ function Dropdowns(){
             className="content"
             >
                 <p className="content-text">Content</p>
-                <img className="downArrow" src={DownArrow} />
+                <img className="downArrow" src={DownArrow} alt=""/>
             </button>
             <Popper open={open2} anchorEl={anchorRef2.current} role={undefined} transition disablePortal >
             {({ TransitionProps, placement }) => (

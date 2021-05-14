@@ -14,12 +14,12 @@ function Cards(){
                 <div className="recommended-rope"></div>
                 <div className="recommended-content">
                     {pics.map(pics => (
-                        <img className="Cards-contents" src={pics} />
+                        <img className="Cards-contents" src={pics} alt="" />
                     ))
                     }
                 </div>
                 <button className="Cards-btn">
-                    <img style={{transform: "rotate(180deg)"}} src={Btn} />
+                    <img style={{transform: "rotate(180deg)"}} src={Btn} alt="" />
                 </button>
             </div>
 
@@ -28,12 +28,12 @@ function Cards(){
                 <div className="top-picks-rope"></div>
                 <div className="top-picks-content">
                     {pics.map(pics => (
-                        <img className="Cards-contents" src={pics} />
+                        <img className="Cards-contents" src={pics} alt=""/>
                     ))
                     }
                 </div>
                 <button className="Cards-btn">
-                    <img style={{transform: "rotate(180deg)"}} src={Btn} />
+                    <img style={{transform: "rotate(180deg)"}} src={Btn} alt=""/>
                 </button>
             </div>
 
@@ -42,12 +42,12 @@ function Cards(){
                 <div className="top-picks-rope"></div>
                 <div className="top-picks-content">
                     {pics.map(pics => (
-                        <img className="Cards-contents" src={pics} />
+                        <img className="Cards-contents" src={pics} alt=""/>
                     ))
                     }
                 </div>
                 <button className="Cards-btn">
-                    <img style={{transform: "rotate(180deg)"}} src={Btn} />
+                    <img style={{transform: "rotate(180deg)"}} src={Btn} alt=""/>
                 </button>
             </div>
 
@@ -56,12 +56,12 @@ function Cards(){
                 <div className="top-picks-rope"></div>
                 <div className="top-picks-content">
                     {pics.map(pics => (
-                        <img className="Cards-contents" src={pics} />
+                        <img className="Cards-contents" src={pics} alt=""/>
                     ))
                     }
                 </div>
                 <button className="Cards-btn">
-                    <img style={{transform: "rotate(180deg)"}} src={Btn} />
+                    <img style={{transform: "rotate(180deg)"}} src={Btn} alt=""/>
                 </button>
             </div>
         </div>

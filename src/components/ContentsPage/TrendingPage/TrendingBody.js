@@ -263,13 +263,13 @@ function  TrendingBody(){
         <div className="TrendingBody">
             <div className="trend-head">Showing 3500 Trending Products</div>
             <div className="trend-sub-head">Page 1 of 175</div>
-            <img className="trend-AD" src={AD}/>
+            <img className="trend-AD" src={AD} alt=""/>
             <div className="trend-cards">
                 {cards.map(e=> (
                     <Link to='/products' className="card">
-                        <img className="card-img" src={e.image}/>
+                        <img className="card-img" src={e.image} alt=""/>
                         <button className="card-btn">
-                            <img className="card-like" src={CardLike} />
+                            <img className="card-like" src={CardLike} alt=""/>
                         </button>
                         <div className="card-name">{e.name}</div>
                         <div style={{display:"flex", justifyContent:"space-evenly"}}>
@@ -295,7 +295,7 @@ function  TrendingBody(){
             
             <div className="trend-pages">
                 <button onClick={handleLeftBtn} className="trend-left-btn">
-                    <img src={LeftBtn} />
+                    <img src={LeftBtn} alt=""/>
                 </button>
                 <div className="trend-list">
                     {pages.map(pages => (
@@ -306,7 +306,7 @@ function  TrendingBody(){
                 </div>
             
                 <button onClick={handleRightBtn} className="trend-right-btn">
-                    <img style={{transform: "rotate(180deg)"}} src={LeftBtn} />
+                    <img style={{transform: "rotate(180deg)"}} src={LeftBtn} alt=""/>
                 </button>
             </div>
              
@@ -315,5 +315,3 @@ function  TrendingBody(){
 }
 
 export default TrendingBody;
-
-{/* <div className="card-like"></div>*/}

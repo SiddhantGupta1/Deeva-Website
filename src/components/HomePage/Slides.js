@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Slides.css";
 import DemoPic from "./../../icons/Demo.svg";
 import LeftBtn from "./../../icons/Arrow.svg";
@@ -47,19 +47,19 @@ function Slides() {
   return (
     <div className="slides">
         <button className="types-left-btn">
-            <img src={LeftBtn} />
+            <img src={LeftBtn} alt=""/>
         </button>
         <div className="types-list">
             {items.map((item) => (
                 <div className="types">
-                    <img className="types-img" src={item.image} />
+                    <img className="types-img" src={item.image} alt=""/>
                     <p className="types-text">{item.text}</p>
                 </div>
             ))}
         </div>
       
         <button className="types-right-btn">
-            <img style={{transform: "rotate(180deg)"}} src={LeftBtn} />
+            <img style={{transform: "rotate(180deg)"}} src={LeftBtn} alt=""/>
         </button>
     </div>
   );

@@ -8,7 +8,7 @@ import Puja from './components/ContentsPage/PujaPage/PujaPage'
 import Cart from './components/CartPage/CartPage'
 import ContactUs from './components/ContactUs/ContactUs'
 import Individual from './components/IndividualPage/IndividualPage'
-import Login from './components/LoginPage/Login'
+
 import Frame from './Frame.png'
 import Header from './components/Header'
 import Body from './components/HomePage/Home'
@@ -20,7 +20,7 @@ function App() {
   return (
     <Router>
       <div className="App">
-      <img className="frame" src={Frame} />
+      <img className="frame" src={Frame} alt=""/>
       <ScrollToTop />
         <Switch>
 
@@ -30,10 +30,12 @@ function App() {
           <Route path="/ethnic" component={Ethnic} />
           <Route path="/party" component={Party} />
           <Route path="/puja" component={Puja} />
-          <Route path="/cart" component={Cart} />
           <Route path="/contact us" component={ContactUs} />
           <Route path="/products" component={Individual} />
-          <Route path="/login" component={Login} />
+          
+          <Route path="/cart" >
+            <Cart />
+          </Route>
 
         </Switch>
       </div>

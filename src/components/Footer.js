@@ -42,7 +42,7 @@ function Footer(){
 
             <div className="Footer1-logo">
                 <div className="Footer1-Divider"></div>
-                <img style={{margin:"16px 0 0 705px"}} src={Logo}/>
+                <img style={{margin:"16px 0 0 705px"}} src={Logo} alt=""/>
             </div>
 
 

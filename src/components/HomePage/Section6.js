@@ -1,4 +1,4 @@
-import React,{useEffect, useState} from 'react'
+import React from 'react'
 import './Section6.css'
 import LeftBtn from "./../../icons/Arrow.svg";
 import Brand from "./../../icons/Brand.svg";
@@ -53,18 +53,18 @@ function Section6(){
             <div className="top-brands">
 
                 <button className="brands-left-btn">
-                    <img src={LeftBtn} />
+                    <img src={LeftBtn} alt=""/>
                 </button>
                 <div className="brands-list">
                     {items.map((item) => (
                         <div className="brands-home">
-                            <img className="brands-img" src={item.image} />
+                            <img className="brands-img" src={item.image} alt="" />
                             <p className="brands-text">{item.text}</p>
                         </div>
                     ))}
                 </div>
                 <button className="brands-right-btn">
-                    <img style={{transform: "rotate(180deg)"}} src={LeftBtn} />
+                    <img style={{transform: "rotate(180deg)"}} src={LeftBtn} alt="" />
                 </button>
 
             </div>

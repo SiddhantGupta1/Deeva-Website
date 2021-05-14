@@ -14,26 +14,26 @@ function Wardrobe(){
                <div>
 
                   <Link to='/trending' className="trending-frame">
-                     <img className="trendingBG" src={TrendingBG}/>
-                     <img className="trending-img" src={Trending}/>
+                     <img className="trendingBG" src={TrendingBG} alt=""/>
+                     <img className="trending-img" src={Trending} alt=""/>
                      <p className="trending">Trending</p>
                      <p className="trending-text">Around 350 global On - Trending works.</p>
                   </Link>
                   <Link to='/ethnic' className="ethnic-frame">
-                     <img className="ethnicBG" src={TrendingBG}/>
-                     <img className="ethnic-img" src={Trending}/>
+                     <img className="ethnicBG" src={TrendingBG} alt=""/>
+                     <img className="ethnic-img" src={Trending} alt=""/>
                      <p className="ethnic">Ethnic</p>
                      <p className="ethnic-text">Around 350 global On - Trending works.</p>
                   </Link>
                   <Link to='/party' className="party-frame">
-                     <img className="partyBG" src={TrendingBG}/>
-                     <img className="party-img" src={Trending}/>
+                     <img className="partyBG" src={TrendingBG} alt=""/>
+                     <img className="party-img" src={Trending} alt=""/>
                      <p className="party">Party</p>
                      <p className="party-text">Around 350 global On - Trending works.</p>
                   </Link>
                   <Link to='/puja' className="puja-frame">
-                     <img className="pujaBG" src={TrendingBG}/>
-                     <img className="puja-img" src={Trending}/>
+                     <img className="pujaBG" src={TrendingBG} alt=""/>
+                     <img className="puja-img" src={Trending} alt=""/>
                      <p className="puja">Puja</p>
                      <p className="puja-text">Around 350 global On - Trending works.</p>
                   </Link>

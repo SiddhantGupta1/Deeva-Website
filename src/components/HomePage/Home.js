@@ -24,7 +24,7 @@ function Body(){
 
             <div className="carousel">
                 {pics.map(pics => (
-                    <img className="sale" src={pics} />
+                    <img className="sale" src={pics} alt="AD" />
                 ))}
             </div>
 
@@ -51,12 +51,12 @@ function Body(){
                         </div>
                     </div>
                 </div>
-                <img className="AD" src={AD} />
+                <img className="AD" src={AD} alt="AD" />
             </div>
             <Section3 />
             <Section4 />
             <Section5 />
-            <img className="AD1" src={AD1}/>
+            <img className="AD1" src={AD1} alt="AD"/>
             <Section6 />
             <Section7 />
             <Footer />

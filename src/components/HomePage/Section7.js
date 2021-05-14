@@ -1,4 +1,4 @@
-import React,{useState, useEffect} from 'react'
+import React from 'react'
 import './Section7.css'
 import Demo from './../../icons/Saree Pic.svg'
 
@@ -78,7 +78,7 @@ function Section7() {
                     <div className="Section7-contents">
                         {items.map(e => (
                             <div style={{margin:"0 46px 0 0"}}>
-                                <img className="Section7-img" src={e.img} />
+                                <img className="Section7-img" src={e.img} alt=""/>
                                 <div className="Section7-prices">
                                     <div className="Section7-price">&#8377;{e.price}</div>
                                     <div className="Section7-Dprice">&#8377;{e.dprice}</div>
@@ -97,7 +97,7 @@ function Section7() {
                     <div className="Section7-contents">
                         {items.map(e => (
                             <div style={{margin:"0 46px 0 0"}}>
-                                <img className="Section7-img" src={e.img} />
+                                <img className="Section7-img" src={e.img} alt=""/>
                                 <div className="Section7-prices">
                                     <div className="Section7-price">&#8377;{e.price}</div>
                                     <div className="Section7-Dprice">&#8377;{e.dprice}</div>
@@ -116,7 +116,7 @@ function Section7() {
                     <div className="Section7-contents">
                         {items.map(e => (
                             <div style={{margin:"0 46px 0 0"}}>
-                                <img className="Section7-img" src={e.img} />
+                                <img className="Section7-img" src={e.img} alt=""/>
                                 <div className="Section7-prices">
                                     <div className="Section7-price">&#8377;{e.price}</div>
                                     <div className="Section7-Dprice">&#8377;{e.dprice}</div>
