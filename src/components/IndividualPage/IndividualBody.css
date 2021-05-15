@@ -232,28 +232,6 @@
     line-height: 27px;
     color: #000000;    
 }
-.Individual-product-rate, .Individual-product-review{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-    height: 28px;
-    background: #FFFFFF;
-    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 38px;
-    font-weight: normal;
-    font-size: 12px;
-    line-height: 18px;
-}
-.Individual-product-rate{
-    width: 126px;
-    margin: 9px 0 0 5px;
-}
-.Individual-product-review{
-    width: 141px;
-    margin: 7px 0 0 5px;
-}
 
 .Individual-product-experiences-heading{
     font-weight: 500;
@@ -288,32 +266,35 @@
 
 #Individual-product-experiences{
     width: 278px;
-    height: 114px;
-    margin-left: 10px;
+    height: 120px;
+    margin: 0 0 1px 10px;
     float: left;
 }
-#Individual-product-experiences div{
+#Individual-product-experiences body{
+    float: left;
     width: 25px;
     height: 25px;
     background: #C4C4C4;
     border-radius: 50%;
-    float: left;
+    
 }
 #Individual-product-experiences a{
+    float: left;
     font-weight: normal;
     font-size: 12px;
     line-height: 18p;
     color: #000000;
-    margin: 0 14px 0 8px;
+    margin: 2.5px 14px 0 8px;
 }
 #Individual-product-experiences p{
+    float: left;
     font-weight: normal;
     font-size: 10.5px;
     line-height: 16px;
     display: flex;
     align-items: center;
     color: #000000;
-    margin: 10px 0 20px 33px;
+    margin: 5px 0 0 33px;
 }
 
 

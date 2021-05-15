@@ -9,10 +9,10 @@ import Cart from './components/CartPage/CartPage'
 import ContactUs from './components/ContactUs/ContactUs'
 import Individual from './components/IndividualPage/IndividualPage'
 
-import Frame from './Frame.png'
 import Header from './components/Header'
 import Body from './components/HomePage/Home'
 import ScrollToTop from './ScrollToTop'
+
 
 function App() {
 

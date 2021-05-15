@@ -12,6 +12,7 @@ header{
     margin: 0;
     top: 0;
     filter: drop-shadow(0px 1px 6px rgba(106, 91, 14, 0.24));
+    z-index: 1000;
 }
 
 .menu{
@@ -38,6 +39,7 @@ header{
     color: #61420C;
     text-decoration: none;
     margin-bottom: 7px;
+    width: 280px;
 }
 
 .deevaLogo{

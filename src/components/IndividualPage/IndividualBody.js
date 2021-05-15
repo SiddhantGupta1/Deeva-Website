@@ -9,6 +9,7 @@ import Assured from './../../icons/Deeva Assured.svg'
 import Return from './../../icons/30 Days Return.svg'
 import DownArrow from './../../icons/Down Arrow.svg'
 import {Popper, ClickAwayListener, MenuItem, MenuList, Grow } from '@material-ui/core';
+import IndividualDropdowns from './IndividualDropdowns'
 
 
 const IndividualBody = ({about , product, dprice, user}) => {
@@ -160,16 +161,17 @@ const IndividualBody = ({about , product, dprice, user}) => {
 
 
                 <div className="Individual-product-rate-review">Rate & Review the Product</div>
-                <button className="Individual-product-rate">Rate the Product</button>
-                <button className="Individual-product-review">Review the Product?</button>
+                <IndividualDropdowns />
+                
 
                 <div className="Individual-product-experiences-heading">Read all the Customer Experiences with the Product</div>
                 <div className="Individual-product-experiences">
                     <bold>Top Reviews</bold>
                     {reviews.map((review) => (
                         <div id="Individual-product-experiences">
-                            <div></div>
+                            <body></body>
                             <a>{review.name}</a>
+                            
                             <StylesProvider injectFirst>
                                 <Rating 
                                     defaultValue={review.rating}
@@ -177,8 +179,10 @@ const IndividualBody = ({about , product, dprice, user}) => {
                                     size="small" 
                                     readOnly 
                                     emptyIcon={<StarBorderIcon fontSize="inherit" />} 
+                                    
                                 />
                             </StylesProvider>
+                           
                             <p>{review.description}</p>
                         </div>
                     ))}
@@ -193,49 +197,3 @@ const IndividualBody = ({about , product, dprice, user}) => {
 }
 
 export default IndividualBody;
-
-{/*
-            <button
-            ref={anchorRef}
-            aria-controls={open ? 'menu-list-grow' : undefined}
-            aria-haspopup="true"
-            onClick={handleToggle}
-            id="Individual-product-delivery-to"
-            >
-                    { user.address!=[] ? <span>Add Address</span> : <a><bold>{user.userName} - </bold>{user.address}</a> }
-                    { user.address==[] ? <img style={{display:"none"}} src={DownArrow} alt=""/> : <img src={DownArrow} alt=""/>}
-            </button>
-            <Popper open={open} anchorEl={anchorRef.current} role={undefined} transition disablePortal>
-            {({ TransitionProps, placement }) => (
-                <Grow
-                {...TransitionProps}
-                style={{ transformOrigin: placement === 'bottom' ? 'center top' : 'center bottom' }}
-                >
-                
-                    <ClickAwayListener onClickAway={handleClose}>
-                    <MenuList className="user-dropdown" autoFocusItem={open} id="menu-list-grow" onKeyDown={handleListKeyDown}>
-                        <MenuItem onClick={handleClose}>Profile</MenuItem>
-                        <MenuItem onClick={handleClose}>My account</MenuItem>
-                        <MenuItem onClick={handleClose}>Logout</MenuItem>
-                    </MenuList>
-                    </ClickAwayListener>
-                
-                </Grow>
-            )}
-            </Popper>
-*/}
-
-
-
-
-
-
-
-
-{/*
-
-<div id="Individual-product-delivery-to">
-                    { user.address!=[] ? <span>Add Address</span> : <a><bold>{user.userName} - </bold>{user.address}</a> }
-                    { user.address==[] ? <img style={{display:"none"}} src={DownArrow} alt=""/> : <img src={DownArrow} alt=""/>}
-                </div>
-*/}
