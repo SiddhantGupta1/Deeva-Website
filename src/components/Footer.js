@@ -10,25 +10,25 @@ function Footer(){
             <div className="Footer1">
                 <div className="Know-Us">
                     <div className="Know-Us-heading">Know Us</div>
-                    <div className="Know-Us-content">About us</div>
-                    <div className="Know-Us-content">Deeva Charity</div>
-                    <div className="Know-Us-content">Deeva Dealers</div>
-                    <div className="Know-Us-content">Media</div>
+                    <a href="" className="Know-Us-content">About us</a>
+                    <a href="" className="Know-Us-content">Deeva Charity</a>
+                    <a href="" className="Know-Us-content">Deeva Dealers</a>
+                    <a href="" className="Know-Us-content">Media</a>
                 </div>
 
                 <div className="Help">
                     <div className="Help-heading">Help & Support Us</div>
-                    <div className="Help-content">Cancellation & Refund Policy</div>
-                    <div className="Help-content">Report Complaint</div>
-                    <div className="Help-content">Return</div>
-                    <div className="Help-content">Payments</div>
+                    <a href="" className="Help-content">Cancellation & Refund Policy</a>
+                    <a href="" className="Help-content">Report Complaint</a>
+                    <a href="" className="Help-content">Return</a>
+                    <a href="" className="Help-content">Payments</a>
                 </div>
 
                 <div className="Collaborate">
                     <div className="Collaborate-heading">Collaborate with Us</div>
-                    <div className="Collaborate-content">Advertise </div>
-                    <div className="Collaborate-content">Sell ur products on Deeva</div>
-                    <div className="Collaborate-content">Partner with us</div>
+                    <a href="" className="Collaborate-content">Advertise </a>
+                    <a href="" className="Collaborate-content">Sell ur products on Deeva</a>
+                    <a href="" className="Collaborate-content">Partner with us</a>
                 </div>
 
                 <div className="Socials">

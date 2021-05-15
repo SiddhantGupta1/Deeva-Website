@@ -48,6 +48,10 @@
     text-decoration: none;
 }
 
+:is(.Know-Us-content, .Help-content, .Collaborate-content, .Socials-content):hover{
+    color: #FFC157;
+}
+
 .Footer1-logo{
     float: left;
     width: 100%;
