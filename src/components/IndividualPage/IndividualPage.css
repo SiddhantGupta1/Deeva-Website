@@ -15,6 +15,7 @@
     background: #FFDF37;
     display: flex;
     justify-content: center;
+    mix-blend-mode: normal;
 }
 .product-images{
     position: absolute;

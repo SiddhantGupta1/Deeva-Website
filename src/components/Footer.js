@@ -5,6 +5,8 @@ import { Link } from 'react-router-dom'
 
 function Footer(){
 
+    var jh= 15;
+
     return(
         <div className="Footer">
             <div className="Footer1">
@@ -34,7 +36,7 @@ function Footer(){
                 <div className="Socials">
                     <div className="Socials-heading">Deeva Socials</div>
                     <a href="https://instagram.com/thedeeva.in?igshid=134ken4lhc7mb" className="Socials-content">Instagram</a>
-                    <a href="" className="Socials-content">Facebook</a>
+                    <a href={"/puja/"+jh} className="Socials-content">Facebook</a>
                     <a href="https://twitter.com/Deeva56098887" className="Socials-content">Twitter</a>
                     <a href="https://www.linkedin.com/company/thedeeva/" className="Socials-content">LinkedIn</a>
                 </div>

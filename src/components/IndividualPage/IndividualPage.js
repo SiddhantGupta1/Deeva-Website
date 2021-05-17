@@ -11,11 +11,11 @@ import FilledLikeBtn from './../../icons/Filled Like Btn.svg'
 import CartBtn from './../../icons/Add to Hanger.svg'
 import product1 from './../../icons/Product1.svg'
 import product2 from './../../icons/Product2.svg'
-import { Link } from 'react-router-dom'
+import { Link} from 'react-router-dom'
 
 var likeNumber = 1;
 var slideNumber = -1;
-function Individual() {
+function Individual(props) {
 
     const about = ["Care Instructions: Dry in Shade<br />Fabric : Banarasi Silk , Pattern/Print Type : Woven Design Saree Length:-5.5Mtr,Blouse Length:-0.8Mtr. Blouse is attached with saree. No Separate Blouse. Blouse to be cut from saree. Blouse is an unstitched Fabric.", "Banarasi sarees originate from the city of Varanasi (Uttar Pradesh). These are well known for the Mughal Era inspired designs in golden as well as silver brocade or Zari.", "Sarees are never out of trend and made for every occasion and setting in a huge variety on the basis of fabric, design, purpose and colour.They easily glam up your look on any and every occasion. Sarees do take a little extra time to be draped but it has a matchless comparison when it comes to elegance and style. They are a must have clothing item in every woman's wardrobe."]
     const product = {
@@ -74,9 +74,9 @@ function Individual() {
             setLike(FilledLikeBtn)
         else
             setLike(LikeBtn)
-        console.log(likeNumber)
     }
 
+    console.log(props.match.params.name);
     return(
         <div className="Individual">
             <img className="productBG" src={BG} alt=""/>
@@ -107,9 +107,9 @@ function Individual() {
 
                 <Link 
                     to={{
-                        pathname: '/ethnic',
+                        pathname: '/wardrobe/ethnic',
                         product , dprice, user
-                    }} 
+                    }}
                     id="buy-now-btn"
                 >
                     Buy Now
@@ -117,11 +117,11 @@ function Individual() {
 
                 <button id="add-to-cart-btn">
                     <div style={{marginRight:"10px"}}>Add to Hanger</div>
-                    <img style={{margin:"-5px 0 0 0"}} src={CartBtn} alt=""/>
+                    <img style={{marginTop:"-5px"}} src={CartBtn} alt=""/>
                 </button>
 
             </div>
-            <Body product = {product} about={about} dprice = {dprice} user={user}/>
+            <Body pro = {props.match.params.name} product = {product} about={about} dprice = {dprice} user={user}/>
             <Section />
             <div style={{float:"left", marginBottom:"60px", width:"100%", height:"10px"}}></div>
             <Footer />

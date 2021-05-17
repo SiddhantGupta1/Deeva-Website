@@ -25,12 +25,12 @@ function App() {
 
           <Route path="/" exact component={Home} />
           <Route path="/home" component={Home} />
-          <Route path="/trending" component={Trending} />
-          <Route path="/ethnic" component={Ethnic} />
-          <Route path="/party" component={Party} />
-          <Route path="/puja" component={Puja} />
+          <Route path="/wardrobe/trending" component={Trending} />
+          <Route path="/wardrobe/ethnic" component={Ethnic} />
+          <Route path="/wardrobe/party" component={Party} />
+          <Route path="/wardrobe/puja" component={Puja} />
           <Route path="/contact us" component={ContactUs} />
-          <Route path="/products" component={Individual} />
+          <Route path="/products/:name" component={Individual} />
           
           <Route path="/cart" >
             <Cart />

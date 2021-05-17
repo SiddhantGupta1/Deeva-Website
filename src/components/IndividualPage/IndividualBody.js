@@ -11,8 +11,7 @@ import DownArrow from './../../icons/Down Arrow.svg'
 import {Popper, ClickAwayListener, MenuItem, MenuList, Grow } from '@material-ui/core';
 import IndividualDropdowns from './IndividualDropdowns'
 
-
-const IndividualBody = ({about , product, dprice, user}) => {
+const IndividualBody = ({about , product,pro,props, dprice, user}) => {
     
     const reviews = [
         {
@@ -35,7 +34,6 @@ const IndividualBody = ({about , product, dprice, user}) => {
     let date = newDate.getDate();
     let month = newDate.getMonth()+1;
     let day = newDate.getDay();
-    console.log(day,date,month)
 
 {/*________________________________________DROPDOWN________________________________________________________________ */}
     const [open, setOpen] = useState(false);
@@ -107,7 +105,7 @@ const IndividualBody = ({about , product, dprice, user}) => {
                         id="Individual-product-rating-star"
                     />
                 </StylesProvider>
-                <div className="Individual-product-sub-heading">{product.fullName}</div>
+                <div className="Individual-product-sub-heading">{pro}</div>
                 
                 <a className="Individual-product-reviews">{product.reviews}<br />CustomerReviews</a>
                 

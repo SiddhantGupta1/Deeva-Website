@@ -16,7 +16,7 @@ function TrendingPage(){
             
                 <div className="Trend-headings">
                     {headings.map(e => (
-                        <Link to={e} className="Trend-heading">{e}</Link>
+                        <Link to={'/wardrobe/'+e} className="Trend-heading">{e}</Link>
                     ))}
                 </div>
 

@@ -1,3 +1,156 @@
 .Cart{
+    margin: 0;
+    box-sizing: border-box;
     position: absolute;
+    margin-top: 53px;
+    background-image: url(./../../Frame.png);
+    background-size: cover;
+    background-repeat: repeat-y;
+    background-color: #F8F6ED;
+    width: 100%;
+    min-width: 1440px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+.cart-page-hanger{
+    justify-content: center;
+    width: 47px;
+    height: 24.79px;
+    margin-top: 27px;
+}
+.cart-page-hanger-text{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    color: #000000;    
+    margin-bottom: 28px;
+}
+.CartHanger{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    float: left;
+    margin-left: 150px;
+}
+.CartHanger-list{
+    width: 830px;
+    height: 153px;
+    background: #FFFFFF;
+    border-radius: 22.64px;
+    margin-bottom: 12px;
+    filter: drop-shadow(0px 1px 4px rgba(71, 71, 71, 0.25));
+}
+
+
+
+
+
+
+
+
+.CartHanger-bill{
+    float: left;
+    width: 366px;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 4px rgba(71, 71, 71, 0.25);
+    border-radius: 22.64px;
+    padding: 30px 27px 0 27px;
+    margin-left: 40px;
+}
+#CartHanger-bill{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+    margin: 0 0 19px 9px;
+}
+
+.CartHanger-bill-item{
+    margin: 0 9px 9px 0;
+}
+
+.CartHanger-bill-item a, .CartHanger-bill-charges{
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    color: #000000;
+    margin: 0 0 9px 9px;
+}
+
+#CartHanger-bill-discount, #CartHanger-bill-delivery{
+    float: right;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: right;
+    color: #6CAE00;
+    margin-right: 9px;   
+}
+.CartHanger-bill-divider{
+    width: 100%;
+    height: 1px;
+    background-color: rgba(123, 122, 122, 0.4);
+    margin-bottom: 23px;
+}
+.CartHanger-bill-total{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;    
+    float: left;
+    margin: 0 0 19px 9px;
+}
+.CartHanger-bill-total-price{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: right;
+    color: #000000;  
+    margin-right: 9px;  
+}
+.CartHanger-bill-btn{
+    width: 294px;
+    height: 41px;
+    background: #FFD706;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 7.42px;
+    margin-bottom: 9px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    color: #000000;
+}
+.CartHanger-bill img{
+    width: 41.73px;
+    height: 35.14px;
+    margin: 0 7.5px 9px 7.5px;
+}
+
+
+.CartHanger-remove-btn{
+    width: 166.6px;
+    height: 54px;
+    background: #FFFFFF;
+    box-shadow: 0px 1.14894px 4.59574px rgba(0, 0, 0, 0.25);
+    border-radius: 8.52511px;
+    font-size: 19px;
+    line-height: 31px;
+    color: #000000;
+    margin-bottom: 101px;
+    align-self: center;
+}
+
+/*_____________________________________________________LIKED____________________________________________________________ */
+
+.CartLiked-heading, .CartBuyAgain-heading{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    color: #000000;
+    align-self: start;
+    margin: 0 0 28px 150px;    
+}
+.CartBuyAgain-heading{  margin-top: 101px;}

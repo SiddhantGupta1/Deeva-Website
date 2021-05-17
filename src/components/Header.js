@@ -35,7 +35,7 @@ function Header() {
     },
     {
       name: "Wardrobe",
-      links: "trending"
+      links: "wardrobe/trending"
     },
 
   ];

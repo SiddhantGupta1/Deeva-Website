@@ -14,7 +14,15 @@ function  TrendingBody(){
     const cards = [
         {
             image: TrendImage,
-            name: "Neeva Yellow Taant Fashion ",
+            name: "Yellow Taant Fashion ",
+            rating: 4,
+            totalRating: 2504,
+            dprice: 999,
+            price: 1550,
+        },
+        {
+            image: TrendImage,
+            name: "Neeva Yellow Taant ",
             rating: 4,
             totalRating: 2504,
             dprice: 999,
@@ -38,15 +46,7 @@ function  TrendingBody(){
         },
         {
             image: TrendImage,
-            name: "Neeva Yellow Taant Fashion ",
-            rating: 4,
-            totalRating: 2504,
-            dprice: 999,
-            price: 1550,
-        },
-        {
-            image: TrendImage,
-            name: "Neeva Yellow Taant Fashion ",
+            name: "Neeva Yellow Fashion ",
             rating: 4,
             totalRating: 2504,
             dprice: 999,
@@ -266,7 +266,7 @@ function  TrendingBody(){
             <img className="trend-AD" src={AD} alt=""/>
             <div className="trend-cards">
                 {cards.map(e=> (
-                    <Link to='/products' className="card">
+                    <Link to={'/products/'+e.name} className="card">
                         <img className="card-img" src={e.image} alt=""/>
                         <button className="card-btn">
                             <img className="card-like" src={CardLike} alt=""/>
