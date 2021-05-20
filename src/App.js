@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useState, useEffect} from 'react'
 import './App.css';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Trending from './components/ContentsPage/TrendingPage/TrendingPage'
@@ -8,12 +8,34 @@ import Puja from './components/ContentsPage/PujaPage/PujaPage'
 import Cart from './components/CartPage/CartPage'
 import ContactUs from './components/ContactUs/ContactUs'
 import Individual from './components/IndividualPage/IndividualPage'
+import Address from './components/Address/Address'
+import Payment from './components/Payment/Payment'
 import Header from './components/Header'
 import Body from './components/HomePage/Home'
 import ScrollToTop from './ScrollToTop'
 
 
 function App() {
+
+  const [product, setProduct] = useState({})
+
+  useEffect( () => {
+    getProducts()
+  },[])
+  const getProducts = async () => {
+    const response = await fetch('https://deevabackend.herokuapp.com/api/getproduct')
+    const products = await response.json()
+
+    setProduct(products.data)
+  }
+
+
+  const [cart, setCart] = useState({})
+  
+  const handleCart = (productID) => {
+    setCart(productID)
+    console.log(cart)
+  }
 
 
   return (
@@ -31,9 +53,11 @@ function App() {
           <Route path="/wardrobe/puja" component={Puja} />
           <Route path="/contact us" component={ContactUs} />
           <Route path="/products/:name" component={Individual} />
+          <Route path="/address select" component={Address} />
+          <Route path="/payment" component={Payment} />
           
           <Route path="/cart" >
-            <Cart />
+            <Cart product={product} />
           </Route>
 
         </Switch>

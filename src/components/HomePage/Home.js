@@ -1,7 +1,7 @@
-import React,{useState,useEffect} from 'react'
+import React from 'react'
 import './Home.css'
 import Slides from './Slides'
-import Sale from './../../icons/Sale.svg'
+import Sale from '../../icons/Sale.svg'
 import Wardrobe from './wardrobe'
 import Section1 from './Section1'
 import Section3 from './ForYou'
@@ -9,9 +9,10 @@ import Section4 from './Section4'
 import Section5 from './Section5'
 import Section6 from './Section6'
 import Section7 from './Section7'
+import Header from '../Header'
 import Footer from '../Footer'
-import AD from './../../icons/Since 1964.svg'
-import AD1 from './../../icons/Paytm.svg'
+import AD from '../../icons/Since 1964.svg'
+import AD1 from '../../icons/Paytm.svg'
 
 function Body(){
 
@@ -60,6 +61,7 @@ function Body(){
             <Section6 />
             <Section7 />
             <Footer />
+            <Header />
 
         </div>
     )

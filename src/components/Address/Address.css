@@ -1,0 +1,134 @@
+.AddressPage{
+    margin: 0;
+    box-sizing: border-box;
+    position: absolute;
+    background-image: url(../../Frame.png);
+    background-size: cover;
+    background-repeat: repeat-y;
+    background-color: #F8F6ED;
+    width: 100%;
+    min-width: 1440px;
+    padding-top: 22px;
+    display: flex;
+}
+.AddressPage-path{
+    position: absolute;
+    margin: 24px 0 0 55px;
+    font-size: 14px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    color: #7B7A7A;    
+    float: left;
+}
+.AddressPage-heading{
+    margin: 54px 0 24px 0;
+    font-size: 29px;
+    line-height: 43px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #000000;    
+}
+
+.Address-card{
+    width: 897px;
+    height: 500px;
+    background: #FFFFFF;
+    box-shadow: 0px 0.817278px 3.26911px rgba(0, 0, 0, 0.25);
+    border-radius: 16.3456px;
+    padding: 24px 48px 0 50px;
+}
+.Address-card-instruction{
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    color: #545352;
+}
+.AddressPage-toggle{
+    margin: 38px 0 55px 0;
+    height: 24.56px;
+}
+.AddressPage-toggle button{
+    font-size: 16.3759px;
+    line-height: 25px;
+    color: #646363;
+    margin-left: 15px;
+}
+#recently-delivered-btn{color:  #000000;}
+.AddressPage-toggle-line{
+    width: 363px;
+    height: 0.5px;
+    background: #878787;
+}
+#recently-delivered{
+    width: 163px;
+    height: 3px;
+    background: #FBD200;
+    margin-left: 15px;
+    transition: 1s ease-in-out;
+}
+
+#recent-addresses{
+    float: left;
+    width: 797px;
+    transition: transform 1s ease-in-out;
+    background: #FBD200;
+}
+#saved-addresses{
+    float: left;
+    width: 797px;
+    transition: transform 1s ease-in-out;
+    background: aqua;
+}
+
+
+
+
+
+.AddressPagebtn{
+    margin-right: 35px;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.AddressPagebtn button{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: #FFD706;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.AddressPagebtn img{
+    width: 22px;
+    height: 38px;
+}
+.AddressPagebtn button:hover{
+    filter: drop-shadow(0px 1px 4px rgba(0, 0, 0, 0.25));
+}
+.AddressPagebtn button:active{
+    transform: translateY(2px);
+}
+.AddressPagebtn div{
+    margin-top: 10px;
+    width: 95px;
+    height: 32px;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 16px;
+    text-align: center;
+    color: #525150;
+}
+.Address-privacy{
+    margin: 51px 0 36px 0;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 121.5%;
+    text-align: center;
+    color: #000000;    
+}

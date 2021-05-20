@@ -121,14 +121,14 @@ function  TrendingFilter(){
     return  (
         <div className="TrendingFilter">
 
-             <div className="FilterSort">
+            <div className="FilterSort">
                 <div id="filter" className="filter"></div>
                 <div id="sort" className="sort"></div>
                 <button onClick={toggle0} className="filter-btn">Filter</button>
                 <button onClick={toggle1} className="sort-btn">Sort</button>
-             </div>
+            </div>
 
-             <div style={{display:"flex",overflow:"hidden"}}>
+            <div style={{display:"flex",overflow:"hidden"}}>
                 <div id="filter-content" className="filter-content">
                     
                     <div className="price-heading">Price</div>
@@ -177,7 +177,7 @@ function  TrendingFilter(){
                     </div>
 
                 </div>
-             </div>
+            </div>
         </div>
     )
 }

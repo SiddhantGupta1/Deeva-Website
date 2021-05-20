@@ -1,16 +1,16 @@
 import React, { useState } from 'react'
 import './IndividualPage.css'
-import Header from './../Header'
-import Footer from './../Footer'
+import Header from '../Header'
+import Footer from '../Footer'
 import Section from './LastSection'
 import Body from './IndividualBody'
-import BG from './../../icons/IndividualBG vector.svg'
-import LeftBtn from './../../icons/Arrow.svg'
-import LikeBtn from './../../icons/Like Btn.svg'
-import FilledLikeBtn from './../../icons/Filled Like Btn.svg'
-import CartBtn from './../../icons/Add to Hanger.svg'
-import product1 from './../../icons/Product1.svg'
-import product2 from './../../icons/Product2.svg'
+import BG from '../../icons/IndividualBG vector.svg'
+import LeftBtn from '../../icons/Arrow.svg'
+import LikeBtn from '../../icons/Like Btn.svg'
+import FilledLikeBtn from '../../icons/Filled Like Btn.svg'
+import CartBtn from '../../icons/Add to Hanger.svg'
+import product1 from '../../icons/Product1.svg'
+import product2 from '../../icons/Product2.svg'
 import { Link} from 'react-router-dom'
 
 var likeNumber = 1;
@@ -38,6 +38,9 @@ function Individual(props) {
     const [current, setCurrent] = useState(0)
     const [like, setLike] = useState(LikeBtn)
     const [disable, setDisable] = useState(true)
+
+    const [cart, setCart] = useState({});
+
     const len = pics.length
     
 
@@ -76,7 +79,15 @@ function Individual(props) {
             setLike(LikeBtn)
     }
 
-    console.log(props.match.params.name);
+    let array = [];
+
+    const handleAddToCart = (name) => {
+        setCart(name)
+        array.push(cart)
+        console.log(array)
+    }
+
+
     return(
         <div className="Individual">
             <img className="productBG" src={BG} alt=""/>
@@ -115,7 +126,7 @@ function Individual(props) {
                     Buy Now
                 </Link>
 
-                <button id="add-to-cart-btn">
+                <button id="add-to-cart-btn" onClick={ () => {handleAddToCart(props.match.params.name) }}>
                     <div style={{marginRight:"10px"}}>Add to Hanger</div>
                     <img style={{marginTop:"-5px"}} src={CartBtn} alt=""/>
                 </button>
