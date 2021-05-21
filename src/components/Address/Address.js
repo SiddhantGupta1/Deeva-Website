@@ -1,10 +1,28 @@
-import React from 'react'
+import React,{useState} from 'react'
 import './Address.css'
 import Logo from '../../icons/Deeva Black Logo.svg'
 import Arrow from '../../icons/Arrow.svg'
 import {Link} from 'react-router-dom'
+import {Radio, RadioGroup, FormControlLabel, StylesProvider} from '@material-ui/core';
+
 
 const Address = () => {
+
+    const userArray = [
+        {
+            id: 1,
+            name: "Ankush",
+            address: " delhi street, europe city, vizag nagaram"
+        },
+        {
+            id: 2,
+            name: "Siddhant",
+            address: " delhi street, europe city, vizag nagaram"
+        },
+    ];
+    const [user, setUser] = useState(userArray)
+    const [radio, setRadio] = useState(1) 
+
     function toggle1(){
         const slide = document.getElementById('recently-delivered')
         slide.style.transform = 'translateX(106%)'
@@ -12,6 +30,11 @@ const Address = () => {
         active0.style.color = '#646363'
         const active1 = document.getElementById('saved-address-btn')
         active1.style.color = '#000000'
+
+        const Rcontent = document.getElementById('recent-addresses')
+        Rcontent.style.transform = 'translateX(-100%)'
+        const Scontent = document.getElementById('saved-addresses')
+        Scontent.style.transform = 'translateX(-100%)'
     }
     function toggle0(){
         const slide = document.getElementById('recently-delivered')
@@ -20,7 +43,18 @@ const Address = () => {
         active0.style.color = '#646363'
         const active1 = document.getElementById('recently-delivered-btn')
         active1.style.color = '#000000'
+
+        const Rcontent = document.getElementById('recent-addresses')
+        Rcontent.style.transform = 'translateX(0%)'
+        const Scontent = document.getElementById('saved-addresses')
+        Scontent.style.transform = 'translateX(0%)'
     }
+
+    function handleRemove(id){
+        const temp = user.filter((e) => e.id!==id )
+        setUser(temp)
+    }
+
     return (
         <div className="AddressPage">
             <div className="AddressPage-path">Home&ensp; &gt; &ensp; Select Address</div>
@@ -44,14 +78,49 @@ const Address = () => {
 
                     </div>
 
-                    <div style={{display:"flex",overflow:"scroll"}}>
+                    <div style={{display:"flex", overflow:"hidden", marginTop:"40px"}}>
                             
                         <div id="recent-addresses">
-                            <h1>hell</h1>
+                            {user.map(e => (
+                                <div style={{marginBottom: '50px'}}>
+                                    <RadioGroup value={radio} onChange={(e) => setRadio(e.target.value)} style={{float:"left"}} >
+                                        <StylesProvider injectFirst><FormControlLabel value={e.name} control={<Radio />} /></StylesProvider>
+                                    </RadioGroup>
+                                    <div style={{display:"flex"}}>
+                                        <div style={{display:"flex", flexDirection:"column", width:"77.5%"}}>
+                                            <div className="addresses-name">{e.name}</div>
+                                            <div className="addresses-address">{e.address}</div>
+                                        </div>
+                                        <div style={{display:"flex", flexDirection:"column"}}>
+                                            <button className="addresses-btn">Edit</button>
+                                            <button className="addresses-btn" onClick={() => { handleRemove(e.id) }}>Remove address</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            ))}
                         </div>
 
                         <div id="saved-addresses">
-                            <h1>HELL</h1>
+                            {user.map(e => (
+                                <div style={{marginBottom: '45px'}}>
+                                    <RadioGroup value={radio} onChange={(e) => setRadio(e.target.value)} style={{float:"left"}} >
+                                        <StylesProvider injectFirst><FormControlLabel value={e.name} control={<Radio />} /></StylesProvider>
+                                    </RadioGroup>
+                                    <div style={{display:"flex"}}>
+                                        <div style={{display:"flex", flexDirection:"column", width:"77.5%"}}>
+                                            <div className="addresses-name">{e.name}</div>
+                                            <div className="addresses-address">{e.address}</div>
+                                        </div>
+                                        <div style={{display:"flex", flexDirection:"column"}}>
+                                            <button className="addresses-btn">Edit</button>
+                                            <button className="addresses-btn" onClick={() => { handleRemove(e.id) }}>Remove address</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            ))}
+                            <button className="saved-address-btn">Add Address &nbsp;<span>+</span></button>
                         </div>
 
                     </div>

@@ -106,18 +106,7 @@
   margin-left: 15px;
   transform: translateY(-3px);
 }
-.MuiRating-iconEmpty {
-  color: #FCFCFC;
-}
-.MuiRating-root{
-  color: black;
-}
-.MuiRating-sizeSmall {
-  font-size: 11px;
-}
-.MuiSvgIcon-root{
-  fill: black;
-}
+
 
 .card-dprice{
   float: left;
@@ -189,4 +178,16 @@
 }
 .trend-pages-btn:focus{
   background: #FFD389;
+}
+
+
+
+.MuiRating-iconEmpty {
+  color: #FCFCFC;
+}
+.MuiRating-sizeSmall {
+  font-size: 11px;
+}
+.MuiSvgIcon-fontSizeInherit{
+  fill: black;
 }

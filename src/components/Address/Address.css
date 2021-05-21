@@ -32,12 +32,12 @@
 }
 
 .Address-card{
+    float: left;
     width: 897px;
-    height: 500px;
     background: #FFFFFF;
     box-shadow: 0px 0.817278px 3.26911px rgba(0, 0, 0, 0.25);
     border-radius: 16.3456px;
-    padding: 24px 48px 0 50px;
+    padding: 24px 48px 0 40px;
 }
 .Address-card-instruction{
     font-weight: 300;
@@ -47,7 +47,7 @@
     color: #545352;
 }
 .AddressPage-toggle{
-    margin: 38px 0 55px 0;
+    margin: 38px 0 0 0;
     height: 24.56px;
 }
 .AddressPage-toggle button{
@@ -67,23 +67,74 @@
     height: 3px;
     background: #FBD200;
     margin-left: 15px;
-    transition: 1s ease-in-out;
+    transition: 1.5s ease-in-out;
 }
 
-#recent-addresses{
+#recent-addresses, #saved-addresses{
+    display: table;
     float: left;
-    width: 797px;
-    transition: transform 1s ease-in-out;
-    background: #FBD200;
+    width: 810px;
+    transition: transform 1.5s ease-in-out;
 }
-#saved-addresses{
-    float: left;
-    width: 797px;
-    transition: transform 1s ease-in-out;
-    background: aqua;
+.addresses-name{
+    margin: 15px 0 25px 48px;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 9px;
+    display: flex;
+    align-items: center;
+    color: #272727;    
 }
-
-
+.addresses-address{
+    margin-left: 48px;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 15px;
+    display: flex;
+    align-items: center;
+    color: #A5A5A5;    
+}
+.addresses-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8.08612px;
+    width: 169px;
+    height: 27px;
+    background: #FFEA7F;
+    border: 0.808612px solid #7D4817;
+    box-sizing: border-box;
+    border-radius: 13.7464px;
+    font-size: 14.555px;
+    line-height: 3px;
+    margin: 4.5px 0 4.5px 0;
+}
+.addresses-btn:hover{
+    filter: drop-shadow(0px 1px 4px rgba(0, 0, 0, 0.25));
+}
+.saved-address-btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    width: 170px;
+    height: 40px;
+    background: #FFD706;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 17px;
+    font-size: 14.555px;
+    line-height: 3px;
+    display: flex;
+    align-items: center;
+    margin: 0 0 34px 90px;
+}
+.saved-address-btn:hover{
+    filter: drop-shadow(0px 1px 4px rgba(0, 0, 0, 0.25));
+}
+.saved-address-btn span{
+    font-size: 25px;
+}
 
 
 
@@ -131,4 +182,21 @@
     line-height: 121.5%;
     text-align: center;
     color: #000000;    
+}
+
+
+
+
+
+
+
+
+.MuiRadio-colorSecondary.Mui-checked {
+    color: #7D4817;
+}
+.MuiRadio-colorSecondary{
+    color: #7D4817;
+}
+.MuiFormControlLabel-root{
+    margin: 0;
 }
