@@ -1,7 +1,7 @@
 import React from 'react'
 import './TrendingFilter.css'
 
-function  TrendingFilter(){
+const TrendingFilter = ({height}) => {
 
     function toggle1(){
         const slide = document.getElementById('filter');
@@ -119,7 +119,7 @@ function  TrendingFilter(){
     }
 
     return  (
-        <div className="TrendingFilter">
+        <div className="TrendingFilter" style={{height:`${height+85}px`}}>
 
             <div className="FilterSort">
                 <div id="filter" className="filter"></div>

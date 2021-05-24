@@ -1,7 +1,6 @@
 .TrendingBody{
     float: left;
     width: 82%;
-    height: 3615px;
     background: #FCFCFC;
     box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
@@ -49,7 +48,6 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    height: 3230px;
 }
 .card{
     width: 249.33px;
@@ -190,4 +188,5 @@
 }
 .MuiSvgIcon-fontSizeInherit{
   fill: black;
+  margin: 0 !important;
 }

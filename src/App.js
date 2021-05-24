@@ -54,7 +54,7 @@ function App() {
           <Route path="/contact us" component={ContactUs} />
           <Route path="/products/:name" component={Individual} />
           <Route path="/address select" component={Address} />
-          <Route path="/payment" component={Payment} />
+          <Route path="/address/payments" component={Payment} />
           
           <Route path="/cart" >
             <Cart product={product} />

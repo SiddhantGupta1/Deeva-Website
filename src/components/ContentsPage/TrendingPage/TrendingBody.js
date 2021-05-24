@@ -9,41 +9,10 @@ import StarBorderIcon from '@material-ui/icons/StarBorder';
 import LeftBtn from './../../../icons/Arrow.svg'
 import { Link } from 'react-router-dom'
 
-function  TrendingBody(){
+const TrendingBody = ({setHeight}) => {
 
     const cards = [
-        {
-            image: TrendImage,
-            name: "Yellow Taant Fashion ",
-            rating: 4,
-            totalRating: 2504,
-            dprice: 999,
-            price: 1550,
-        },
-        {
-            image: TrendImage,
-            name: "Neeva Yellow Taant ",
-            rating: 4,
-            totalRating: 2504,
-            dprice: 999,
-            price: 1550,
-        },
-        {
-            image: TrendImage,
-            name: "Neeva Yellow Taant Fashion ",
-            rating: 4,
-            totalRating: 2504,
-            dprice: 999,
-            price: 1550,
-        },
-        {
-            image: TrendImage,
-            name: "Neeva Yellow Taant Fashion ",
-            rating: 4,
-            totalRating: 2504,
-            dprice: 999,
-            price: 1550,
-        },
+       
         {
             image: TrendImage,
             name: "Neeva Yellow Fashion ",
@@ -258,9 +227,13 @@ function  TrendingBody(){
             btn.style.transform = "translateX(0px)";
         }
     }
-
     return(
-        <div className="TrendingBody">
+        <div className="TrendingBody" ref={el => {
+            if(!el) return;
+        
+            setHeight(el.getBoundingClientRect().height)
+        }} >
+        
             <div className="trend-head">Showing 3500 Trending Products</div>
             <div className="trend-sub-head">Page 1 of 175</div>
             <img className="trend-AD" src={AD} alt=""/>

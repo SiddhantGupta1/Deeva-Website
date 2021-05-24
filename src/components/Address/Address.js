@@ -131,7 +131,7 @@ const Address = () => {
             </div>
 
             <div className="AddressPagebtn">
-                <Link to="/payment"><button><img style={{transform:"rotate(180deg)"}} src={Arrow} alt="" /></button></Link>
+                <Link to="/address/payments"><button><img style={{transform:"rotate(180deg)"}} src={Arrow} alt="" /></button></Link>
                 <div>Go to<br/> Payment Page</div>
             </div>
         </div>

@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useState} from 'react'
 import './TrendingPage.css'
 import Header from '../../Header'
 import Footer from '../../Footer'
@@ -10,6 +10,7 @@ import { Link } from 'react-router-dom'
 function TrendingPage(){
 
     const headings=["Trending", "Ethnic", "Party", "Puja", "Western"];
+    const [height, setHeight] = useState(1000)
 
     return(
         <div className="Trending">
@@ -20,8 +21,8 @@ function TrendingPage(){
                     ))}
                 </div>
 
-                <Filter />
-                <Body />
+                <Filter height={height} />
+                <Body setHeight={setHeight}/>
 
                 <div className="Trend-help">
                     <div className="trend-help-heading">Help or Having trouble in finding what you want ?</div>
