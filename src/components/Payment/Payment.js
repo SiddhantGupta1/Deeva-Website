@@ -9,21 +9,39 @@ import Phonepe from '../../icons/Phone Pe.svg'
 
 const Payment = () => {
 
-    const [radio, setRadio] = useState("name") 
-    const [quantity, setQuantity] = useState(1)
-
-    const bill = [
+    const bills = [
         {
+            id: 1,
             name: "Neeva",
             fullName: "Neeva Yellow Taant Fashion ",
             image: Demo,
         },
         {
+            id: 2,
             name: "Neeva",
             fullName: "Neeva Yellow Taant Fashion ",
             image: Demo,
         },
     ]
+
+    const [bill, setBill] = useState(bills)
+    const [radio, setRadio] = useState("gpay") 
+    const [quantity, setQuantity] = useState(1)
+
+    const add = () => {
+        var increment = quantity + 1
+        setQuantity(increment)
+    }
+    const subtract = (id) => {
+        var decrement = quantity - 1
+        if(decrement == 0) {
+            const newList = bill.filter((e) => e.id!==id )
+            setBill(newList)
+        }
+        else {
+            setQuantity(decrement)
+        }
+    }
 
     return (
         <div className="PaymentPage">
@@ -63,25 +81,34 @@ const Payment = () => {
                         <div className="other-payment-modes">Other Payment Modes</div>
                         <div className="other-payment-modes-container">
                             <div className="gpay">
-                                <RadioGroup value={radio} onChange={() => setRadio("gpay")} style={{float:"left"}} >
-                                    <StylesProvider injectFirst><FormControlLabel value="gpay" control={<Radio />} /></StylesProvider>
-                                </RadioGroup>
-                                <div>Google Pay</div>
-                                <img src={Gpay} alt=""/>
+                                <div style={{display:"flex", alignItems:"center", justifyContent:"center"}}>
+                                    <RadioGroup value={radio} onChange={() => setRadio("gpay")} style={{float:"left"}} >
+                                        <StylesProvider injectFirst><FormControlLabel value="gpay" control={<Radio />} /></StylesProvider>
+                                    </RadioGroup>
+                                    <div>Google Pay</div>
+                                    <img src={Gpay} alt=""/>
+                                </div>
+                                {radio==="gpay" ? <input id="gpay-input" type="text" placeholder="Enter your Mobile number" maxlength="10" ></input> : <div></div>}
                             </div>
                             <div className="paytm">
-                                <RadioGroup value={radio} onChange={() => setRadio("paytm")} style={{float:"left"}} >
-                                    <StylesProvider injectFirst><FormControlLabel value="paytm" control={<Radio />} /></StylesProvider>
-                                </RadioGroup>
-                                <div>Paytm</div>
-                                <img src={Paytm} alt=""/>
+                                <div style={{display:"flex", alignItems:"center", justifyContent:"center"}}>
+                                    <RadioGroup value={radio} onChange={() => setRadio("paytm")} style={{float:"left"}} >
+                                        <StylesProvider injectFirst><FormControlLabel value="paytm" control={<Radio />} /></StylesProvider>
+                                    </RadioGroup>
+                                    <div>Paytm</div>
+                                    <img src={Paytm} alt=""/>
+                                </div>
+                                {radio==="paytm" ? <input id="paytm-input" type="text" placeholder="Enter your Mobile number" maxlength="10" ></input> : <div></div>}
                             </div>
                             <div className="phonepe">
-                                <RadioGroup value={radio} onChange={() => setRadio("phonepe")} style={{float:"left"}} >
-                                    <StylesProvider injectFirst><FormControlLabel value="phonepe" control={<Radio />} /></StylesProvider>
-                                </RadioGroup>
-                                <div>Phonepe</div>
-                                <img src={Phonepe} alt=""/>
+                                <div style={{display:"flex", alignItems:"center", justifyContent:"center"}}>
+                                    <RadioGroup value={radio} onChange={() => setRadio("phonepe")} style={{float:"left"}} >
+                                        <StylesProvider injectFirst><FormControlLabel value="phonepe" control={<Radio />} /></StylesProvider>
+                                    </RadioGroup>
+                                    <div>Phonepe</div>
+                                    <img src={Phonepe} alt=""/>
+                                </div>
+                                {radio==="phonepe" ? <input id="phonepe-input" type="text" placeholder="Enter your Mobile number" maxlength="10" ></input> : <div></div>}
                             </div>
                         </div>
 
@@ -110,23 +137,18 @@ const Payment = () => {
                                         <a>{e.fullName}</a>
                                     </div>
                                     <div className="OrderDetails-qty-btn">
-                                        <button>-</button>
+                                        <button onClick={() => { subtract(e.id) }}>-</button>
                                         <a>{quantity}</a>
-                                        <button>+</button>
+                                        <button onClick={() => { add() }}>+</button>
                                     </div>
                                     
                                 </div>
                             ))}
                         </div>
-                        
-                        <div style={{display:"flex", justifyContent:"space-between", marginBottom:"9px"}}>
-                            <div className="OrderDetails-unit">Unit Cost</div>
-                            <div id="OrderDetails-unit">&#8377;999</div>
-                        </div>
 
                         <div style={{display:"flex", justifyContent:"space-between", marginBottom:"9px"}}>
                             <div className="OrderDetails-qty">Quantity</div>
-                            <div id="OrderDetails-qty">1</div>
+                            <div id="OrderDetails-qty">{bill.length}</div>
                         </div>
 
                         <div style={{display:"flex", justifyContent:"space-between", marginBottom:"9px"}}>

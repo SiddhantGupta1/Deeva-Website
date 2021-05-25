@@ -61,7 +61,6 @@
     height: 124px;
     background: #EDE1CE;
     border: 1px solid #43413D;
-    box-sizing: border-box;
     box-shadow: 0px 2px 4px rgba(71, 71, 71, 0.25);
     border-radius: 9px;    
     margin: 0 0 20px 20px;
@@ -105,17 +104,17 @@
     height: 110px;
     background: #EDE1CE;
     border: 1px solid #43413D;
-    box-sizing: border-box;
     border-radius: 17px;
     display: flex;
     justify-content: space-evenly;
     align-items: flex-start;
-    padding-top: 18px;
+    padding: 15px 0 10px 0;
 }
 .gpay, .paytm, .phonepe{
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
 .gpay div, .paytm div, .phonepe div{
     float: left;
@@ -123,6 +122,25 @@
     font-size: 21px;
     line-height: 9px;
     margin: 0 2.5px;
+}
+#gpay-input, #paytm-input, #phonepe-input{
+    display: flex;
+    align-items: center;
+    padding: 10px 10px 10px 20px;
+    width: 229px;
+    height: 34px;
+    border: 1px solid #43413D;
+    box-shadow: 0px 0px 4px #FBD200;
+    border-radius: 26px;
+    margin-top: 12px;
+}
+input:focus{    outline: none;}
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button{
+  -webkit-appearance: none;
+  margin: 0;
+}
+input{
+    -moz-appearance: textfield;
 }
 
 
@@ -183,7 +201,6 @@
     height: 42px;
     background: #FFFFFF;
     border: 0.567568px solid #F0E4D0;
-    box-sizing: border-box;
     border-radius: 5.10811px;
     display: flex;
     align-items: center;
@@ -207,7 +224,6 @@
 .OrderDetails-qty-btn{
     background: #FFFFFF;
     border: 1.1129px solid #F0E4D0;
-    box-sizing: border-box;
     box-shadow: 0px 0.896104px 3.58442px rgba(71, 71, 71, 0.25);
     border-radius: 20px;
     margin-top: 5px;
@@ -230,13 +246,13 @@
     padding: 0 2px;
 }
 
-.OrderDetails-unit, .OrderDetails-qty, .OrderDetails-subtotal, .OrderDetails-delivery{
+.OrderDetails-qty, .OrderDetails-subtotal, .OrderDetails-delivery{
     font-weight: 500;
     font-size: 13px;
     line-height: 19px;
     color: #9A9A9A;
 }
-#OrderDetails-qty, #OrderDetails-subtotal, #OrderDetails-unit{
+#OrderDetails-qty, #OrderDetails-subtotal{
     font-weight: 600;
     font-size: 18px;
     line-height: 25px;
