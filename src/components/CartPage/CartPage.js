@@ -128,7 +128,7 @@ console.log(product[0])
                     <div className="CartHanger-bill-divider"></div>
                     <div className="CartHanger-bill-total">Total Amount</div>
                     <div className="CartHanger-bill-total-price">&#8377;{total.toLocaleString("en-US")}</div>
-                    <Link to="/address select"><button className="CartHanger-bill-btn">Checkout</button></Link>
+                    <Link to="/address"><button className="CartHanger-bill-btn">Checkout</button></Link>
                     <div style={{display:"flex", justifyContent:"center"}}>
                         <img src={Return} alt=""/>
                         <img src={Assured} alt=""/>

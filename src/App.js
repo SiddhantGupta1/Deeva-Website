@@ -53,8 +53,8 @@ function App() {
           <Route path="/wardrobe/puja" component={Puja} />
           <Route path="/contact us" component={ContactUs} />
           <Route path="/products/:name" component={Individual} />
-          <Route path="/address select" component={Address} />
-          <Route path="/address/payments" component={Payment} />
+          <Route path="/address" exact component={Address} />
+          <Route path="/address/payments" exact component={Payment} />
           
           <Route path="/cart" >
             <Cart product={product} />
