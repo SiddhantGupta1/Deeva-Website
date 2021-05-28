@@ -1,5 +1,5 @@
 import React from 'react';
-import './wardrobe.css'
+import './Wardrobe.css'
 import Trending from './../../icons/Trending.svg'
 import TrendingBG from './../../icons/TrendingBG.svg'
 import { Link } from 'react-router-dom'

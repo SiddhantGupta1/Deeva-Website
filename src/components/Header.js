@@ -146,8 +146,10 @@ function Header() {
             </React.Fragment>
           ))}
         </StylesProvider>
-
+        
+        <Link to="/">
         <img className="deevaLogo" src={DeevaLogo} alt=""/>
+        </Link>
         <div className="search-bar">
           <img className="search" src={Search} alt=""/>
           <input className="searching" type="text" placeholder="Search" />

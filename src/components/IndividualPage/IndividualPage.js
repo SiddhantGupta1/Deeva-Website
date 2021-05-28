@@ -116,14 +116,16 @@ function Individual(props) {
                     <img className="product-like-btn" src={like} alt=""/>
                 </button>
 
-                <Link 
-                    to={{
-                        pathname: '/wardrobe/ethnic',
-                        product , dprice, user
-                    }}
-                    id="buy-now-btn"
+                <Link  to ={`/demo?name=${product?.name}&price=${dprice}`}
+                    // to={{
+                    //     pathname: `/demo`,
+                    //     product , dprice, user
+                    // }}
+                    
                 >
+                    <div id="buy-now-btn">
                     Buy Now
+                    </div>
                 </Link>
 
                 <button id="add-to-cart-btn" onClick={ () => {handleAddToCart(props.match.params.name) }}>

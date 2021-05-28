@@ -9,10 +9,10 @@ import StarBorderIcon from '@material-ui/icons/StarBorder';
 import LeftBtn from './../../../icons/Arrow.svg'
 import { Link } from 'react-router-dom'
 
+
 const TrendingBody = ({setHeight}) => {
 
     const cards = [
-       
         {
             image: TrendImage,
             name: "Neeva Yellow Fashion ",
@@ -205,7 +205,7 @@ const TrendingBody = ({setHeight}) => {
             dprice: 999,
             price: 1550,
         },
-      ];
+    ];
     
     const pages = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]
 
