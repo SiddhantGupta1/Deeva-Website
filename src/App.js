@@ -10,6 +10,8 @@ import ContactUs from './components/ContactUs/ContactUs'
 import Individual from './components/IndividualPage/IndividualPage'
 import Address from './components/Address/Address'
 import Payment from './components/Payment/Payment'
+import YourOrders from './components/YourOrders/YourOrders'
+import Delivery from './components/Delivery/Delivery'
 import Header from './components/Header'
 import Body from './components/HomePage/Home'
 import ScrollToTop from './ScrollToTop'
@@ -47,14 +49,16 @@ function App() {
 
           <Route path="/" exact component={Home} />
           <Route path="/home" component={Home} />
-          <Route path="/wardrobe/trending" component={Trending} />
-          <Route path="/wardrobe/ethnic" component={Ethnic} />
-          <Route path="/wardrobe/party" component={Party} />
-          <Route path="/wardrobe/puja" component={Puja} />
+          <Route path="/wardrobe/trending" exact component={Trending} />
+          <Route path="/wardrobe/ethnic" exact component={Ethnic} />
+          <Route path="/wardrobe/party" exact component={Party} />
+          <Route path="/wardrobe/puja" exact component={Puja} />
           <Route path="/contact us" component={ContactUs} />
           <Route path="/products/:name" component={Individual} />
           <Route path="/address" exact component={Address} />
           <Route path="/address/payments" exact component={Payment} />
+          <Route path="/your orders" exact component={YourOrders} />
+          <Route path="/your orders/delivery" exact component={Delivery}/>
           
           <Route path="/cart" >
             <Cart product={product} />

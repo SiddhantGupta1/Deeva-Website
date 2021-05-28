@@ -31,7 +31,7 @@ function Header() {
     },
     {
       name: "Categories",
-      links: "ethnic"
+      links: "wardrobe/ethnic"
     },
     {
       name: "Wardrobe",
@@ -43,7 +43,7 @@ function Header() {
   const link2 = [
     {
       name: "Your Orders",
-      links: "party"
+      links: "your orders"
     },
     {
       name: "My Hanger",
@@ -51,7 +51,7 @@ function Header() {
     },
     {
       name: "Profile",
-      links: "puja"
+      links: "wardrobe/puja"
     },
 
   ];
@@ -63,11 +63,11 @@ function Header() {
     },
     {
       name: "Register",
-      links: "cart"
+      links: "your orders/delivery"
     },
     {
       name: "Settings",
-      links: "puja"
+      links: "wardrobe/puja"
     },
     {
       name: "Help and Contact",
@@ -75,7 +75,7 @@ function Header() {
     },
     {
       name: "Sign Out",
-      links: "puja"
+      links: "wardrobe/puja"
     },
 
   ];
