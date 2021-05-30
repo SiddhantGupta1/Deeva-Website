@@ -1,15 +1,16 @@
-import React from 'react'
+import React,{useState} from 'react'
 import './TrendingBody.css'
-import AD from './../../../icons/Trend AD.svg'
-import TrendImage from './../../../icons/Trend Image.svg'
-import CardLike from './../../../icons/Like Btn.svg'
+import AD from '../../icons/Trend AD.svg'
+import TrendImage from '../../icons/Trend Image.svg'
+import LikeBtn from '../../icons/Like Btn.svg'
+import FilledLikeBtn from '../../icons/Filled Like Btn.svg'
 import Rating from '@material-ui/lab/Rating';
 import { StylesProvider } from "@material-ui/core/styles";
 import StarBorderIcon from '@material-ui/icons/StarBorder';
-import LeftBtn from './../../../icons/Arrow.svg'
+import LeftBtn from '../../icons/Arrow.svg'
 import { Link } from 'react-router-dom'
 
-
+var likeNumber = 1;
 const TrendingBody = ({setHeight}) => {
 
     const cards = [
@@ -207,6 +208,16 @@ const TrendingBody = ({setHeight}) => {
         },
     ];
     
+    
+    const [like, setLike] = useState(LikeBtn)
+    const LikeButton = () =>{
+        likeNumber++;
+        if(likeNumber%2===0) 
+            setLike(FilledLikeBtn)
+        else
+            setLike(LikeBtn)
+    }
+
     const pages = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]
 
     function handleRightBtn(){
@@ -239,30 +250,32 @@ const TrendingBody = ({setHeight}) => {
             <img className="trend-AD" src={AD} alt=""/>
             <div className="trend-cards">
                 {cards.map(e=> (
-                    <Link to={'/products/'+e.name} className="card">
-                        <img className="card-img" src={e.image} alt=""/>
-                        <button className="card-btn">
-                            <img className="card-like" src={CardLike} alt=""/>
+                    <div className="card">
+                        <button onClick={LikeButton} className="card-btn">
+                            <img src={like} alt="" style={{width:"20px", height:"20px"}} />
                         </button>
-                        <div className="card-name">{e.name}</div>
-                        <div style={{display:"flex", justifyContent:"space-evenly"}}>
-                            <div className="card-rating">
-                                <StylesProvider injectFirst>
-                                    <Rating 
-                                        defaultValue={e.rating}
-                                        precision={0.1} 
-                                        size="small" 
-                                        readOnly 
-                                        emptyIcon={<StarBorderIcon fontSize="inherit" />} 
-                                    />
-                                    <div className="card-total-rating">{e.totalRating}</div>
-                                </StylesProvider>
+                        <Link to={'/products/'+e.name} >
+                            <img className="card-img" src={e.image} alt=""/>
+                            <div className="card-name">{e.name}</div>
+                            <div style={{display:"flex", justifyContent:"space-evenly"}}>
+                                <div className="card-rating">
+                                    <StylesProvider injectFirst>
+                                        <Rating 
+                                            defaultValue={e.rating}
+                                            precision={0.1} 
+                                            size="small" 
+                                            readOnly 
+                                            emptyIcon={<StarBorderIcon fontSize="inherit" />} 
+                                        />
+                                        <div className="card-total-rating">{e.totalRating}</div>
+                                    </StylesProvider>
+                                </div>
+                                <div className="card-dprice">&#8377;{e.dprice}</div>
+                                <div className="card-price">&#8377;{e.price}</div>
                             </div>
-                            <div className="card-dprice">&#8377;{e.dprice}</div>
-                            <div className="card-price">&#8377;{e.price}</div>
-                        </div>
 
-                    </Link>
+                        </Link>
+                    </div>
                 ))}
             </div>
             

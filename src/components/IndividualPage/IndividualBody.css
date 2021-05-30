@@ -278,7 +278,7 @@
     border-radius: 50%;
     
 }
-#Individual-product-experiences a{
+#Individual-product-experiences dt{
     float: left;
     font-weight: normal;
     font-size: 12px;
@@ -300,9 +300,8 @@
 
 #Individual-product-divider{
     float: left;
-    width: 1110px;
+    width: 1111px;
     height: 1px;
     background: #5F5F5F;
-    display: flex;
-    margin: 0 200px 20px 200px;
+    margin-bottom: 20px;
 }

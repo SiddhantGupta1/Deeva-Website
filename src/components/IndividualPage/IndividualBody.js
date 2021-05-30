@@ -28,14 +28,16 @@ const IndividualBody = ({about , product,pro,props, dprice, user}) => {
         },
     ]
 
-
+    const days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]
+    const months = ["January","February","March","April","May","June","July","August","September","October","November","December"];
     
     let newDate = new Date()
     let date = newDate.getDate();
-    let month = newDate.getMonth()+1;
+    let month = newDate.getMonth();
     let day = newDate.getDay();
+    console.log(date, months[month], days[day])
 
-{/*________________________________________DROPDOWN________________________________________________________________ */}
+/*________________________________________DROPDOWN________________________________________________________________ */
     const [open, setOpen] = useState(false);
     const anchorRef = useRef(null);
 
@@ -67,7 +69,7 @@ const IndividualBody = ({about , product,pro,props, dprice, user}) => {
         prevOpen.current = open;
     }, [open]);
 
-{/*_____________________________________________________________________________________________________________________________________ */}
+/*_____________________________________________________________________________________________________________________________________ */
 
 
     return (
@@ -90,7 +92,7 @@ const IndividualBody = ({about , product,pro,props, dprice, user}) => {
                 
                 <div className="Individual-product-rating">
                     <img src={Star} alt=""/>
-                    <a id="Individual-product-rating">{product.rating}</a>
+                    <dt id="Individual-product-rating">{product.rating}</dt>
                 </div>
 
                 <div className="Individual-product-heading">{product.name}</div>
@@ -107,17 +109,17 @@ const IndividualBody = ({about , product,pro,props, dprice, user}) => {
                 </StylesProvider>
                 <div className="Individual-product-sub-heading">{pro}</div>
                 
-                <a className="Individual-product-reviews">{product.reviews}<br />CustomerReviews</a>
+                <dt className="Individual-product-reviews">{product.reviews}<br />CustomerReviews</dt>
                 
                 <div className="Individual-product-dprice">&#8377;{dprice}</div>
-                <a className="Individual-product-price">&#8377;{product.price}</a>
-                <a className="Individual-product-discount">( {product.discount}% Off )</a>
-                {product.stock==true ? <a style={{color:"#6CAE00",fontSize:"12px", lineHeight:"18px"}}>In Stock</a> : <a style={{color:"#C91414",fontSize:"12px", lineHeight:"18px"}}>Not In Stock</a> }
+                <dt className="Individual-product-price">&#8377;{product.price}</dt>
+                <dt className="Individual-product-discount">( {product.discount}% Off )</dt>
+                {product.stock===true ? <dt style={{color:"#6CAE00",fontSize:"12px", lineHeight:"18px"}}>In Stock</dt> : <dt style={{color:"#C91414",fontSize:"12px", lineHeight:"18px"}}>Not In Stock</dt> }
 
                 <img className="Individual-product-30-return" src={Return} alt=""/>
                 <img className="Individual-product-assured" src={Assured} alt=""/>
 
-                <div className="Individual-product-delivery-by">Delivery by <a style={{fontWeight:"500"}}>Wednesday, 28 April</a> &emsp;&ensp;<a style={{color:"#6CAE00"}}>Free</a></div>
+                <div className="Individual-product-delivery-by">Delivery by <dt style={{fontWeight:"500"}}>Wednesday, 28 April</dt> &emsp;&ensp;<dt style={{color:"#6CAE00"}}>Free</dt></div>
 
                 <div className="Individual-product-list-heading">Offers Available on this Item</div>
                 <ul id="Individual-list">
@@ -137,8 +139,8 @@ const IndividualBody = ({about , product,pro,props, dprice, user}) => {
                     onClick={handleToggle}
                     id="Individual-product-delivery-to"
                     >
-                            { user.address==[] ? <span>Add Address</span> : <a><bold>{user.userName} - </bold>{user.address}</a> }
-                            { user.address==[] ? <img style={{display:"none"}} src={DownArrow} alt=""/> : <img src={DownArrow} alt=""/>}
+                            { user.address===[] ? <span>Add Address</span> : <dt><bold>{user.userName} - </bold>{user.address}</dt> }
+                            { user.address===[] ? <img style={{display:"none"}} src={DownArrow} alt=""/> : <img src={DownArrow} alt=""/>}
                 </button>
                 <Popper open={open} anchorEl={anchorRef.current} role={undefined} transition disablePortal>
                     {({ TransitionProps, placement }) => (
@@ -149,7 +151,7 @@ const IndividualBody = ({about , product,pro,props, dprice, user}) => {
                         
                             <ClickAwayListener onClickAway={handleClose}>
                             <MenuList className="Individual-product-delivery-dropdown" autoFocusItem={open} id="menu-list-grow" onKeyDown={handleListKeyDown}>
-                                { user.address!=[] ? user.address.map(e =>( <MenuItem><option>{e}</option></MenuItem> )) : <a>Add Address here</a>}
+                                { user.address!==[] ? user.address.map(e =>( <MenuItem><option>{e}</option></MenuItem> )) : <dt>Add Address here</dt>}
                             </MenuList>
                             </ClickAwayListener>
                         
@@ -168,7 +170,7 @@ const IndividualBody = ({about , product,pro,props, dprice, user}) => {
                     {reviews.map((review) => (
                         <div id="Individual-product-experiences">
                             <body></body>
-                            <a>{review.name}</a>
+                            <dt>{review.name}</dt>
                             
                             <StylesProvider injectFirst>
                                 <Rating 
@@ -189,7 +191,9 @@ const IndividualBody = ({about , product,pro,props, dprice, user}) => {
 
             </div>
 
-            <div id="Individual-product-divider"></div>
+            <div style={{width:"100%", display:"flex", justifyContent:"center"}}>
+                <div id="Individual-product-divider"></div>
+            </div>
         </div>
     )
 }

@@ -28,9 +28,11 @@ function Body(){
                     <img className="sale" src={pics} alt="AD" />
                 ))}
             </div>
-
-            <div className="wardrobe-frame">
-                <Wardrobe />
+            
+            <div style={{width:"100%", display:"flex", justifyContent:"center"}}>
+                <div className="wardrobe-frame">
+                    <Wardrobe />
+                </div>
             </div>
             <Section1 />
 
@@ -54,11 +56,23 @@ function Body(){
                 </div>
                 <img className="AD" src={AD} alt="AD" />
             </div>
-            <Section3 />
+
+            <div style={{width:"100%", display:"flex", justifyContent:"center"}}>
+                <Section3 />
+            </div>
+
             <Section4 />
-            <Section5 />
+
+            <div style={{width:"100%", display:"flex", justifyContent:"center"}}>
+                <Section5 />
+            </div>
+
             <img className="AD1" src={AD1} alt="AD"/>
-            <Section6 />
+
+            <div style={{width:"100%", display:"flex", justifyContent:"center"}}>
+                <Section6 />
+            </div>
+
             <Section7 />
             <Footer />
             <Header />

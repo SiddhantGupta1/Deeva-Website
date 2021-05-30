@@ -1,50 +1,29 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto');
-
-.headline{
-    /* Your Orders */
-    position: relative;
-    width: 151px;
-    height: 34px;
-    left: 645px;
-    top: 112px;
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 36px;
-    text-align: center;
+.YourOrders{
+    margin: 0;
+    box-sizing: border-box;
+    position: absolute;
+    background-image: url(../../Frame.png);
+    background-size: cover;
+    background-repeat: repeat-y;
+    background-color: #F8F6ED;
+    width: 100%;
+    min-width: 1440px;
+    padding-top: 53px;
+    height: 500px;
 }
 
-
- body {
-    /* overflow-y: hidden;  */
-    overflow-x: hidden; 
-} 
-
-.nav{
-    position: relative;
-    width: 102px;
-    height: 14px;
-    left: 55px;
-    top: 87px;
-    padding: 5px;
+.YourOrders-path{
+    margin: 34px 0 31px 55px;
     font-size: 14px;
     line-height: 21px;
-    display: flex;
-    flex-wrap: nowrap;
-    display: inline-flex;
-    align-items: center;
-    text-decoration: none;
-
     color: #7B7A7A;
 }
-
-
-.main-bg{
-   /* Your Orders */
-    position: relative;
-    width: 1900px;
-    height: 1000px;
-
-    background: #F8F6ED;
+.YourOrders-heading{
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 36px;
+    display: flex;
+    justify-content: center;
 }
 
 .box{
@@ -264,35 +243,4 @@
     background: #FFFFFF;
     box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
     border-radius: 22px;
-}
-
-.divider{
-    position: absolute;
-    width: 362px;
-    height: 0px;
-    left: 540px;
-    top: 228px;
-
-    border: 0.5px solid #878787;
-}
-
-.order{
-    position: absolute;
-    width: 61px;
-    height: 27px;
-    left: 564px;
-    top: 197px;
-    font-size: 18px;
-    line-height: 27px;
-    color: #000000;
-}
-
-.cancelled{
-    position: absolute;
-    width: 157px;
-    height: 27px;
-    left: 720px;
-    top: 197px;
-    font-size: 18px;
-    line-height: 27px;
 }

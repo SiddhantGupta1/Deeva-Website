@@ -73,7 +73,7 @@ function Individual(props) {
 
     const LikeButton = () =>{
         likeNumber++;
-        if(likeNumber%2==0) 
+        if(likeNumber%2===0) 
             setLike(FilledLikeBtn)
         else
             setLike(LikeBtn)

@@ -1,13 +1,13 @@
 import React,{useState} from 'react'
 import './TrendingPage.css'
-import Header from '../../Header'
-import Footer from '../../Footer'
+import Header from '../Header'
+import Footer from '../Footer'
 import Body from './TrendingBody'
 import Filter from './TrendingFilter'
 import Section from './LastSection'
 import { Link, useParams } from 'react-router-dom'
 
-function TrendingPage(){
+function WardrobePage(){
 
     const headings=["Trending", "Ethnic", "Party", "Puja", "Western"];
     const [height, setHeight] = useState(1000)
@@ -46,4 +46,4 @@ function TrendingPage(){
     )
 }
 
-export default TrendingPage;
+export default WardrobePage;

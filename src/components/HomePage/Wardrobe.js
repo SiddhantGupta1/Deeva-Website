@@ -1,7 +1,7 @@
 import React from 'react';
 import './Wardrobe.css'
-import Trending from './../../icons/Trending.svg'
-import TrendingBG from './../../icons/TrendingBG.svg'
+import Trending from '../../icons/Trending.svg'
+import TrendingBG from '../../icons/TrendingBG.svg'
 import { Link } from 'react-router-dom'
 
 function wardrobe(){
@@ -10,7 +10,6 @@ function wardrobe(){
       <div className="wardrobe">
             <div className="wardrobe-heading">Wardrobe</div>
                <div className="wardrobe-rope"></div>
-               <div>
 
                   <Link to={'/wardrobe/trending'} className="trending-frame">
                      <img className="trendingBG" src={TrendingBG} alt=""/>
@@ -36,9 +35,7 @@ function wardrobe(){
                      <p className="puja">Puja</p>
                      <p className="puja-text">Around 350 global On - Trending works.</p>
                   </Link>
-
-
-               </div>
+                  
       </div>
 
     )

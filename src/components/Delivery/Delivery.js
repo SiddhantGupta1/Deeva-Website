@@ -12,7 +12,7 @@ function Delivery() {
     return (
         <div class = "main-bg" >
              <Header/>
-            <img src = {Frame}></img>
+            <img src = {Frame} alt="" />
             <div class ="nav">
               <a href = '#'> Home </a>  
               &nbsp;&gt;&nbsp; 
@@ -34,10 +34,10 @@ function Delivery() {
 
             <div class='box-down'>
 
-                <div class ='img1'> <img src = {img1}></img> </div>
-                <div class ='img2'> <img src = {img2}></img> </div>
-                <div class ='img3'> <img src = {img3}></img> </div>
-                <div class ='img4'> <img src = {img4}></img> </div>
+                <div class ='img1'> <img src = {img1} alt="" /> </div>
+                <div class ='img2'> <img src = {img2} alt="" /> </div>
+                <div class ='img3'> <img src = {img3} alt="" /> </div>
+                <div class ='img4'> <img src = {img4} alt="" /> </div>
 
             </div>
 

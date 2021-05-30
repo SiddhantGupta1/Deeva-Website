@@ -1,6 +1,6 @@
 import React,{useState, useEffect, useRef} from 'react';
 import './IndividualDropdowns.css';
-import {Popper, ClickAwayListener, MenuItem, MenuList, Grow } from '@material-ui/core';
+import {Popper, ClickAwayListener, MenuList, Grow } from '@material-ui/core';
 import Rating from '@material-ui/lab/Rating';
 import { StylesProvider } from "@material-ui/core/styles";
 import StarBorderIcon from '@material-ui/icons/StarBorder';
@@ -125,7 +125,7 @@ const IndividualDropdowns = () => {
                             <ClickAwayListener onClickAway={handleClose}>
                             <MenuList className="Individual-product-rate-dropdown" autoFocusItem={open} id="menu-list-grow" onKeyDown={handleListKeyDown}>
                                 <bold onClick={handleClose} style={{}}></bold>
-                                <a>Rate Your Experience</a>
+                                <dt>Rate Your Experience</dt>
                                 {value !== null && <img ml={2} src={labels[hover !== -1 ? hover : value]} alt="" />}
                                 <StylesProvider injectFirst>
                                 <div className={classes.root}>

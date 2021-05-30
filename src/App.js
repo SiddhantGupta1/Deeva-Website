@@ -1,7 +1,7 @@
 import React,{useState, useEffect} from 'react'
 import './App.css';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import Trending from './components/ContentsPage/TrendingPage/TrendingPage'
+import Trending from './components/TrendingPage/TrendingPage'
 import Cart from './components/CartPage/CartPage'
 import ContactUs from './components/ContactUs/ContactUs'
 import Individual from './components/IndividualPage/IndividualPage'

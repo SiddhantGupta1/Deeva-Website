@@ -64,17 +64,18 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    transform: translate(203px,-312px);
     width: 33.06px;
     height: 33.06px;
     border-radius: 50%;
     background: #FCFCFC;
     box-shadow: 0px 3.68094px 4.90792px rgba(71, 71, 71, 0.25);
     border: none;
+    margin: 9px 0 0 207px;
 }
-.card-btn:active{
-    transform: translate(203px,-310px);
+.card-btn:focus{
+  transform: translateY(0);
 }
+
 
 .card-name{
   display: flex;

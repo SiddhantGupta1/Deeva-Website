@@ -1,7 +1,6 @@
 import React from 'react'
 import './Footer.css'
 import Logo from './../icons/Deeva Short Logo.svg'
-import { Link } from 'react-router-dom'
 
 function Footer(){
 
@@ -43,9 +42,10 @@ function Footer(){
 
             </div>
 
+            
+            <div className="Footer1-Divider"></div>
             <div className="Footer1-logo">
-                <div className="Footer1-Divider"></div>
-                <img style={{margin:"16px 0 0 705px"}} src={Logo} alt=""/>
+                <img style={{width:"69px", height:"80px", marginTop:"18px"}} src={Logo} alt=""/>
             </div>
 
 

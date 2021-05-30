@@ -100,7 +100,7 @@
     line-height: 33px;
     color: #7B7A7A;    
 }
-.CartHanger-list-price-1 a{
+.CartHanger-list-price-1 dt{
     font-weight: 500;
     font-size: 14.1793px;
     line-height: 21px;
@@ -144,19 +144,19 @@
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
-    color: #000000;
     margin: 0 0 19px 9px;
 }
 
 .CartHanger-bill-item{
-    margin: 0 9px 9px 0;
+    margin: 0 9px 0 0;
+    display: flex;
+    justify-content: space-between;
 }
 
-.CartHanger-bill-item a, .CartHanger-bill-charges{
+.CartHanger-bill-item dt, .CartHanger-bill-delivery, .CartHanger-bill-discount{
     font-weight: normal;
     font-size: 14px;
     line-height: 21px;
-    color: #000000;
     margin: 0 0 9px 9px;
 }
 
