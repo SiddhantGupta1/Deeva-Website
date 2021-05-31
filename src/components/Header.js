@@ -108,21 +108,21 @@ function Header() {
         Hello Ankush
       </div>
       <List>
-        {link1.map((text, index) => (
+        {link1.map((text) => (
           <ListItem style={{padding:"0 16px"}} button key={text.name}>
             <Link className="menu-text-links" to={`/${text.links}`}> {text.name} </Link>
           </ListItem>
         ))}
       </List>
       <List>
-        {link2.map((text, index) => (
+        {link2.map((text) => (
           <ListItem style={{padding:"0 16px"}} button key={text.name}>
             <Link className="menu-text-links" to={`/${text.links}`}>{text.name} </Link>
           </ListItem>
         ))}
       </List>
       <List>
-        {link3.map((text, index) => (
+        {link3.map((text) => (
           <ListItem style={{padding:"0 16px"}} button key={text.name}>
             <Link className="menu-text-links" to={`/${text.links}`}> {text.name} </Link>
           </ListItem>
@@ -148,7 +148,7 @@ function Header() {
         </StylesProvider>
         
         <Link to="/">
-        <img className="deevaLogo" src={DeevaLogo} alt=""/>
+          <img src={DeevaLogo} alt=""/>
         </Link>
         <div className="search-bar">
           <img className="search" src={Search} alt=""/>

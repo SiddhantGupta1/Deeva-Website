@@ -139,7 +139,7 @@ const IndividualBody = ({about , product,pro,props, dprice, user}) => {
                     onClick={handleToggle}
                     id="Individual-product-delivery-to"
                     >
-                            { user.address===[] ? <span>Add Address</span> : <dt><bold>{user.userName} - </bold>{user.address}</dt> }
+                            { user.address===[] ? <span>Add Address</span> : <dt><article>{user.userName} - </article>{user.address}</dt> }
                             { user.address===[] ? <img style={{display:"none"}} src={DownArrow} alt=""/> : <img src={DownArrow} alt=""/>}
                 </button>
                 <Popper open={open} anchorEl={anchorRef.current} role={undefined} transition disablePortal>
@@ -166,10 +166,10 @@ const IndividualBody = ({about , product,pro,props, dprice, user}) => {
 
                 <div className="Individual-product-experiences-heading">Read all the Customer Experiences with the Product</div>
                 <div className="Individual-product-experiences">
-                    <bold>Top Reviews</bold>
-                    {reviews.map((review) => (
-                        <div id="Individual-product-experiences">
-                            <body></body>
+                    <article>Top Reviews</article>
+                    {reviews.map((review,i) => (
+                        <div key={i} id="Individual-product-experiences">
+                            
                             <dt>{review.name}</dt>
                             
                             <StylesProvider injectFirst>

@@ -13,6 +13,7 @@ import Header from './components/Header'
 import Body from './components/HomePage/Home'
 import ScrollToTop from './ScrollToTop'
 import Demo from './components/demo';
+import Image from './icons/Trend Image.svg'
 
 
 function App() {
@@ -37,6 +38,54 @@ function App() {
     console.log(cart)
   }
 
+  const orders = [
+    {
+        id: 0,
+        image: Image,
+        name: "Neeva Yellow Fashion ",
+        discount: 35,
+        dprice: 999,
+        price: 1550,
+        manufacturer: "Neeva, Maharashtra",
+    },
+    {
+        id: 1,
+        image: Image,
+        name: "Neeva Yellow Taant Fashion ",
+        discount: 35,
+        dprice: 1099,
+        price: 1550,
+        manufacturer: "Neeva, Maharashtra",
+    },
+    {
+        id: 2,
+        image: Image,
+        name: "Neeva Yellow Taant Fashion ",
+        discount: 35,
+        dprice: 999,
+        price: 1550,
+        manufacturer: "Neeva, Maharashtra",
+    },
+    {
+        id: 3,
+        image: Image,
+        name: "Neeva Yellow Taant Fashion ",
+        discount: 35,
+        dprice: 999,
+        price: 1550,
+        manufacturer: "Neeva, Maharashtra",
+    },
+    {
+        id: 4,
+        image: Image,
+        name: "Neeva Yellow Taant Fashion ",
+        discount: 35,
+        dprice: 999,
+        price: 1550,
+        manufacturer: "Neeva, Maharashtra",
+    },
+];
+  const deliver = "Delivery by 1st June 2021"
 
   return (
     <Router>
@@ -51,8 +100,12 @@ function App() {
           <Route path="/products/:name" component={Individual} />
           <Route path="/address" exact component={Address} />
           <Route path="/address/payments" exact component={Payment} />
-          <Route path="/your orders" exact component={YourOrders} />
-          <Route path="/your orders/delivery" exact component={Delivery}/>
+          <Route path="/your orders" exact>
+            <YourOrders deliver={deliver} orders={orders} />
+          </Route>
+          <Route path="/your orders/delivery" exact>
+            <Delivery deliver={deliver} orders={orders} />
+          </Route>
           <Route path="/demo" component={Demo} />
           <Route path="/cart" >
             <Cart product={product} />

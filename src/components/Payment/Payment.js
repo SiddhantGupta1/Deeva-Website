@@ -89,7 +89,7 @@ const Payment = () => {
                                         <div>Google Pay</div>
                                         <img src={Gpay} alt=""/>
                                     </div>
-                                    {radio==="gpay" ? <input id="gpay-input" type="text" placeholder="Enter your Mobile number" maxlength="10" ></input> : <div></div>}
+                                    {radio==="gpay" ? <input id="gpay-input" type="text" placeholder="Enter your Mobile number" maxLength="10" ></input> : <div></div>}
                                 </div>
                                 <div className="paytm">
                                     <div style={{display:"flex", alignItems:"center", justifyContent:"center"}}>
@@ -99,7 +99,7 @@ const Payment = () => {
                                         <div>Paytm</div>
                                         <img src={Paytm} alt=""/>
                                     </div>
-                                    {radio==="paytm" ? <input id="paytm-input" type="text" placeholder="Enter your Mobile number" maxlength="10" ></input> : <div></div>}
+                                    {radio==="paytm" ? <input id="paytm-input" type="text" placeholder="Enter your Mobile number" maxLength="10" ></input> : <div></div>}
                                 </div>
                                 <div className="phonepe">
                                     <div style={{display:"flex", alignItems:"center", justifyContent:"center"}}>
@@ -109,7 +109,7 @@ const Payment = () => {
                                         <div>Phonepe</div>
                                         <img src={Phonepe} alt=""/>
                                     </div>
-                                    {radio==="phonepe" ? <input id="phonepe-input" type="text" placeholder="Enter your Mobile number" maxlength="10" ></input> : <div></div>}
+                                    {radio==="phonepe" ? <input id="phonepe-input" type="text" placeholder="Enter your Mobile number" maxLength="10" ></input> : <div></div>}
                                 </div>
                             </div>
 
@@ -120,7 +120,7 @@ const Payment = () => {
                                     </RadioGroup>
                                     <dt className="pay-on-delivery-text">Pay On Delivery</dt>
                                 </div>
-                                <bold>Pay with cash at your place at the time of delivery.</bold>
+                                <article>Pay with cash at your place at the time of delivery.</article>
                             </div>
 
                         </div>
@@ -128,13 +128,13 @@ const Payment = () => {
                         <div className="OrderDetails-card">
                             <dt>Order Details</dt>
                             <div style={{marginBottom:"29px"}}>
-                                {bill.map(e => (
-                                    <div className="OrderDetails-content">
+                                {bill.map((e,i) => (
+                                    <div key={i} className="OrderDetails-content">
                                         <div className="OrderDetails-img">
                                             <img src={e.image} alt="" style={{width:"30px", height:"30px"}}/>
                                         </div>
                                         <div style={{width:"100%", display:"flex", flexDirection:"column"}}>
-                                            <bold>{e.name}</bold>
+                                            <article>{e.name}</article>
                                             <dt>{e.fullName}</dt>
                                         </div>
                                         <div className="OrderDetails-qty-btn">

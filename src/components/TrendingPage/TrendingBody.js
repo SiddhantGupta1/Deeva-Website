@@ -249,8 +249,8 @@ const TrendingBody = ({setHeight}) => {
             <div className="trend-sub-head">Page 1 of 175</div>
             <img className="trend-AD" src={AD} alt=""/>
             <div className="trend-cards">
-                {cards.map(e=> (
-                    <div className="card">
+                {cards.map((e,i) => (
+                    <div key={i} className="card">
                         <button onClick={LikeButton} className="card-btn">
                             <img src={like} alt="" style={{width:"20px", height:"20px"}} />
                         </button>
@@ -284,8 +284,8 @@ const TrendingBody = ({setHeight}) => {
                     <img src={LeftBtn} alt=""/>
                 </button>
                 <div className="trend-list">
-                    {pages.map(pages => (
-                        <div style={{marginRight:"23px"}}>
+                    {pages.map((pages,i) => (
+                        <div key={i} style={{marginRight:"23px"}}>
                             <button id={pages} className="trend-pages-btn">{pages}</button>
                         </div>
                     ))}

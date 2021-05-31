@@ -1,135 +1,126 @@
-.main-bg{
-    /* overflow-y: hidden;  */
-    overflow-x: hidden; 
-    z-index: 1;
-} 
-
-.nav{
+.DeliveryPage{
+    margin: 0;
+    box-sizing: border-box;
     position: absolute;
-    width: 397px;
-    height: 14px;
-    left: 55px;
-    top: 60px;
-    color: #7B7A7A;
-
+    background-image: url(../../Frame.png);
+    background-size: cover;
+    background-repeat: repeat-y;
+    background-color: #F8F6ED;
+    width: 100%;
+    min-width: 1440px;
+    padding-top: 53px;
 }
-
-a{
-    text-decoration: none;
-    color: #7B7A7A;
+.DeliveryPage-path{
+    margin: 24px 0 15px 55px;
+    font-size: 14px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    color: #7B7A7A;    
+    float: left;
 }
-
-.box-up{
-    position: absolute;
-    width: 1308px;
-    height: 240px;
-    left: 110px;
-    top: 230px;
-    background: #FFFFFF;
-    box-shadow: 0px 1px 4px rgba(71, 71, 71, 0.25);
-    border-radius: 22.64px;
-    z-index: 0;
-}
-
-.box-down{
-    position: absolute;
-    width: 1308px;
-    height: 287px;
-    left: 110px;
-    top: 487px;
-
-    background: #FFFFFF;
-    box-shadow: 0px 1px 4px rgba(71, 71, 71, 0.25);
-    border-radius: 22.64px
-
-}
-
-.headline{
-    position: absolute;
-    width: 411px;
-    height: 53px;
-    left: 545px;
-    top: 129px;
-
-    font-family: Poppins;
-    font-style: normal;
+.DeliveryPage-heading{
+    width: 100%;
     font-weight: 500;
     font-size: 36px;
     line-height: 54px;
     display: flex;
-    align-items: center;
-    text-align: center;
-
+    justify-content: center;
     color: #6CAE00;
-
+    margin-bottom: 30px;
 }
-
-.pack-img{
-    position: absolute;
-    width: 993px;
-    height: 157.1px;
-    left: 158px;
-    top: 37px;
+.DeliveryPage-frame1, .DeliveryPage-frame2{
+    width: 1308px;
+    height: 239px;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 4px rgba(71, 71, 71, 0.25);
+    border-radius: 22.64px;
+    padding: 22px 0 0 90px;
 }
-
-.delivery-adds{
+.DeliveryPage-frame1{
     display: flex;
-    width: 170px;
-    height: 26px;
-    left: 156px;
-    top: 273px;
-
-    font-family: Poppins;
-    font-style: normal;
+    justify-content: space-between;
+}
+.DeliverPage-user{  float: left;}
+.DeliverPage-user dt{
     font-weight: 500;
     font-size: 19.8073px;
     line-height: 30px;
-
-    color: #000000;
-    z-index: 4;
+}
+.DeliverPage-user article{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;    
+}
+.DeliverPage-user div{
+    font-size: 13px;
+    line-height: 20px;
 }
 
-.main-bg{
 
-    width: 1600px;
-    height: 1200px;
-
-    background: #F8F6ED;
-
+.DeliveryPage-product-names dt{
+    font-weight: 500;
+    font-size: 19.8073px;
+    line-height: 30px;    
+}
+.DeliveryPage-product-names article{
+    font-weight: 500;
+    font-size: 11.0041px;
+    line-height: 17px;
+    color: #7B7A7A;    
+}
+.DeliveryPage-product-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70.27px;
+    height: 71.24px;
+    border: 0.962636px solid #F0E4D0;
+    border-radius: 8.66373px;
+    margin-left: 20px;
+}
+.DeliveryPage-product-img img{
+    width: 51px;
+    height: 52px;
+    filter: drop-shadow(0px 1.92527px 3.85055px rgba(71, 71, 71, 0.25));
+    border-radius: 8.66373px;
+}
+.DeliveryPage-product-details{
+    display: flex;
+    margin-right: 30px;
+}
+.DeliveryPage-product-price{
+    font-weight: 600;
+    font-size: 24.4024px;
+    line-height: 37px;
+    color: #545454;
+}
+.DeliveryPage-product-prices{
+    display: flex;
+    align-items: center;
+}
+.DeliveryPage-product-prices dt{
+    font-weight: 500;
+    font-size: 14.0755px;
+    line-height: 21px;
+    color: #707070;
+    text-decoration: line-through;
+    margin-right: 16px;
+}
+.DeliveryPage-product-prices article{
+    font-weight: 500;
+    font-size: 14.0755px;
+    line-height: 21px;
+    color: #6CAE00;    
+}
+.DeliveryPage-product-details img{
+    width: 55.69px;
+    height: 46.9px;
+    margin-right: 10px;
 }
 
-.img1{
-    
-    width: 76.45px;
-    height: 121.81px;
-    left: 1.68px;
-    top: 0px;
-}
 
-.img2{
-    
-    width: 84.85px;
-    height: 101.65px;
-    left: 0px;
-    top: 0px;
-
-}
-
-.img3{
-   
-    width: 241.11px;
-    height: 114.25px;
-    left: 412.49px;
-    top: 7.92px;
-
-}
-
-.img4{
-    
-    width: 168.86px;
-    height: 115.09px;
-    left: 993px;
-    top: 8.4px;
-
-    transform: matrix(-1, 0, 0, 1, 0, 0);
+.DeliveryPage-frame2{
+    height: 287px;
+    margin-top: 17px;
 }

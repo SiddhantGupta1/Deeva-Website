@@ -77,8 +77,8 @@ function Section7() {
                     
                         <div className="Section7-rope"></div>
                         <div className="Section7-contents">
-                            {items.map(e => (
-                                <div style={{margin:"0 46px 0 0"}}>
+                            {items.map((e,i) => (
+                                <div key={i} style={{margin:"0 46px 0 0"}}>
                                     <img className="Section7-img" src={e.img} alt=""/>
                                     <div className="Section7-prices">
                                         <div className="Section7-price">&#8377;{e.price}</div>
@@ -86,8 +86,7 @@ function Section7() {
                                     </div>
                                     <div className="Section7-comments">Last Bought on<br/>{e.comment}</div>
                                 </div>
-                            ))
-                            }
+                            ))}
                     </div>    
                 </div>
             </div>
@@ -98,8 +97,8 @@ function Section7() {
                     
                         <div className="Section7-rope" style={{width:"87.237%"}}></div>
                         <div className="Section7-contents">
-                            {items.map(e => (
-                                <div style={{margin:"0 46px 0 0"}}>
+                            {items.map((e,i) => (
+                                <div key={i} style={{margin:"0 46px 0 0"}}>
                                     <img className="Section7-img" src={e.img} alt=""/>
                                     <div className="Section7-prices">
                                         <div className="Section7-price">&#8377;{e.price}</div>
@@ -119,8 +118,8 @@ function Section7() {
                     
                         <div className="Section7-rope" style={{width:"85.748%"}}></div>
                         <div className="Section7-contents">
-                            {items.map(e => (
-                                <div style={{margin:"0 46px 0 0"}}>
+                            {items.map((e,i) => (
+                                <div key={i} style={{margin:"0 46px 0 0"}}>
                                     <img className="Section7-img" src={e.img} alt=""/>
                                     <div className="Section7-prices">
                                         <div className="Section7-price">&#8377;{e.price}</div>

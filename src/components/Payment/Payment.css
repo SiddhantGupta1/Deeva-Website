@@ -158,7 +158,7 @@ input{
     align-items: center;
     color: #272727;    
 }
-.pay-on-delivery bold{
+.pay-on-delivery article{
     font-weight: 300;
     font-size: 13px;
     line-height: 17px;
@@ -207,7 +207,7 @@ input{
     justify-content: center;
     float: left; 
 }
-.OrderDetails-content bold{
+.OrderDetails-content article{
     font-weight: 500;
     font-size: 18px;
     line-height: 27px;

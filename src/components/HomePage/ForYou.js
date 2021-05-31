@@ -115,8 +115,8 @@ function ForYou() {
             <div className="ForYou">
                 <div className="ForYou-rope"></div>
                 <div className="ForYou-content">
-                    {items.map(e => (
-                        <div style={{margin:"0 46px 0 0"}}>
+                    {items.map((e,i) => (
+                        <div key={i} style={{margin:"0 46px 0 0"}}>
                             <img className="ForYou-hanger" src={Hanger} alt="Golden Hanger"/>
                             <img className="ForYou-img" src={e.img} alt="Product"/>
                             <div className="ForYou-prices">

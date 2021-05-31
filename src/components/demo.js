@@ -9,7 +9,7 @@ const Demo = () => {
     
     return(
         <div className="Ethnic">
-            <h1>Ethnic</h1>
+            <h1>Demo</h1>
             <h1>{parsed?.name}</h1>
             <h1>{parsed?.price}</h1>
         </div>

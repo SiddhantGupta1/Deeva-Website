@@ -24,8 +24,8 @@ function Body(){
             <Slides />
 
             <div className="carousel">
-                {pics.map(pics => (
-                    <img className="sale" src={pics} alt="AD" />
+                {pics.map((pics,i) => (
+                    <img key={i} className="sale" src={pics} alt="AD" />
                 ))}
             </div>
             

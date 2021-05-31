@@ -13,8 +13,8 @@ function Cards(){
                 <div className="recommended-heading">Recommended For You</div>
                 <div className="recommended-rope"></div>
                 <div className="recommended-content">
-                    {pics.map(pics => (
-                        <img className="Cards-contents" src={pics} alt="" />
+                    {pics.map((pics,i) => (
+                        <img key={i} className="Cards-contents" src={pics} alt="" />
                     ))
                     }
                 </div>

@@ -19,8 +19,8 @@ function Section4() {
                 <div className="specials-heading">Deeva Specials</div>
                 <div className="specials-rope"></div>
                 <div className="specials">
-                    {pics.map(pics => (
-                        <img className="specials-img" src={pics} alt=""/>
+                    {pics.map((pics,i) => (
+                        <img key={i} className="specials-img" src={pics} alt=""/>
                     ))
                     }
                     <button className="specials-btn">

@@ -1,121 +1,64 @@
 import React from 'react'
 import  './YourOrders.css'
 import Header from '../Header'
-import pic from '../../icons/Trend Image.svg'
+import Arrow from '../../icons/Your Orders Arrow.svg'
+import Star from '../../icons/Golden Star.svg'
+import {Link} from 'react-router-dom'
 
-function YourOrders() {
-
+function YourOrders({deliver, orders}) {
 
     return (
         <div className="YourOrders">
             <div className="YourOrders-path">Home&ensp; &gt; &ensp; Your Orders</div>
 
-
             <div className="YourOrders-heading">Your Orders</div>
     
-            <div className="Dropdown"> 
-                <select name="time">
-                    <option>Overlast 1 month</option>
-                    <option>Overlast 3 months</option>
-                    <option>Overlast 6 months</option>
-                    <option>Overlast 12 months</option>
-                </select>
-            </div>
+            <div className="YourOrders-content">
+                {orders.map((e,i) => (
+                    <div key={i} style={{width:"100%", display:"flex", justifyContent:"center"}}>
+                        <div className="Order-frame">
+                            <div className="YourOrders-img"> 
+                                <img src={e.image} alt=""/> 
+                            </div>
+                            <div style={{display:"flex", flexDirection:"column"}}>
+                                <div className="YourOrders-name">{e.name.split(' ').slice(0,1).join(' ')}</div>
+                                <div className="YourOrders-fullname">{e.name}</div>
+                                
+                                <div className="Order-delivery-details">
+                                    <dt>Ordered on 29th May 2021</dt>
+                                    <img src={Arrow} alt=""/>
+                                    <dt>{deliver}</dt>
+                                    <img src={Arrow} alt=""/>
+                                    <dt>Return Policy Active till 1st July 2021</dt>
+                                </div>
+                            </div>
+                            <div style={{display:"flex",flexDirection:"column", alignItems:"flex-end"}}>
+                                <button><img style={{marginRight:"10px"}} src={Star} alt="" />Rate and Review your Purchase</button>
+                                
+                                <div>
+                                    <div id="YourOrders-dprice">&#8377;{e.dprice.toFixed(2)}</div>
+                                    <div style={{display:"flex"}}>
+                                        <div id="YourOrders-price">&#8377;{e.price}</div>
+                                        <div id="YourOrders-discount">({e.discount}% Off)</div>
+                                    </div>
+                                </div>
+                                
+                            </div>
 
-            <div className="box"> 
-                <div className="text">Neeva</div>
-                <div className="text-below">Neeva Yellow Taant Fashion</div>
+                        </div>
+                        <div className="YourOrders-btns">
+                            <Link to={`/your orders/delivery?id=${e.id}`} style={{textDecoration:"none"}}>
+                                <button style={{backgroundColor:"#FFD706"}}>Track Product</button>
+                            </Link>
+                            <button style={{backgroundColor:"#FFFFFF", marginTop:"10px"}}>Cancel Order</button>
+                        </div>
+                    </div>
 
-                <div> <img className="pic" src={pic} alt=""/> </div>
-
-                <div className="ordered-on">Ordered on 29th May 2021 </div>
-                <div className="arrow1"> </div>
-                <div className="delivery-by"> Delivery by 1st June 2021</div>
-                <div className="arrow2"> </div>
-                <div className="return-policy"> Return Policy Active till 1st July 2021 </div>
-
-                <a href ="#"> <div className="review"> ⭐Rate and Review your Purchase</div></a>
-
-                <div className="price">₹ 999</div>
-                <div className="offer">
-                    <strike>₹1550  </strike>
-                      (35% Off)
-                 </div>
-
-                <div className="track-button">
-                    <button><b>Track Product</b></button>
-                </div>
-
-                <div className="cancel-order">
-                    <button><b>Cancel Order</b></button>
-                </div>
-
-            </div>
-
-            <div className="box"> 
-                <div className="text">Neeva</div>
-                <div className="text-below">Neeva Yellow Taant Fashion</div>
-
-                <div> <img className="pic" src = {pic} alt=""/> </div>
-
-                <div className="ordered-on">Ordered on 29th May 2021 </div>
-                <div className="arrow1"> </div>
-                <div className="delivery-by"> Delivery by 1st June 2021</div>
-                <div className="arrow2"> </div>
-                <div className="return-policy"> Return Policy Active till 1st July 2021 </div>
-
-                <a href ="#"> <div className="review"> ⭐Rate and Review your Purchase</div></a>
-
-                <div className="price">₹ 999</div>
-                <div className="offer">
-                    <strike>₹1550  </strike>
-                      (35% Off)
-                 </div>
-
-                <div className="track-button">
-                    <button><b>Track Product</b></button>
-                </div>
-
-                <div className="cancel-order">
-                    <button><b>Cancel Order</b></button>
-                </div>
+                ))}
 
             </div>
-
-            <div className="box"> 
-                <div className="text">Neeva</div>
-                <div className="text-below">Neeva Yellow Taant Fashion</div>
-
-                <div> <img className="pic" src = {pic} alt=""/> </div>
-
-                <div className="ordered-on">Ordered on 29th May 2021 </div>
-                <div className="arrow1"> </div>
-                <div className="delivery-by"> Delivery by 1st June 2021</div>
-                <div className="arrow2"> </div>
-                <div className="return-policy"> Return Policy Active till 1st July 2021 </div>
-
-                <div className="review"> ⭐Rate and Review your Purchase</div>
-
-                <div className="price">₹ 999</div>
-                <div className="offer">
-                    <strike>₹1550  </strike>
-                      (35% Off)
-                 </div>
-
-                <div className="track-button">
-                    <button><b>Track Product</b></button>
-                </div>
-
-                <div className="cancel-order">
-                    <button><b>Cancel Order</b></button>
-                </div>
-
-            </div>
-
 
             <Header/>
-
-         
         </div>
     )
 }

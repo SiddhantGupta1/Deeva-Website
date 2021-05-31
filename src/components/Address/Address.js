@@ -81,8 +81,8 @@ const Address = () => {
                     <div style={{display:"flex", overflow:"hidden", marginTop:"40px"}}>
                             
                         <div id="recent-addresses">
-                            {user.map(e => (
-                                <div style={{marginBottom: '50px'}}>
+                            {user.map((e,i) => (
+                                <div key={i} style={{marginBottom: '50px'}}>
                                     <RadioGroup value={radio} onChange={(e) => setRadio(e.target.value)} style={{float:"left"}} >
                                         <StylesProvider injectFirst><FormControlLabel value={e.name} control={<Radio />} /></StylesProvider>
                                     </RadioGroup>
@@ -102,8 +102,8 @@ const Address = () => {
                         </div>
 
                         <div id="saved-addresses">
-                            {user.map(e => (
-                                <div style={{marginBottom: '45px'}}>
+                            {user.map((e,i) => (
+                                <div key={i} style={{marginBottom: '45px'}}>
                                     <RadioGroup value={radio} onChange={(e) => setRadio(e.target.value)} style={{float:"left"}} >
                                         <StylesProvider injectFirst><FormControlLabel value={e.name} control={<Radio />} /></StylesProvider>
                                     </RadioGroup>

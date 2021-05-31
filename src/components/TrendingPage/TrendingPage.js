@@ -20,7 +20,7 @@ function WardrobePage(){
             
                 <div className="Trend-headings">
                     {headings.map((e,i) => (
-                        <Link key={i} to={'/wardrobe/'+e}>
+                        <Link key={i} to={'/wardrobe/'+e} style={{textDecoration:"none", color:"#7E7E7E"}}>
                             {e===Params.query ? (
                             <div className="Trend-heading">{e}</div>
                             ) : (

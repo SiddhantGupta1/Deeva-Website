@@ -133,36 +133,36 @@ const TrendingFilter = ({height}) => {
                     
                     <div className="price-heading">Price</div>
                     <div className="price-range">
-                        {price.map(price=>(
-                            <button onClick={()=>{handlePrice(price); }} id={price} className="prices">{price}</button>
+                        {price.map((price,i)=>(
+                            <button key={i} onClick={()=>{handlePrice(price); }} id={price} className="prices">{price}</button>
                         ))}
                     </div>
                     
                     <div className="brand-heading">Brand</div>
                     <div className="brand-range">
-                        {brand.map(brand=>(
-                            <button onClick={()=>{handleBrand(brand); }} id={brand} className="brands">{brand}</button>
+                        {brand.map((brand,i)=>(
+                            <button key={i} onClick={()=>{handleBrand(brand); }} id={brand} className="brands">{brand}</button>
                         ))}
                     </div>
 
                     <div className="delivery-heading">Delivery</div>
                     <div className="delivery-range">
-                        {delivery.map(delivery=>(
-                            <button onClick={()=>{handleDelivery(delivery); }} id={delivery} className="deliverys">{delivery}</button>
+                        {delivery.map((delivery,i)=>(
+                            <button key={i} onClick={()=>{handleDelivery(delivery); }} id={delivery} className="deliverys">{delivery}</button>
                         ))}
                     </div>
 
                     <div className="style-heading">Style</div>
                     <div className="style-range">
-                        {style.map(style=>(
-                            <button onClick={()=>{handleStyle(style); }} id={style} className="styles">{style}</button>
+                        {style.map((style,i)=>(
+                            <button key={i} onClick={()=>{handleStyle(style); }} id={style} className="styles">{style}</button>
                         ))}
                     </div>
 
                     <div className="weave-heading">Weave Type</div>
                     <div className="weave-range">
-                        {weave.map(weave=>(
-                            <button onClick={()=>{handleWeave(weave); }} id={weave} className="weaves">{weave}</button>
+                        {weave.map((weave,i)=>(
+                            <button key={i} onClick={()=>{handleWeave(weave); }} id={weave} className="weaves">{weave}</button>
                         ))}
                     </div>
 
@@ -171,8 +171,8 @@ const TrendingFilter = ({height}) => {
                 <div id="sort-content" className="sort-content">
                     
                     <div className="sort-range">
-                        {featured.map(featured=>(
-                            <button onClick={()=>{handleFeatured(featured); }} id={featured} className="featureds">{featured}</button>
+                        {featured.map((featured,i)=>(
+                            <button key={i} onClick={()=>{handleFeatured(featured); }} id={featured} className="featureds">{featured}</button>
                         ))}
                     </div>
 

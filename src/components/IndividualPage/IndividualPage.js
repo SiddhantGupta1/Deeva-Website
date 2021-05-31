@@ -116,13 +116,7 @@ function Individual(props) {
                     <img className="product-like-btn" src={like} alt=""/>
                 </button>
 
-                <Link  to ={`/demo?name=${product?.name}&price=${dprice}`}
-                    // to={{
-                    //     pathname: `/demo`,
-                    //     product , dprice, user
-                    // }}
-                    
-                >
+                <Link  to={`/demo?name=${product?.name}&price=${dprice}`}>
                     <div id="buy-now-btn">
                     Buy Now
                     </div>

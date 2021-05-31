@@ -77,8 +77,8 @@ function LastSection() {
                     
                         <div className="LastSection-rope" style={{width:"79.44%"}}></div>
                         <div className="LastSection-contents">
-                            {items.map(e => (
-                                <div style={{margin:"0 46px 0 0"}}>
+                            {items.map((e,i) => (
+                                <div key={i} style={{margin:"0 46px 0 0"}}>
                                     <img className="LastSection-img" src={e.img} alt="" />
                                     <div className="LastSection-prices">
                                         <div className="LastSection-price">&#8377;{e.price}</div>
@@ -98,8 +98,8 @@ function LastSection() {
                     
                         <div className="LastSection-rope" style={{width:"82.65%"}}></div>
                         <div className="LastSection-contents">
-                            {items.map(e => (
-                                <div style={{margin:"0 46px 0 0"}}>
+                            {items.map((e,i) => (
+                                <div key={i} style={{margin:"0 46px 0 0"}}>
                                     <img className="LastSection-img" src={e.img} alt=""/>
                                     <div className="LastSection-prices">
                                         <div className="LastSection-price">&#8377;{e.price}</div>
@@ -119,8 +119,8 @@ function LastSection() {
                     
                         <div className="LastSection-rope" style={{width:"87.7%"}}></div>
                         <div className="LastSection-contents">
-                            {items.map(e => (
-                                <div style={{margin:"0 46px 0 0"}}>
+                            {items.map((e,i) => (
+                                <div key={i} style={{margin:"0 46px 0 0"}}>
                                     <img className="LastSection-img" src={e.img} alt=""/>
                                     <div className="LastSection-prices">
                                         <div className="LastSection-price">&#8377;{e.price}</div>

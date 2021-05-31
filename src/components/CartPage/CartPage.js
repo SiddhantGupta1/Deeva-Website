@@ -85,8 +85,8 @@ console.log(product[0])
                 <div style={{width:"100%"}}>
                     <div className="CartHanger">
                         
-                        {demo.map(e => (
-                            <div className="CartHanger-list">
+                        {demo.map((e,i) => (
+                            <div key={i} className="CartHanger-list">
                                 <div className="CartHanger-list-img">
                                     <img src={e.image} alt="" style={{width:"76px", height:"77px", borderRadius:"13px", filter:"drop-shadow(0px 2.85504px 5.71007px rgba(71, 71, 71, 0.25))"}} />
                                 </div>
@@ -116,8 +116,8 @@ console.log(product[0])
 
                     <div className="CartHanger-bill">
                         <div id="CartHanger-bill">Sub Total</div>
-                        {demo.map(e => (
-                            <div className="CartHanger-bill-item">
+                        {demo.map((e,i) => (
+                            <div key={i} className="CartHanger-bill-item">
                                 <dt>{e.fullName.split(' ').slice(0,2).join(' ')}</dt>
                                 <dt>&#8377;{e.price.toLocaleString("en-US")}</dt>
                             </div>
@@ -143,8 +143,8 @@ console.log(product[0])
                 <div className="CartLiked-heading">Liked</div>
                 <div style={{width: "100%"}}>
                     <div className="CartLiked">
-                        {demo.map(e => (
-                            <div>
+                        {demo.map((e,i) => (
+                             <div key={i}>
                                 <div id="CartLiked-like-btn">
                                     <button style={{display: "flex", alignItems: "center", justifyContent: "center", width:"30px", height: "30px"}}>
                                         <img src={FilledLike} alt="" />
@@ -179,8 +179,8 @@ console.log(product[0])
 
                     <div className="CartHanger-bill">
                         <div id="CartHanger-bill">Sub Total</div>
-                        {demo.map(e => (
-                            <div className="CartHanger-bill-item">
+                        {demo.map((e,i) => (
+                            <div key={i} className="CartHanger-bill-item">
                                 <dt>{e.fullName.split(' ').slice(0,2).join(' ')}</dt>
                                 <dt style={{float:"right"}}>&#8377;{e.price.toLocaleString("en-US")}</dt>
                             </div>
@@ -208,8 +208,8 @@ console.log(product[0])
                 <div className="CartBuyAgain-heading">Buy Again</div>
                 <div style={{width: "100%"}}>
                     <div className="CartHanger">
-                        {demo.map(e => (
-                            <div className="CartHanger-list">
+                        {demo.map((e,i) => (
+                            <div key={i} className="CartHanger-list">
                                 <div className="CartHanger-list-img">
                                     <img src={e.image} alt="" style={{width:"76px", height:"77px", borderRadius:"13px", filter:"drop-shadow(0px 2.85504px 5.71007px rgba(71, 71, 71, 0.25))"}} />
                                 </div>
@@ -237,8 +237,8 @@ console.log(product[0])
 
                     <div className="CartHanger-bill">
                         <div id="CartHanger-bill">Sub Total</div>
-                        {demo.map(e => (
-                            <div className="CartHanger-bill-item">
+                        {demo.map((e,i) => (
+                            <div key={i} className="CartHanger-bill-item">
                                 <dt>{e.fullName.split(' ').slice(0,2).join(' ')}</dt>
                                 <dt style={{float:"right"}}>&#8377;{e.price.toLocaleString("en-US")}</dt>
                             </div>
