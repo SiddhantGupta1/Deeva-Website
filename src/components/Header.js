@@ -31,11 +31,11 @@ function Header() {
     },
     {
       name: "Categories",
-      links: "wardrobe/ethnic"
+      links: "category/Taant"
     },
     {
       name: "Wardrobe",
-      links: "wardrobe/trending"
+      links: "wardrobe/Trending"
     },
 
   ];
@@ -51,7 +51,7 @@ function Header() {
     },
     {
       name: "Profile",
-      links: "wardrobe/puja"
+      links: "wardrobe/Puja"
     },
 
   ];
@@ -67,7 +67,7 @@ function Header() {
     },
     {
       name: "Settings",
-      links: "wardrobe/puja"
+      links: "wardrobe/Puja"
     },
     {
       name: "Help and Contact",
@@ -75,7 +75,7 @@ function Header() {
     },
     {
       name: "Sign Out",
-      links: "wardrobe/puja"
+      links: "wardrobe/Puja"
     },
 
   ];

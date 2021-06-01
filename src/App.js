@@ -1,7 +1,8 @@
 import React,{useState, useEffect} from 'react'
 import './App.css';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import Trending from './components/TrendingPage/TrendingPage'
+import Wardrobe from './components/Wardrobe/WardrobePage'
+import Category from './components/Category/Category' 
 import Cart from './components/CartPage/CartPage'
 import ContactUs from './components/ContactUs/ContactUs'
 import Individual from './components/IndividualPage/IndividualPage'
@@ -95,7 +96,8 @@ function App() {
         <Switch>
           <Route path="/" exact component={Home} />
           <Route path="/home" component={Home} />
-          <Route path="/wardrobe/:query" component={Trending} />
+          <Route path="/wardrobe/:query" component={Wardrobe} />
+          <Route path="/category/:query" component={Category} />
           <Route path="/contact us" component={ContactUs} />
           <Route path="/products/:name" component={Individual} />
           <Route path="/address" exact component={Address} />

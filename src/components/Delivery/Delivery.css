@@ -19,6 +19,12 @@
     color: #7B7A7A;    
     float: left;
 }
+.DeliveryPage-path a{
+    color: #7B7A7A;    
+    font-size: 14px;
+    line-height: 21px;
+    text-decoration: none;
+}
 .DeliveryPage-heading{
     width: 100%;
     font-weight: 500;
@@ -123,4 +129,37 @@
 .DeliveryPage-frame2{
     height: 287px;
     margin-top: 17px;
+    padding: 38px 140px;
+    display: flex;
+    flex-direction: column;
+}
+.DeliveryPage-frame2 img{
+    z-index: -1;
+}
+.Delivery-line-point{
+    width: 16.8px;
+    height: 16.8px;
+    border-radius: 50%;
+    background: #EFEDE7;
+}
+.DeliveryPage-frame2 dt{
+    font-weight: 500;
+    font-size: 13.4416px;
+    line-height: 20px;
+}
+.DeliveryPage-frame2 article{
+    font-size: 12px;
+    line-height: 18px;
+    color: #7B7A7A;
+}
+
+#Delivery-line{
+    height: 3.35px;
+    background: #FFD706;
+    transform: translateY(-3.2px);
+}
+.Delivery-line{
+    height: 3.35px;
+    background: #EFEDE7;
+    width: 100%;
 }

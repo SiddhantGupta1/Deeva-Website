@@ -27,8 +27,8 @@ function Cards(){
                 <div className="top-picks-heading">Top Picks</div>
                 <div className="top-picks-rope"></div>
                 <div className="top-picks-content">
-                    {pics.map(pics => (
-                        <img className="Cards-contents" src={pics} alt=""/>
+                    {pics.map((pics,i) => (
+                        <img key={i} className="Cards-contents" src={pics} alt=""/>
                     ))
                     }
                 </div>
@@ -41,8 +41,8 @@ function Cards(){
                 <div className="top-picks-heading">Top Picks</div>
                 <div className="top-picks-rope"></div>
                 <div className="top-picks-content">
-                    {pics.map(pics => (
-                        <img className="Cards-contents" src={pics} alt=""/>
+                    {pics.map((pics,i) => (
+                        <img key={i} className="Cards-contents" src={pics} alt=""/>
                     ))
                     }
                 </div>
@@ -55,8 +55,8 @@ function Cards(){
                 <div className="top-picks-heading">Top Picks</div>
                 <div className="top-picks-rope"></div>
                 <div className="top-picks-content">
-                    {pics.map(pics => (
-                        <img className="Cards-contents" src={pics} alt=""/>
+                    {pics.map((pics,i) => (
+                        <img key={i} className="Cards-contents" src={pics} alt=""/>
                     ))
                     }
                 </div>

@@ -13,6 +13,7 @@ import Header from '../Header'
 import Footer from '../Footer'
 import AD from '../../icons/Since 1964.svg'
 import AD1 from '../../icons/Paytm.svg'
+import {Link} from 'react-router-dom'
 
 function Body(){
 
@@ -40,18 +41,18 @@ function Body(){
                 <div className="User">
                     <div className="User-heading">Hi Ankush!</div>
                     <div style={{display:"flex", flexWrap:"wrap"}}>
-                        <div className="User-content">
+                        <Link to="/your orders" className="User-content">
                             <div className="User-content-text">Your Orders</div>
-                        </div>
-                        <div className="User-content">
-                            <div className="User-content-text">Saved</div>
-                        </div>
-                        <div className="User-content">
+                        </Link>
+                        <a href="/cart#LikedSection" className="User-content">
+                            <div className="User-content-text">Liked</div>
+                        </a>
+                        <Link to="/cart" className="User-content">
                             <div className="User-content-text">Your Wishlist</div>
-                        </div>
-                        <div className="User-content">
+                        </Link>
+                        <Link to="/cart" className="User-content">
                             <div className="User-content-text">Your Hanger</div>
-                        </div>
+                        </Link>
                     </div>
                 </div>
                 <img className="AD" src={AD} alt="AD" />
@@ -82,6 +83,3 @@ function Body(){
 }
 
 export default Body;
-
-
-

@@ -11,25 +11,25 @@ function wardrobe(){
             <div className="wardrobe-heading">Wardrobe</div>
                <div className="wardrobe-rope"></div>
 
-                  <Link to={'/wardrobe/trending'} className="trending-frame">
+                  <Link to='/wardrobe/Trending' className="trending-frame">
                      <img className="trendingBG" src={TrendingBG} alt=""/>
                      <img className="trending-img" src={Trending} alt=""/>
                      <p className="trending">Trending</p>
                      <p className="trending-text">Around 350 global On - Trending works.</p>
                   </Link>
-                  <Link to='/wardrobe/ethnic' className="ethnic-frame">
+                  <Link to='/wardrobe/Ethnic' className="ethnic-frame">
                      <img className="ethnicBG" src={TrendingBG} alt=""/>
                      <img className="ethnic-img" src={Trending} alt=""/>
                      <p className="ethnic">Ethnic</p>
                      <p className="ethnic-text">Around 350 global On - Trending works.</p>
                   </Link>
-                  <Link to='/wardrobe/party' className="party-frame">
+                  <Link to='/wardrobe/Party' className="party-frame">
                      <img className="partyBG" src={TrendingBG} alt=""/>
                      <img className="party-img" src={Trending} alt=""/>
                      <p className="party">Party</p>
                      <p className="party-text">Around 350 global On - Trending works.</p>
                   </Link>
-                  <Link to='/wardrobe/puja' className="puja-frame">
+                  <Link to='/wardrobe/Puja' className="puja-frame">
                      <img className="pujaBG" src={TrendingBG} alt=""/>
                      <img className="puja-img" src={Trending} alt=""/>
                      <p className="puja">Puja</p>

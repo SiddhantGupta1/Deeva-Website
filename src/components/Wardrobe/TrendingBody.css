@@ -1,0 +1,193 @@
+.TrendingBody{
+    float: left;
+    width: 82%;
+    background: #FCFCFC;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    padding: 0 52px 0 56.72px;
+}
+
+/*.TrendingBody:before{
+  content: "";
+  position: absolute;
+  left: 315px;
+  border-left: 10px solid #F8F6ED;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 10px solid transparent;
+  transform: rotate(90deg);
+}*/
+.trend-head{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13.2222px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;   
+    color: #7E7E7E;
+    margin: 11px 0 0 0;
+}
+.trend-sub-head{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10.3889px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    color: #7E7E7E;
+}
+.trend-AD{
+    width: 1066.28px;
+    height: 178.5px;
+    border-radius: 5px;
+    mix-blend-mode: multiply;
+    margin: 18px 0 24.56px 0;
+}
+
+.trend-cards{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.card{
+    width: 249.33px;
+    height: 432.56px;
+    border-radius: 16.1118px;
+    background: #FCFCFC;
+    box-shadow: 0px 0.944444px 2.83333px rgba(112, 111, 110, 0.25);
+    margin: 0 0 28px 0;
+    text-decoration: none;
+
+}
+.card-btn{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 33.06px;
+    height: 33.06px;
+    border-radius: 50%;
+    background: #FCFCFC;
+    box-shadow: 0px 3.68094px 4.90792px rgba(71, 71, 71, 0.25);
+    border: none;
+    margin: 9px 0 0 207px;
+}
+.card-btn:focus{
+  transform: translateY(0);
+}
+
+
+.card-name{
+  display: flex;
+  justify-content: center;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13.2222px;
+  line-height: 20px;
+  align-items: center;
+  color: #525151;
+  margin: 2px 0 40px 0;
+}
+
+.card-rating{
+  float: left;
+  margin-top: 5px;
+}
+.card-total-rating{
+  font-style: normal;
+  font-weight: 500;
+  font-size: 7.55556px;
+  line-height: 109.5%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #525151;
+  margin-left: 15px;
+  transform: translateY(-3px);
+}
+
+
+.card-dprice{
+  float: left;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24.1189px;
+  line-height: 36px;
+  display: flex;
+  align-items: center;
+  color: #000000;
+  transform: translate(0,-2px); 
+}
+.card-price{
+  float: left;
+  text-decoration: line-through;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13.9659px;
+  line-height: 21px;
+  display: flex;
+  align-items: center;
+  color: rgba(0, 0, 0, 0.5);  
+}
+
+.trend-pages{
+  width: 100%;
+  display: flex;
+  padding: 0 195px;
+}
+.trend-left-btn, .trend-right-btn{
+  border-radius: 50%;
+  background: none;
+  border: none;
+  float: left; 
+  margin-top: 14px;
+}
+.trend-left-btn{
+  padding-right: 30px;
+}
+.trend-right-btn{
+  padding-left: 35px;
+}
+
+.trend-list {
+  width: 615px;
+  float: left;
+  margin: 20px 0 0 0;
+  display: flex;
+  overflow: scroll;
+  overflow-y: hidden;
+  padding: 0 0 0 10px;
+  text-align: center;
+  height: 60px;
+}
+.trend-list::-webkit-scrollbar{
+  display: none;
+}
+.trend-pages-btn{
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background: #F5EECD;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 2s;
+}
+.trend-pages-btn:focus{
+  background: #FFD389;
+}
+
+
+
+.MuiRating-iconEmpty {
+  color: #FCFCFC;
+}
+.MuiRating-sizeSmall {
+  font-size: 11px;
+}
+.MuiSvgIcon-fontSizeInherit{
+  fill: black;
+  margin: 0 !important;
+}

@@ -19,6 +19,12 @@
     line-height: 21px;
     color: #7B7A7A;
 }
+.YourOrders-path a{
+    font-size: 14px;
+    line-height: 21px;
+    color: #7B7A7A;
+    text-decoration: none;
+}
 .YourOrders-heading{
     font-weight: 500;
     font-size: 26px;

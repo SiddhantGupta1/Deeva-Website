@@ -9,7 +9,7 @@ function YourOrders({deliver, orders}) {
 
     return (
         <div className="YourOrders">
-            <div className="YourOrders-path">Home&ensp; &gt; &ensp; Your Orders</div>
+            <div className="YourOrders-path"><a href="/">Home</a>&ensp; &gt; &ensp; Your Orders</div>
 
             <div className="YourOrders-heading">Your Orders</div>
     

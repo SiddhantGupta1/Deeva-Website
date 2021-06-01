@@ -254,7 +254,7 @@ const TrendingBody = ({setHeight}) => {
                         <button onClick={LikeButton} className="card-btn">
                             <img src={like} alt="" style={{width:"20px", height:"20px"}} />
                         </button>
-                        <Link to={'/products/'+e.name} >
+                        <Link to={'/products/'+e.name} style={{textDecoration:"none"}} >
                             <img className="card-img" src={e.image} alt=""/>
                             <div className="card-name">{e.name}</div>
                             <div style={{display:"flex", justifyContent:"space-evenly"}}>

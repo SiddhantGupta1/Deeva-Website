@@ -139,7 +139,7 @@ console.log(product[0])
             </div>
 {/*_____________________________________________________LIKED____________________________________________________________ */}
             
-            <div style={{display:"flex", flexDirection:"column"}}>
+            <div id="LikedSection" style={{display:"flex", flexDirection:"column", marginTop:"101px"}}>
                 <div className="CartLiked-heading">Liked</div>
                 <div style={{width: "100%"}}>
                     <div className="CartLiked">
