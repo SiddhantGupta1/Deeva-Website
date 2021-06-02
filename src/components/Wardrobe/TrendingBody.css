@@ -71,6 +71,7 @@
     box-shadow: 0px 3.68094px 4.90792px rgba(71, 71, 71, 0.25);
     border: none;
     margin: 9px 0 0 207px;
+    padding: 0;
 }
 .card-btn:focus{
   transform: translateY(0);

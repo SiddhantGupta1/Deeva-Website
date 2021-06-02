@@ -23,9 +23,7 @@
     display: flex;
     margin: 11.7px 0 0 0;
     list-style-type: none;
-    overflow: auto;
-    overflow-y: hidden;
-    position: relative;
+    overflow: hidden;
     padding: 0 0 0 10px;
     text-align: center;
     height: 81.3px;

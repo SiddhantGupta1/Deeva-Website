@@ -1,13 +1,13 @@
-.Section7-frame{
+.LastSection-frame{
     float: left;
     width: 1454px;
     height: 251px;
     background: #FFFCF8;
     border-radius: 5px;
-    margin: 17px 30px 0 30px;
+    margin: 41px 30px -20px 30px;
     filter: drop-shadow(0px 1px 6px rgba(0, 0, 0, 0.15));
 }
-.Section7-heading{
+.LastSection-heading{
     float: left;
     font-style: normal;
     font-weight: 600;
@@ -18,14 +18,14 @@
     color: #784E08;
     margin: 8px 0 0 42px;
 }
-.Section7-rope{
+.LastSection-rope{
     float: left;
     width: 87.44%;
-    border: 2px solid #FFC056;
+    border: 1px solid #FFC056;
     background-color: #FFC056;
-    margin: 16.31px 0 0 11px;
+    margin: 20px 0 0 11px;
 }
-.Section7-contents{
+.LastSection-contents{
     float: left;
     width: 87%;
     height: 200px;
@@ -34,13 +34,12 @@
     overflow: auto;
     overflow-y: hidden;
     margin: 15px 0 0 140px;
-    text-decoration: none;
 }
-.Section7-contents::-webkit-scrollbar{
+.LastSection-contents::-webkit-scrollbar{
     display: none;
 }
-.Section7-contents a{   text-decoration: none;}
-.Section7-img{
+
+.LastSection-img{
     float: left;
     width: 115.75px;
     height: 146.15px;
@@ -48,7 +47,7 @@
     border-radius: 9.80892px;
     z-index: -1;
 }
-.Section7-prices{
+.LastSection-prices{
     float: left;
     width: 52.97px;
     height: 29.43px;
@@ -57,7 +56,7 @@
     border-radius: 29.4268px;
     transform: translate(32px,-15px);
 }
-.Section7-price{
+.LastSection-price{
     width: 20.6px;
     height: 10.79px;
     font-style: normal;
@@ -68,7 +67,7 @@
     margin: 2px 0 0 15.69px;
     text-decoration: line-through;
 }
-.Section7-Dprice{
+.LastSection-Dprice{
     width: 27.46px;
     height: 11.77px;
     font-style: normal;
@@ -79,7 +78,7 @@
     margin: 0;
     margin: -2px 0 0 12.75px;
 }
-.Section7-comments{
+.LastSection-comments{
     width: 56px;
     height: 9.33px;
     font-family: 'Roboto', sans-serif;    

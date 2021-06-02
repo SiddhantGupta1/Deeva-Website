@@ -9,56 +9,14 @@ import Return from '../../icons/30 Days Return.svg'
 import FilledLike from '../../icons/Filled Like Btn.svg'
 import {Link} from 'react-router-dom'
 
-const CartPage = ({product}) => {
+const CartPage = ({product,cards,like,setLike}) => {
 console.log(product[0])
-    const demos = [
-        {
-            id: 1,
-            image: TrendImage,
-            fullName: "Neeva Yellow Taant Fashion",
-            name: "Neeva",
-            dprice: 999,
-            price: 1550,
-            dicount: 35,
-            stock: true,
-        },
-        {
-            id: 2,
-            image: TrendImage,
-            fullName: "Neeva Yellow Taant Fashion",
-            name: "Neeva",
-            dprice: 999,
-            price: 1550,
-            dicount: 35,
-            stock: true,
-        },
-        {
-            id: 3,
-            image: TrendImage,
-            fullName: "Neeva Yellow Taant Fashion",
-            name: "Neeva",
-            dprice: 999,
-            price: 1550,
-            dicount: 35,
-            stock: false,
-        },
-        {
-            id: 4,
-            image: TrendImage,
-            fullName: "Neeva Yellow Taant Fashion",
-            name: "Neeva",
-            dprice: 999,
-            price: 1550,
-            dicount: 35,
-            stock: true,
-        },
-    ];
 
     var discount = 1200;
     var delivery = "Free";
     var total = 5000;
 
-    const [demo, setDemo] = useState(demos)
+    const [demo, setDemo] = useState(cards)
     const [quantity, setQuantity] = useState(1)
     const add = () => {
         var increment = quantity + 1
@@ -85,15 +43,15 @@ console.log(product[0])
                 <div style={{width:"100%"}}>
                     <div className="CartHanger">
                         
-                        {demo.map((e,i) => (
+                        {demo.slice(0,4).map((e,i) => (
                             <div key={i} className="CartHanger-list">
                                 <div className="CartHanger-list-img">
                                     <img src={e.image} alt="" style={{width:"76px", height:"77px", borderRadius:"13px", filter:"drop-shadow(0px 2.85504px 5.71007px rgba(71, 71, 71, 0.25))"}} />
                                 </div>
 
                                 <div style={{width:"510px", display:"flex", flexDirection:"column"}}>
-                                    <div className="CartHanger-list-name">{e.name}</div>
-                                    <div className="CartHanger-list-fullname">{e.fullName}</div>
+                                    <div className="CartHanger-list-name">{e.name.split(' ').slice(0,1).join('')}</div>
+                                    <div className="CartHanger-list-fullname">{e.name}</div>
                                     <div className="CartHanger-list-delivery-by">{ e.stock===true ? <span style={{color:"#6CAE00"}}>Delivery by 3rd may</span> : <span style={{color:"#AE0000"}}>Currently Unavailable</span>}</div>
                                 </div>
                                 <div className="CartHanger-list-price">
@@ -116,9 +74,9 @@ console.log(product[0])
 
                     <div className="CartHanger-bill">
                         <div id="CartHanger-bill">Sub Total</div>
-                        {demo.map((e,i) => (
+                        {demo.slice(0,4).map((e,i) => (
                             <div key={i} className="CartHanger-bill-item">
-                                <dt>{e.fullName.split(' ').slice(0,2).join(' ')}</dt>
+                                <dt>{e.name.split(' ').slice(0,2).join(' ')}</dt>
                                 <dt>&#8377;{e.price.toLocaleString("en-US")}</dt>
                             </div>
                         ))}
@@ -156,8 +114,8 @@ console.log(product[0])
                                     </div>
 
                                     <div style={{width:"510px", display:"flex", flexDirection:"column"}}>
-                                        <div className="CartHanger-list-name">{e.name}</div>
-                                        <div className="CartHanger-list-fullname">{e.fullName}</div>
+                                        <div className="CartHanger-list-name">{e.name.split(' ').slice(0,1).join('')}</div>
+                                        <div className="CartHanger-list-fullname">{e.name}</div>
                                         <div className="CartHanger-list-delivery-by">{ e.stock===true ? <span style={{color:"#6CAE00"}}>Delivery by 3rd may</span> : <span style={{color:"#AE0000"}}>Currently Unavailable</span>}</div>
                                     </div>
                                     <div className="CartHanger-list-price">
@@ -181,7 +139,7 @@ console.log(product[0])
                         <div id="CartHanger-bill">Sub Total</div>
                         {demo.map((e,i) => (
                             <div key={i} className="CartHanger-bill-item">
-                                <dt>{e.fullName.split(' ').slice(0,2).join(' ')}</dt>
+                                <dt>{e.name.split(' ').slice(0,2).join(' ')}</dt>
                                 <dt style={{float:"right"}}>&#8377;{e.price.toLocaleString("en-US")}</dt>
                             </div>
                         ))}
@@ -208,15 +166,15 @@ console.log(product[0])
                 <div className="CartBuyAgain-heading">Buy Again</div>
                 <div style={{width: "100%"}}>
                     <div className="CartHanger">
-                        {demo.map((e,i) => (
+                        {demo.slice(0,4).map((e,i) => (
                             <div key={i} className="CartHanger-list">
                                 <div className="CartHanger-list-img">
                                     <img src={e.image} alt="" style={{width:"76px", height:"77px", borderRadius:"13px", filter:"drop-shadow(0px 2.85504px 5.71007px rgba(71, 71, 71, 0.25))"}} />
                                 </div>
 
                                 <div style={{width:"510px", display:"flex", flexDirection:"column"}}>
-                                    <div className="CartHanger-list-name">{e.name}</div>
-                                    <div className="CartHanger-list-fullname">{e.fullName}</div>
+                                    <div className="CartHanger-list-name">{e.name.split(' ').slice(0,1).join('')}</div>
+                                    <div className="CartHanger-list-fullname">{e.name}</div>
                                     <div className="CartHanger-list-delivery-by">{ e.stock===true ? <span style={{color:"#6CAE00"}}>Delivery by 3rd may</span> : <span style={{color:"#AE0000"}}>Currently Unavailable</span>}</div>
                                 </div>
                                 <div className="CartHanger-list-price">
@@ -237,9 +195,9 @@ console.log(product[0])
 
                     <div className="CartHanger-bill">
                         <div id="CartHanger-bill">Sub Total</div>
-                        {demo.map((e,i) => (
+                        {demo.slice(0,4).map((e,i) => (
                             <div key={i} className="CartHanger-bill-item">
-                                <dt>{e.fullName.split(' ').slice(0,2).join(' ')}</dt>
+                                <dt>{e.name.split(' ').slice(0,2).join(' ')}</dt>
                                 <dt style={{float:"right"}}>&#8377;{e.price.toLocaleString("en-US")}</dt>
                             </div>
                         ))}

@@ -204,6 +204,7 @@
 }
 #Individual-product-delivery-to article{
     font-weight: 500;
+    float: left;
 }
 #Individual-product-delivery-to img{
     position: absolute;

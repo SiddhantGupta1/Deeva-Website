@@ -7,6 +7,7 @@ const Demo = () => {
     let location = useLocation();
     const parsed = queryString.parse(location.search);
     
+
     return(
         <div className="Ethnic">
             <h1>Demo</h1>

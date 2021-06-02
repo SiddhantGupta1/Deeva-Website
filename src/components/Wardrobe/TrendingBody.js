@@ -1,7 +1,6 @@
-import React,{useState} from 'react'
+import React from 'react'
 import './TrendingBody.css'
 import AD from '../../icons/Trend AD.svg'
-import TrendImage from '../../icons/Trend Image.svg'
 import LikeBtn from '../../icons/Like Btn.svg'
 import FilledLikeBtn from '../../icons/Filled Like Btn.svg'
 import Rating from '@material-ui/lab/Rating';
@@ -10,213 +9,30 @@ import StarBorderIcon from '@material-ui/icons/StarBorder';
 import LeftBtn from '../../icons/Arrow.svg'
 import { Link } from 'react-router-dom'
 
-var likeNumber = 1;
-const TrendingBody = ({setHeight}) => {
+var ProductLike = [];
+for(var i=0; i<24; i++)
+{
+    ProductLike[i] = 1
+}
+const TrendingBody = ({setHeight, like, setLike, cards}) => {
 
-    const cards = [
-        {
-            image: TrendImage,
-            name: "Neeva Yellow Fashion ",
-            rating: 4,
-            totalRating: 2504,
-            dprice: 999,
-            price: 1550,
-        },
-        {
-            image: TrendImage,
-            name: "Neeva Yellow Taant Fashion ",
-            rating: 4,
-            totalRating: 2504,
-            dprice: 999,
-            price: 1550,
-        },
-        {
-            image: TrendImage,
-            name: "Neeva Yellow Taant Fashion ",
-            rating: 4,
-            totalRating: 2504,
-            dprice: 999,
-            price: 1550,
-        },
-        {
-            image: TrendImage,
-            name: "Neeva Yellow Taant Fashion ",
-            rating: 4,
-            totalRating: 2504,
-            dprice: 999,
-            price: 1550,
-        },
-        {
-            image: TrendImage,
-            name: "Neeva Yellow Taant Fashion ",
-            rating: 4,
-            totalRating: 2504,
-            dprice: 999,
-            price: 1550,
-        },
-        {
-            image: TrendImage,
-            name: "Neeva Yellow Taant Fashion ",
-            rating: 4,
-            totalRating: 2504,
-            dprice: 999,
-            price: 1550,
-        },
-        {
-            image: TrendImage,
-            name: "Neeva Yellow Taant Fashion ",
-            rating: 4,
-            totalRating: 2504,
-            dprice: 999,
-            price: 1550,
-        },
-        {
-            image: TrendImage,
-            name: "Neeva Yellow Taant Fashion ",
-            rating: 4,
-            totalRating: 2504,
-            dprice: 999,
-            price: 1550,
-        },
-        {
-            image: TrendImage,
-            name: "Neeva Yellow Taant Fashion ",
-            rating: 4,
-            totalRating: 2504,
-            dprice: 999,
-            price: 1550,
-        },
-        {
-            image: TrendImage,
-            name: "Neeva Yellow Taant Fashion ",
-            rating: 4,
-            totalRating: 2504,
-            dprice: 999,
-            price: 1550,
-        },
-        {
-            image: TrendImage,
-            name: "Neeva Yellow Taant Fashion ",
-            rating: 4,
-            totalRating: 2504,
-            dprice: 999,
-            price: 1550,
-        },
-        {
-            image: TrendImage,
-            name: "Neeva Yellow Taant Fashion ",
-            rating: 4,
-            totalRating: 2504,
-            dprice: 999,
-            price: 1550,
-        },
-        {
-            image: TrendImage,
-            name: "Neeva Yellow Taant Fashion ",
-            rating: 4,
-            totalRating: 2504,
-            dprice: 999,
-            price: 1550,
-        },
-        {
-            image: TrendImage,
-            name: "Neeva Yellow Taant Fashion ",
-            rating: 4,
-            totalRating: 2504,
-            dprice: 999,
-            price: 1550,
-        },
-        {
-            image: TrendImage,
-            name: "Neeva Yellow Taant Fashion ",
-            rating: 4,
-            totalRating: 2504,
-            dprice: 999,
-            price: 1550,
-        },
-        {
-            image: TrendImage,
-            name: "Neeva Yellow Taant Fashion ",
-            rating: 4,
-            totalRating: 2504,
-            dprice: 999,
-            price: 1550,
-        },
-        {
-            image: TrendImage,
-            name: "Neeva Yellow Taant Fashion ",
-            rating: 4,
-            totalRating: 2504,
-            dprice: 999,
-            price: 1550,
-        },
-        {
-            image: TrendImage,
-            name: "Neeva Yellow Taant Fashion ",
-            rating: 4,
-            totalRating: 2504,
-            dprice: 999,
-            price: 1550,
-        },
-        {
-            image: TrendImage,
-            name: "Neeva Yellow Taant Fashion ",
-            rating: 4,
-            totalRating: 2504,
-            dprice: 999,
-            price: 1550,
-        },
-        {
-            image: TrendImage,
-            name: "Neeva Yellow Taant Fashion ",
-            rating: 4,
-            totalRating: 2504,
-            dprice: 999,
-            price: 1550,
-        },
-        {
-            image: TrendImage,
-            name: "Neeva Yellow Taant Fashion ",
-            rating: 4,
-            totalRating: 2504,
-            dprice: 999,
-            price: 1550,
-        },
-        {
-            image: TrendImage,
-            name: "Neeva Yellow Taant Fashion ",
-            rating: 4,
-            totalRating: 2504,
-            dprice: 999,
-            price: 1550,
-        },
-        {
-            image: TrendImage,
-            name: "Neeva Yellow Taant Fashion ",
-            rating: 4,
-            totalRating: 2504,
-            dprice: 999,
-            price: 1550,
-        },
-        {
-            image: TrendImage,
-            name: "Neeva Yellow Taant Fashion ",
-            rating: 4,
-            totalRating: 2504,
-            dprice: 999,
-            price: 1550,
-        },
-    ];
-    
-    
-    const [like, setLike] = useState(LikeBtn)
-    const LikeButton = () =>{
-        likeNumber++;
-        if(likeNumber%2===0) 
-            setLike(FilledLikeBtn)
-        else
-            setLike(LikeBtn)
+    const LikeButton = (i) => {
+ 
+        if(ProductLike[i] === 1){
+            document.getElementById("ProductLike"+i).src = FilledLikeBtn;
+            ProductLike[i] = 0;
+            
+        }else{
+            document.getElementById("ProductLike"+i).src = LikeBtn;
+            ProductLike[i] = 1
+            
+        }
     }
+
+    const handleAddLike = (i) => {
+        setLike(ProductLike)
+    }
+
 
     const pages = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]
 
@@ -249,10 +65,11 @@ const TrendingBody = ({setHeight}) => {
             <div className="trend-sub-head">Page 1 of 175</div>
             <img className="trend-AD" src={AD} alt=""/>
             <div className="trend-cards">
-                {cards.map((e,i) => (
+                {cards.slice(0,24).map((e,i) => (
                     <div key={i} className="card">
-                        <button onClick={LikeButton} className="card-btn">
-                            <img src={like} alt="" style={{width:"20px", height:"20px"}} />
+                        
+                        <button onClick={() => { LikeButton(i); handleAddLike(i); }} className="card-btn">                        
+                            <img src={LikeBtn} alt="" id={`ProductLike${i}`} style={{width:"20px", height:"20px"}} />
                         </button>
                         <Link to={'/products/'+e.name} style={{textDecoration:"none"}} >
                             <img className="card-img" src={e.image} alt=""/>
@@ -275,6 +92,7 @@ const TrendingBody = ({setHeight}) => {
                             </div>
 
                         </Link>
+                        
                     </div>
                 ))}
             </div>

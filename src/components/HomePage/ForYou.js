@@ -116,14 +116,14 @@ function ForYou() {
                 <div className="ForYou-rope"></div>
                 <div className="ForYou-content">
                     {items.map((e,i) => (
-                        <div key={i} style={{margin:"0 46px 0 0"}}>
+                        <a href={`/others/For You#Product${i}`} key={i} style={{margin:"0 46px 0 0"}}>
                             <img className="ForYou-hanger" src={Hanger} alt="Golden Hanger"/>
                             <img className="ForYou-img" src={e.img} alt="Product"/>
                             <div className="ForYou-prices">
                                 <div className="ForYou-price">&#8377;{e.price}</div>
                                 <div className="ForYou-Dprice">&#8377;{e.dprice}</div>
                             </div>
-                        </div>
+                        </a>
                     ))
                     }
                 </div>    

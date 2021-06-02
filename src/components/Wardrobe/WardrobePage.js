@@ -7,13 +7,11 @@ import Filter from './TrendingFilter'
 import Section from './LastSection'
 import { Link, useParams } from 'react-router-dom'
 
-function WardrobePage(){
+function WardrobePage({like,setLike,cards}){
 
     const headings=["Trending", "Ethnic", "Party", "Puja", "Western"];
     const [height, setHeight] = useState(1000)
     const Params = useParams();
-
-    console.log(Params.query);
 
     return(
         <div className="Trending">
@@ -30,8 +28,15 @@ function WardrobePage(){
                     ))}
                 </div>
 
-                <Filter height={height} />
-                <Body setHeight={setHeight}/>
+                <Filter 
+                    height={height} 
+                />
+                <Body 
+                    setHeight={setHeight}
+                    like={like} 
+                    setLike={setLike}
+                    cards={cards}
+                />
 
                 <div className="Trend-help">
                     <div className="trend-help-heading">Help or Having trouble in finding what you want ?</div>
