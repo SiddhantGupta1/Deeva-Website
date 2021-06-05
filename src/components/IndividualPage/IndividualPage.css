@@ -99,7 +99,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px;    
     background: #F8F6ED;
     box-shadow: 0px 1px 4px rgba(71, 71, 71, 0.25);
     border-radius: 35px;
@@ -109,6 +108,11 @@
     line-height: 24px;
     color: #000000;
     margin: -20px 20px 0 0;
+}
+:is(#buy-now-btn, #add-to-cart-btn):hover{
+    color: #FFDF37;
+    background: #433B11;
+    transition: 0.5s;
 }
 #buy-now-btn{
     width: 214px;

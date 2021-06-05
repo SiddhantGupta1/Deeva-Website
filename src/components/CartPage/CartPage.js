@@ -3,14 +3,14 @@ import './CartPage.css'
 import Header from '../Header'
 import Footer from '../Footer'
 import Hanger from '../../icons/Add to Hanger.svg'
-import TrendImage from '../../icons/Trend Image.svg'
 import Assured from '../../icons/Deeva Assured.svg'
 import Return from '../../icons/30 Days Return.svg'
 import FilledLike from '../../icons/Filled Like Btn.svg'
 import {Link} from 'react-router-dom'
 
+var liked = []
 const CartPage = ({product,cards,like,setLike}) => {
-console.log(product[0])
+console.log(product)
 
     var discount = 1200;
     var delivery = "Free";
@@ -102,7 +102,7 @@ console.log(product[0])
                 <div style={{width: "100%"}}>
                     <div className="CartLiked">
                         {demo.map((e,i) => (
-                             <div key={i}>
+                             <div key={i} >
                                 <div id="CartLiked-like-btn">
                                     <button style={{display: "flex", alignItems: "center", justifyContent: "center", width:"30px", height: "30px"}}>
                                         <img src={FilledLike} alt="" />

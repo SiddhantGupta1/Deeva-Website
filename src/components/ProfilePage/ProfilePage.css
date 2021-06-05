@@ -1,0 +1,12 @@
+.ProfilePage{
+    margin: 0;
+    box-sizing: border-box;
+    position: absolute;
+    background-image: url(../../Frame.png);
+    background-size: cover;
+    background-repeat: repeat-y;
+    background-color: #F8F6ED;
+    width: 100%;
+    min-width: 1440px;
+    padding: 53px 0 19px 0;
+}

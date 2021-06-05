@@ -2,41 +2,11 @@ import React,{useState, useRef, useEffect}  from 'react';
 import {Popper, ClickAwayListener, MenuItem, MenuList, Grow } from '@material-ui/core';
 import './Dropdowns.css';
 import DownArrow from './../../icons/Down Arrow.svg'
+import {Link} from 'react-router-dom'
 
+var userName = "Chandrashekhara Kumar Borjatu"
 function Dropdowns(){
-    const [open, setOpen] = useState(false);
-    const anchorRef = useRef(null);
-
-    const handleToggle = () => {
-        setOpen((prevOpen) => !prevOpen);
-    };
-
-    const handleClose = (event) => {
-        if (anchorRef.current && anchorRef.current.contains(event.target)) {
-        return;
-        }
-
-        setOpen(false);
-    };
-
-    function handleListKeyDown(event) {
-        if (event.key === 'Tab') {
-        event.preventDefault();
-        setOpen(false);
-        }
-    }
-
-    const prevOpen = useRef(open);
-    useEffect(() => {
-        if (prevOpen.current === true && open === false) {
-        anchorRef.current.focus();
-        }
-
-        prevOpen.current = open;
-    }, [open]);
-
-//___________________________________________________________________________________________________________________
-//___________________________________________________________________________________________________________________
+    
     const [open1, setOpen1] = useState(false);
     const anchorRef1 = useRef(null);
 
@@ -103,35 +73,7 @@ function Dropdowns(){
 
 
     return(
-        <div style={{display:"flex", WebkitFlexDirection:"row"}}>
-            <button
-            ref={anchorRef}
-            aria-controls={open ? 'menu-list-grow' : undefined}
-            aria-haspopup="true"
-            onClick={handleToggle}
-            className="user"
-            >
-                <p className="user-text">Hiii Ankush</p>
-                <img className="downArrow" src={DownArrow} alt="" />
-            </button>
-            <Popper open={open} anchorEl={anchorRef.current} role={undefined} transition disablePortal>
-            {({ TransitionProps, placement }) => (
-                <Grow
-                {...TransitionProps}
-                style={{ transformOrigin: placement === 'bottom' ? 'center top' : 'center bottom' }}
-                >
-                
-                    <ClickAwayListener onClickAway={handleClose}>
-                    <MenuList className="user-dropdown" autoFocusItem={open} id="menu-list-grow" onKeyDown={handleListKeyDown}>
-                        <MenuItem onClick={handleClose}>Profile</MenuItem>
-                        <MenuItem onClick={handleClose}>My account</MenuItem>
-                        <MenuItem onClick={handleClose}>Logout</MenuItem>
-                    </MenuList>
-                    </ClickAwayListener>
-                
-                </Grow>
-            )}
-            </Popper>
+        <div style={{display:"flex", marginLeft:"2%"}}>
 
 
             <button
@@ -139,9 +81,9 @@ function Dropdowns(){
             aria-controls={open1 ? 'menu-list-grow' : undefined}
             aria-haspopup="true"
             onClick={handleToggle1}
-            className="budget-store"
+            className="user"
             >
-                <p className="budget-store-text">Budget Store</p>
+                <p className="user-text">Hiii {userName.split(' ').splice(0,1)}</p>
                 <img className="downArrow" src={DownArrow} alt="" />
             </button>
             <Popper open={open1} anchorEl={anchorRef1.current} role={undefined} transition disablePortal>
@@ -152,11 +94,12 @@ function Dropdowns(){
                 >
                 
                     <ClickAwayListener onClickAway={handleClose1}>
-                    <MenuList className="budget-store-dropdown" autoFocusItem={open1} id="menu-list-grow" onKeyDown={handleListKeyDown1}>
-                        <MenuItem onClick={handleClose1}>Profile</MenuItem>
-                        <MenuItem onClick={handleClose1}>My account</MenuItem>
-                        <MenuItem onClick={handleClose1}>Logout</MenuItem>
-                    </MenuList>
+                        <MenuList className="user-dropdown" autoFocusItem={open1} id="menu-list-grow" onKeyDown={handleListKeyDown1}>
+                            <Link to="/profile"><MenuItem onClick={handleClose1} className="user-dropdown-content" >Your Profile</MenuItem></Link>
+                            <Link to="/your orders"><MenuItem onClick={handleClose1} className="user-dropdown-content" >Your Orders</MenuItem></Link>
+                            <Link to="/cart"><MenuItem onClick={handleClose1} className="user-dropdown-content" >Wishlist</MenuItem></Link>
+                            <MenuItem onClick={handleClose1} className="user-dropdown-content" >Signout</MenuItem>
+                        </MenuList>
                     </ClickAwayListener>
                 
                 </Grow>
@@ -169,9 +112,9 @@ function Dropdowns(){
             aria-controls={open2 ? 'menu-list-grow' : undefined}
             aria-haspopup="true"
             onClick={handleToggle2}
-            className="content"
+            className="budget-store"
             >
-                <p className="content-text">Content</p>
+                <p className="budget-store-text">Budget Store</p>
                 <img className="downArrow" src={DownArrow} alt=""/>
             </button>
             <Popper open={open2} anchorEl={anchorRef2.current} role={undefined} transition disablePortal >
@@ -182,10 +125,12 @@ function Dropdowns(){
                 >
                 
                     <ClickAwayListener onClickAway={handleClose2}>
-                    <MenuList className="content-dropdown" autoFocusItem={open2} id="menu-list-grow" onKeyDown={handleListKeyDown2}>
-                        <MenuItem onClick={handleClose2}>Profile</MenuItem>
-                        <MenuItem onClick={handleClose2}>My account</MenuItem>
-                        <MenuItem onClick={handleClose2}>Logout</MenuItem>
+                    <MenuList className="budget-store-dropdown" autoFocusItem={open2} id="menu-list-grow" onKeyDown={handleListKeyDown2}>
+                        <Link><MenuItem onClick={handleClose2} className="budget-store-dropdown-content" >&#8377;200-&#8377;999</MenuItem></Link>
+                        <MenuItem onClick={handleClose2} className="budget-store-dropdown-content" >&#8377;1000-&#8377;2499</MenuItem>
+                        <MenuItem onClick={handleClose2} className="budget-store-dropdown-content" >&#8377;2500-&#8377;4999+</MenuItem>
+                        <MenuItem onClick={handleClose2} className="budget-store-dropdown-content" >Luxury</MenuItem>
+                        <MenuItem onClick={handleClose2} className="budget-store-dropdown-content" >Bulk Purchase</MenuItem>
                     </MenuList>
                     </ClickAwayListener>
                 

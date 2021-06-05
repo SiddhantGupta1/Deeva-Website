@@ -51,7 +51,7 @@ function Header() {
     },
     {
       name: "Profile",
-      links: "wardrobe/Puja"
+      links: "profile"
     },
 
   ];

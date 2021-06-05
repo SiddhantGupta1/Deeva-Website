@@ -21,8 +21,8 @@ function Body(){
 
     return(
         <div className="body">
-            <h1 style={{color:"white", margin:"0 0 5px 0" }}>Deeva</h1>
-            <Slides />
+            <div style={{marginTop:"53px"}}><Slides /></div>
+            
 
             <div className="carousel">
                 {pics.map((pics,i) => (

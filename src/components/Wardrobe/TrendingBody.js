@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import './TrendingBody.css'
 import AD from '../../icons/Trend AD.svg'
 import LikeBtn from '../../icons/Like Btn.svg'
@@ -9,30 +9,35 @@ import StarBorderIcon from '@material-ui/icons/StarBorder';
 import LeftBtn from '../../icons/Arrow.svg'
 import { Link } from 'react-router-dom'
 
-var ProductLike = [];
-for(var i=0; i<24; i++)
-{
-    ProductLike[i] = 1
-}
+var ProductLike = {};
 const TrendingBody = ({setHeight, like, setLike, cards}) => {
+    ProductLike=like
 
-    const LikeButton = (i) => {
+    useEffect(() => {
+        const data = localStorage.getItem("liked");
+        if(data){
+            setLike(JSON.parse(data));
+        }
+        
+    }, []);
+
+        
+    const LikeButton = (id) => {
  
-        if(ProductLike[i] === 1){
-            document.getElementById("ProductLike"+i).src = FilledLikeBtn;
-            ProductLike[i] = 0;
+        if(ProductLike[id] === false){
+            document.getElementById("ProductLike"+id).src = FilledLikeBtn;
+            ProductLike[id] = true;
             
         }else{
-            document.getElementById("ProductLike"+i).src = LikeBtn;
-            ProductLike[i] = 1
+            document.getElementById("ProductLike"+id).src = LikeBtn;
+            ProductLike[id] = false
             
         }
-    }
-
-    const handleAddLike = (i) => {
         setLike(ProductLike)
+        console.log(like)
+        console.log(JSON.stringify(like))
+        localStorage.setItem('liked', JSON.stringify(like))
     }
-
 
     const pages = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]
 
@@ -65,11 +70,13 @@ const TrendingBody = ({setHeight, like, setLike, cards}) => {
             <div className="trend-sub-head">Page 1 of 175</div>
             <img className="trend-AD" src={AD} alt=""/>
             <div className="trend-cards">
-                {cards.slice(0,24).map((e,i) => (
-                    <div key={i} className="card">
-                        
-                        <button onClick={() => { LikeButton(i); handleAddLike(i); }} className="card-btn">                        
-                            <img src={LikeBtn} alt="" id={`ProductLike${i}`} style={{width:"20px", height:"20px"}} />
+                {cards.slice(0,24).map((e,i) => {
+                    ProductLike[e.id] =false
+                    
+                return(
+                    <div key={e.id} className="card">
+                        <button onClick={() => { LikeButton(e.id); }} className="card-btn">                        
+                            <img src={like[e.id]===true ? FilledLikeBtn : LikeBtn} alt="" id={`ProductLike${e.id}`} style={{width:"20px", height:"20px"}} />
                         </button>
                         <Link to={'/products/'+e.name} style={{textDecoration:"none"}} >
                             <img className="card-img" src={e.image} alt=""/>
@@ -94,7 +101,7 @@ const TrendingBody = ({setHeight, like, setLike, cards}) => {
                         </Link>
                         
                     </div>
-                ))}
+                )})}
             </div>
             
             <div className="trend-pages">

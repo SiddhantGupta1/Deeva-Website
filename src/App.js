@@ -11,6 +11,7 @@ import Address from './components/Address/Address'
 import Payment from './components/Payment/Payment'
 import YourOrders from './components/YourOrders/YourOrders'
 import Delivery from './components/Delivery/Delivery'
+import Profile from './components/ProfilePage/ProfilePage'
 import Header from './components/Header'
 import Body from './components/HomePage/Home'
 import ScrollToTop from './ScrollToTop'
@@ -37,7 +38,7 @@ function App() {
 
   const cards = [
     {
-        id: 1,
+        id: "bdksbjs16843",
         image: TrendImage,
         name: "Neeva Yellow Fashion ",
         rating: 4,
@@ -48,7 +49,7 @@ function App() {
         discount: 35,
     },
     {
-        id: 2,
+        id: "fdsgf4es6f4sg",
         image: TrendImage,
         name: "Neeva Yellow Taant Fashion ",
         rating: 4,
@@ -59,7 +60,7 @@ function App() {
         discount: 35,
     },
     {
-        id: 3,
+        id: "s4f6s4f64se",
         image: TrendImage,
         name: "Neeva Yellow Taant Fashion ",
         rating: 4,
@@ -70,7 +71,7 @@ function App() {
         discount: 35,
     },
     {
-        id: 4,
+        id: "sd6f4sdfzd4",
         image: TrendImage,
         name: "Neeva Yellow Taant Fashion ",
         rating: 4,
@@ -81,7 +82,7 @@ function App() {
         discount: 35,
     },
     {
-        id: 5,
+        id: "hsd4f64sd4464cz",
         image: TrendImage,
         name: "Neeva Yellow Taant Fashion ",
         rating: 4,
@@ -92,7 +93,7 @@ function App() {
         discount: 35,
     },
     {
-        id: 6,
+        id: "asd4f6sd46f4s",
         image: TrendImage,
         name: "Neeva Yellow Taant Fashion ",
         rating: 4,
@@ -103,7 +104,7 @@ function App() {
         discount: 35,
     },
     {
-        id: 7,
+        id: "sdhg2sd5f6",
         image: TrendImage,
         name: "Neeva Yellow Taant Fashion ",
         rating: 4,
@@ -114,7 +115,7 @@ function App() {
         discount: 35,
     },
     {
-        id: 8,
+        id: "sf5s5f646fs",
         image: TrendImage,
         name: "Neeva Yellow Taant Fashion ",
         rating: 4,
@@ -125,7 +126,7 @@ function App() {
         discount: 35,
     },
     {
-        id: 9,
+        id: "s5f6sdf6dsfs",
         image: TrendImage,
         name: "Neeva Yellow Taant Fashion ",
         rating: 4,
@@ -136,7 +137,7 @@ function App() {
         discount: 35,
     },
     {
-        id: 10,
+        id: "ikykh654uk5h5k",
         image: TrendImage,
         name: "Neeva Yellow Taant Fashion ",
         rating: 4,
@@ -147,7 +148,7 @@ function App() {
         discount: 35,
     },
     {
-        id: 11,
+        id: "yuku5i1lu1h",
         image: TrendImage,
         name: "Neeva Yellow Taant Fashion ",
         rating: 4,
@@ -158,7 +159,7 @@ function App() {
         discount: 35,
     },
     {
-        id: 12,
+        id: "qehd6rjy4x6",
         image: TrendImage,
         name: "Neeva Yellow Taant Fashion ",
         rating: 4,
@@ -169,7 +170,7 @@ function App() {
         discount: 35,
     },
     {
-        id: 13,
+        id: "tiuk5ty5hd1erd",
         image: TrendImage,
         name: "Neeva Yellow Taant Fashion ",
         rating: 4,
@@ -180,7 +181,7 @@ function App() {
         discount: 35,
     },
     {
-        id: 14,
+        id: "t651hd4rth6drhs",
         image: TrendImage,
         name: "Neeva Yellow Taant Fashion ",
         rating: 4,
@@ -191,7 +192,7 @@ function App() {
         discount: 35,
     },
     {
-        id: 15,
+        id: "iukfty61d54465h6f6g",
         image: TrendImage,
         name: "Neeva Yellow Taant Fashion ",
         rating: 4,
@@ -202,7 +203,7 @@ function App() {
         discount: 35,
     },
     {
-        id: 16,
+        id: "f1tseuhftu5k1s",
         image: TrendImage,
         name: "Neeva Yellow Taant Fashion ",
         rating: 4,
@@ -213,7 +214,7 @@ function App() {
         discount: 35,
     },
     {
-        id: 17,
+        id: "poiu5ijfhgg4dhd",
         image: TrendImage,
         name: "Neeva Yellow Taant Fashion ",
         rating: 4,
@@ -224,7 +225,7 @@ function App() {
         discount: 35,
     },
     {
-        id: 18,
+        id: "poiuyt4511",
         image: TrendImage,
         name: "Neeva Yellow Taant Fashion ",
         rating: 4,
@@ -235,7 +236,7 @@ function App() {
         discount: 35,
     },
     {
-        id: 19,
+        id: "zncbfzshb51dgfg14d",
         image: TrendImage,
         name: "Neeva Yellow Taant Fashion ",
         rating: 4,
@@ -246,7 +247,7 @@ function App() {
         discount: 35,
     },
     {
-        id: 20,
+        id: "serg5d1z5gfsrgh",
         image: TrendImage,
         name: "Neeva Yellow Taant Fashion ",
         rating: 4,
@@ -257,7 +258,7 @@ function App() {
         discount: 35,
     },
     {
-        id: 21,
+        id: "y4kj4d6rdgrd",
         image: TrendImage,
         name: "Neeva Yellow Taant Fashion ",
         rating: 4,
@@ -268,7 +269,7 @@ function App() {
         discount: 35,
     },
     {
-        id: 22,
+        id: "mrh8ses49d784er6sg3",
         image: TrendImage,
         name: "Neeva Yellow Taant Fashion ",
         rating: 4,
@@ -279,7 +280,7 @@ function App() {
         discount: 35,
     },
     {
-        id: 23,
+        id: "n8s68rgwa8t4g5d",
         image: TrendImage,
         name: "Neeva Yellow Taant Fashion ",
         rating: 4,
@@ -290,7 +291,7 @@ function App() {
         discount: 35,
     },
     {
-        id: 24,
+        id: "fmesekbfag4f54esd",
         image: TrendImage,
         name: "Neeva Yellow Taant Fashion ",
         rating: 4,
@@ -372,6 +373,7 @@ function App() {
           <Route path="/products/:name" component={Individual} />
           <Route path="/address" exact component={Address} />
           <Route path="/address/payments" exact component={Payment} />
+          <Route path="/profile" component={Profile}/>
           <Route path="/your orders" exact>
             <YourOrders deliver={deliver} orders={orders} />
           </Route>
