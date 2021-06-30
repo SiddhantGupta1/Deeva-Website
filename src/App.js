@@ -24,7 +24,7 @@ function App() {
 
   const [product, setProduct] = useState({})
   const [cart, setCart] = useState({})
-  const [like,setLike] = useState([])
+  const [like,setLike] = useState({})
 
   useEffect( () => {
     getProducts()
@@ -350,7 +350,7 @@ function App() {
         manufacturer: "Neeva, Maharashtra",
     },
   ];
-  const deliver = "Delivery by 1st June 2021"
+  const deliver = "Delivery by 1st December 2021"
 
   return (
     <Router>
@@ -373,7 +373,9 @@ function App() {
           <Route path="/products/:name" component={Individual} />
           <Route path="/address" exact component={Address} />
           <Route path="/address/payments" exact component={Payment} />
-          <Route path="/profile" component={Profile}/>
+          <Route path="/profile">
+              <Profile deliver={deliver} orders={orders}/>
+          </Route>
           <Route path="/your orders" exact>
             <YourOrders deliver={deliver} orders={orders} />
           </Route>

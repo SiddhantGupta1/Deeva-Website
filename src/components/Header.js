@@ -50,7 +50,7 @@ function Header() {
       links: "cart"
     },
     {
-      name: "Profile",
+      name: "Profile & Settings",
       links: "profile"
     },
 
@@ -64,10 +64,6 @@ function Header() {
     {
       name: "Register",
       links: "your orders/delivery"
-    },
-    {
-      name: "Settings",
-      links: "wardrobe/Puja"
     },
     {
       name: "Help and Contact",
@@ -148,7 +144,7 @@ function Header() {
         </StylesProvider>
         
         <Link to="/">
-          <img src={DeevaLogo} alt=""/>
+          <img src={DeevaLogo} alt="" style={{marginTop:"3px"}}/>
         </Link>
         <div className="search-bar">
           <img className="search" src={Search} alt=""/>

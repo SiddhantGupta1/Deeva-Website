@@ -24,6 +24,7 @@ const TrendingBody = ({setHeight, like, setLike, cards}) => {
         
     const LikeButton = (id) => {
  
+        console.log(ProductLike)
         if(ProductLike[id] === false){
             document.getElementById("ProductLike"+id).src = FilledLikeBtn;
             ProductLike[id] = true;
@@ -35,6 +36,7 @@ const TrendingBody = ({setHeight, like, setLike, cards}) => {
         }
         setLike(ProductLike)
         console.log(like)
+        console.log(typeof like)
         console.log(JSON.stringify(like))
         localStorage.setItem('liked', JSON.stringify(like))
     }
@@ -71,8 +73,11 @@ const TrendingBody = ({setHeight, like, setLike, cards}) => {
             <img className="trend-AD" src={AD} alt=""/>
             <div className="trend-cards">
                 {cards.slice(0,24).map((e,i) => {
-                    ProductLike[e.id] =false
-                    
+                    //ProductLike.assign(e.id, false)
+                    var ids = e.id
+                    console.log(typeof e.id)
+                    Object.assign(ProductLike,{id : ids,value : false})
+                
                 return(
                     <div key={e.id} className="card">
                         <button onClick={() => { LikeButton(e.id); }} className="card-btn">                        

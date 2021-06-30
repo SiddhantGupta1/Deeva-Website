@@ -21,6 +21,7 @@ header{
     height: 13.24px;
     background: none;
     border: none;
+    padding: 2px;
 }
 .menu-text{
     font-style: normal;
