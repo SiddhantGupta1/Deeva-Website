@@ -1,0 +1,15 @@
+.AddressForm{
+    width: 897px;
+    height: 528px;
+    border-radius: 16.3456px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.AddressForm h1{
+    margin: 0;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 27.7168px;
+}

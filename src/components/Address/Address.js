@@ -4,7 +4,25 @@ import Logo from '../../icons/Deeva Black Logo.svg'
 import Arrow from '../../icons/Arrow.svg'
 import {Link} from 'react-router-dom'
 import {Radio, RadioGroup, FormControlLabel, StylesProvider} from '@material-ui/core';
+import Modal from '@material-ui/core/Modal';
+import { makeStyles } from '@material-ui/core/styles';
+import Backdrop from '@material-ui/core/Backdrop';
+import Fade from '@material-ui/core/Fade';
+import AddressForm from './AddressForm'
 
+const useStyles = makeStyles((theme) => ({
+    modal: {
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+    },
+    paper: {
+      backgroundColor: '#FFFFFF',
+      outline: 'none',
+      borderRadius: '16px',
+      overflow: 'auto',
+    },
+  }));
 
 const Address = () => {
 
@@ -54,6 +72,18 @@ const Address = () => {
         const temp = user.filter((e) => e.id!==id )
         setUser(temp)
     }
+
+    const classes = useStyles();
+
+    const [open, setOpen] = useState(false);
+  
+    const handleOpen = () => {
+      setOpen(true);
+    };
+  
+    const handleClose = () => {
+      setOpen(false);
+    };
 
     return (
         <div className="AddressPage">
@@ -120,7 +150,25 @@ const Address = () => {
                                 </div>
                                 
                             ))}
-                            <button className="saved-address-btn">Add Address &nbsp;<span>+</span></button>
+                            <button className="saved-address-btn" onClick={handleOpen}>Add Address &nbsp;<span>+</span></button>
+                            <Modal
+                                open={open}
+                                onClose={handleClose}
+                                className={classes.modal}
+                                aria-labelledby="simple-modal-title"
+                                aria-describedby="simple-modal-description"
+                                closeAfterTransition
+                                BackdropComponent={Backdrop}
+                                BackdropProps={{
+                                timeout: 500,
+                                }}
+                            >
+                                <Fade in={open}>
+                                    <div className={classes.paper}>
+                                        <AddressForm  setOpen={setOpen}/>
+                                    </div>
+                                </Fade>
+                            </Modal>
                         </div>
 
                     </div>
