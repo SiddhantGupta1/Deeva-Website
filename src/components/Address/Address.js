@@ -165,7 +165,7 @@ const Address = () => {
                             >
                                 <Fade in={open}>
                                     <div className={classes.paper}>
-                                        <AddressForm  setOpen={setOpen}/>
+                                        <AddressForm  setFormOpen={setOpen}/>
                                     </div>
                                 </Fade>
                             </Modal>

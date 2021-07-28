@@ -102,7 +102,7 @@ const TrendingFilter = ({height}) => {
         clicked.style.background = '#FFD706'
     }
 
-/*_____________________________SORT________________________________ */
+/*_____________________________FEATURED________________________________ */
     const featured = ["Featured", "Price : Low to High", "Price : High to Low", "Reviews"];
     function handleFeatured(feature){
         
