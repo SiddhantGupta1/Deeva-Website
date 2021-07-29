@@ -22,6 +22,9 @@
     color: #7B7A7A;    
     float: left;
 }
+.AddressPage-path a{
+    color: #7B7A7A; 
+}
 .AddressPage-heading{
     margin: 54px 0 24px 0;
     font-size: 29px;

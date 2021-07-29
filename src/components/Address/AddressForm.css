@@ -1,11 +1,19 @@
 .AddressForm{
-    width: 897px;
+    width: 700px;
     height: 528px;
     border-radius: 16.3456px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    position: relative;
+}
+#closeAddressForm{
+    width: 17px;
+    height: 17px;
+    position: absolute;
+    top: 13px;
+    right: 19px;
 }
 .AddressForm h1{
     margin: 0 0 20px 0;
@@ -78,11 +86,10 @@
 .form-state-dropdown{
     background: rgba(237, 225, 206, 0.8);
     width: 200px;
-    height: 200px;
+    height: 125px;
     border-radius: 8.6px;
     overflow: auto;
     padding: 0 !important;
-    top: 229px;
     left: 150px;
 }
 .form-state-dropdown::-webkit-scrollbar{

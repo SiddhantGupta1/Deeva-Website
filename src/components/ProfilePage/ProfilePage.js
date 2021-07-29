@@ -28,10 +28,10 @@ const ProfilePage = ({deliver, orders}) => {
                         <img src={ProfilePage1} alt=""/>
                         <dt>Your<br />Orders</dt>
                     </a>
-                    <button>
+                    <a href="/address#saved-addresses">
                         <img src={ProfilePage2} alt=""/>
                         <dt>Saved<br />Addresses</dt>
-                    </button>
+                    </a>
                     <button>
                         <img src={ProfilePage3} alt=""/>
                         <dt>Saved<br />Cards</dt>

@@ -1,6 +1,7 @@
 import React,{useState,useRef,useEffect} from 'react'
 import './AddressForm.css'
 import DownArrow from './../../icons/Down Arrow.svg'
+import Cross from './../../icons/Cross.svg'
 import {Popper, ClickAwayListener, MenuItem, MenuList, Grow } from '@material-ui/core';
 
 const AddressForm = ({setFormOpen}) => {
@@ -152,12 +153,53 @@ const AddressForm = ({setFormOpen}) => {
         }
     ]
 
+    const [input, setInput] = useState({
+      name: "",
+      number: "",
+      address: "",
+      area: "",
+      landmark: "",
+      city: "",
+      timing: "",
+      state: "Himachal Pradesh"
+    })
 
-//___________________________________________________________________________________________________________
+    const handleChange = e => {
+        const {name , value} = e.target
+        setInput(prev => ({
+          ...prev,
+          [name]: value
+        }))
+    }
+
+    const handleTiming = (e) => {
+      setInput(prev =>({
+          ...prev,
+          timing: e
+      }))
+      const timing1 = document.getElementById("timing1")
+      const timing2 = document.getElementById("timing2")
+      if(e==="anytime")
+      {
+          timing2.style.background = "#F5F0E7"
+          timing1.style.background = "#FFD706"
+      }
+      else if(e==="work")
+      {
+          timing1.style.background = "#F5F0E7"
+          timing2.style.background = "#FFD706"
+      }
+    }
+
+    const handleAddbtn = () => {
+       
+      console.log(input)
+    }
+
+//_____________________________________DROPDOWN_________________________________________________________________
     const [open, setOpen] = useState(false);
-    const [state, setState] = useState('Himachal Pradesh');
     const anchorRef = useRef(null);
-
+    
     const handleToggle = () => {
         setOpen((prevOpen) => !prevOpen);
     };
@@ -187,50 +229,37 @@ const AddressForm = ({setFormOpen}) => {
     const handleFormClose = () => {
         setFormOpen(false)
     }
-    const [timing, setTiming] = useState('anytime');
 
-    const handleTiming = (e) => {
-        setTiming(e)
-        const timing1 = document.getElementById("timing1")
-        const timing2 = document.getElementById("timing2")
-        if(e==="anytime")
-        {
-            timing2.style.background = "#F5F0E7"
-            timing1.style.background = "#FFD706"
-        }
-        else if(e==="work")
-        {
-            timing1.style.background = "#F5F0E7"
-            timing2.style.background = "#FFD706"
-        }
-    }
+
+
 
     return (
         <div className="AddressForm">
+          <img id="closeAddressForm" src={Cross} alt="Close" onClick={handleFormClose} />
             <h1>Add Address</h1>
             <div className="form-name" >
                 <p>Full Name</p>
-                <input type="text" placeholder="Enter your Full Name" />
+                <input type="text" placeholder="Enter your Full Name" value={input.name} name="name" onChange={handleChange} />
             </div>
             <div className="form-phone" >
                 <p>Mobile Number</p>
-                <input type="text" maxLength="10" placeholder="Enter your mobile number" />
+                <input type="text" maxLength="10" placeholder="Enter your mobile number" value={input.number} name="number" onChange={handleChange} />
             </div>
             <div className="form-address" >
                 <p>Flat, Building no.</p>
-                <input type="text" />
+                <input type="text" value={input.address} name="address" onChange={handleChange} />
             </div>
             <div className="form-area" >
                 <p>Area</p>
-                <input type="text" />
+                <input type="text" value={input.area} name="area" onChange={handleChange} />
             </div>
             <div className="form-landmark" >
                 <p>Landmark</p>
-                <input type="text" />
+                <input type="text" value={input.landmark} name="landmark" onChange={handleChange} />
             </div>
             <div className="form-city" >
                 <p>City</p>
-                <input type="text" />
+                <input type="text" value={input.city} name="city" onChange={handleChange} />
             </div>
             <div className="form-state" >
                 <p>State</p>
@@ -241,7 +270,7 @@ const AddressForm = ({setFormOpen}) => {
                     onClick={handleToggle}
                     id="form-state"
                     >
-                        { state} <img src={DownArrow} alt=""/>
+                        { input.state} <img src={DownArrow} alt=""/>
                 </button>
                 <Popper open={open} anchorEl={anchorRef.current} role={undefined} transition disablePortal>
                     {({ TransitionProps, placement }) => (
@@ -252,7 +281,7 @@ const AddressForm = ({setFormOpen}) => {
                         
                             <ClickAwayListener onClickAway={handleClose}>
                             <MenuList className="form-state-dropdown" autoFocusItem={open} id="menu-list-grow" onKeyDown={handleListKeyDown}>
-                                { states.map(e =>( <MenuItem onClick={ ()=> {setState(e.name); handleClose()}} style={{fontSize:"13px"}} >{e.name}</MenuItem> ))}
+                                { states.map(e =>( <MenuItem onClick={ ()=> {setInput(prev=>({...prev, state: e.name}) ); handleClose()}} style={{fontSize:"13px"}} >{e.name}</MenuItem> ))}
                             </MenuList>
                             </ClickAwayListener>
                         
@@ -265,7 +294,7 @@ const AddressForm = ({setFormOpen}) => {
                 <button id="timing1" onClick={()=>{handleTiming('anytime')}} >Anytime (8am - 8pm)</button>
                 <button id="timing2" onClick={()=>{handleTiming('work')}} >Work (10am - 6pm)</button>
             </div>
-            <button type="submit" className="form-add-btn" >Add the Address</button>
+            <button disabled={!input.name || !input.number || !input.address || !input.area || !input.landmark || !input.city || !input.state || !input.timing} className="form-add-btn" id="form-add-btn" onClick={()=> {handleAddbtn(); handleFormClose()}} >Add the Address</button>
         </div>
     )
 }
