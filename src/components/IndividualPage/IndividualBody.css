@@ -216,14 +216,22 @@
 }
 #Individual-product-delivery-to span{
     font-weight: 500;
-    margin: 0 0 0 100px;
-    font-size: 12px;
+    font-size: 14px;
+    line-height: 29px;
+    width: 300px;
 }
 .Individual-product-delivery-dropdown{
     background: #EDE1CE;
     width: 300px;
     opacity: 0.8;
     border-radius: 10px;
+    padding: 0 !important;
+}
+.Individual-product-delivery-dropdown option{
+    font-size: 14px;
+    line-height: 12px;
+    opacity: 1;
+    margin: 2px 0 -2px 0;
 }
 
 .Individual-product-rate-review{

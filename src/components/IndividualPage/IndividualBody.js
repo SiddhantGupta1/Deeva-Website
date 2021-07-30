@@ -10,6 +10,25 @@ import Return from './../../icons/30 Days Return.svg'
 import DownArrow from './../../icons/Down Arrow.svg'
 import {Popper, ClickAwayListener, MenuItem, MenuList, Grow } from '@material-ui/core';
 import IndividualDropdowns from './IndividualDropdowns'
+import Modal from '@material-ui/core/Modal';
+import { makeStyles } from '@material-ui/core/styles';
+import Backdrop from '@material-ui/core/Backdrop';
+import Fade from '@material-ui/core/Fade';
+import AddressForm from './../Address/AddressForm'
+
+const useStyles = makeStyles((theme) => ({
+    modal: {
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+    },
+    paper: {
+      backgroundColor: '#FFFFFF',
+      outline: 'none',
+      borderRadius: '16px',
+      overflow: 'auto',
+    },
+  }));
 
 const IndividualBody = ({about , product,pro,props, dprice, user}) => {
     
@@ -71,6 +90,16 @@ const IndividualBody = ({about , product,pro,props, dprice, user}) => {
 
 /*_____________________________________________________________________________________________________________________________________ */
 
+    const classes = useStyles();
+    const [openModal, setOpenModal] = useState(false);
+  
+    const handleOpenModal = () => {
+      setOpenModal(true);
+    };
+  
+    const handleCloseModal = () => {
+      setOpen(false);
+    };
 
     return (
         <div className="IndividualBody">
@@ -129,7 +158,7 @@ const IndividualBody = ({about , product,pro,props, dprice, user}) => {
                     <li style={{height:"45px"}} className="Individual-list">&nbsp;Bank Offer10% Off on Bank of Baroda Mastercard debit card first time transaction, Terms and Condition applyT&C</li>
                 </ul>
 
-                <div className="Individual-product-delivery-to">Delivery to</div>
+                <div className="Individual-product-delivery-to">Deliver to</div>
 
 
                 <button
@@ -139,9 +168,29 @@ const IndividualBody = ({about , product,pro,props, dprice, user}) => {
                     onClick={handleToggle}
                     id="Individual-product-delivery-to"
                     >
-                            { user.address===[] ? <span>Add Address</span> : <dt><article>{user.userName} - </article>{user.address}</dt> }
-                            { user.address===[] ? <img style={{display:"none"}} src={DownArrow} alt=""/> : <img src={DownArrow} alt=""/>}
+                            { user.address.length===0 ? <span onClick={handleOpenModal}>Add Address</span> : <dt><article>{user.userName} -&nbsp;</article>{user.address[0]}</dt> }
+                            { user.address.length===0 ? <></> : <img src={DownArrow} alt=""/>}
                 </button>
+
+                            <Modal
+                                open={openModal}
+                                onClose={handleCloseModal}
+                                className={classes.modal}
+                                aria-labelledby="simple-modal-title"
+                                aria-describedby="simple-modal-description"
+                                closeAfterTransition
+                                BackdropComponent={Backdrop}
+                                BackdropProps={{
+                                timeout: 500,
+                                }}
+                            >
+                                <Fade in={openModal}>
+                                    <div className={classes.paper}>
+                                        <AddressForm  setFormOpen={setOpenModal}/>
+                                    </div>
+                                </Fade>
+                            </Modal>
+
                 <Popper open={open} anchorEl={anchorRef.current} role={undefined} transition disablePortal>
                     {({ TransitionProps, placement }) => (
                         <Grow
@@ -151,7 +200,7 @@ const IndividualBody = ({about , product,pro,props, dprice, user}) => {
                         
                             <ClickAwayListener onClickAway={handleClose}>
                             <MenuList className="Individual-product-delivery-dropdown" autoFocusItem={open} id="menu-list-grow" onKeyDown={handleListKeyDown}>
-                                { user.address!==[] ? user.address.map(e =>( <MenuItem><option>{e}</option></MenuItem> )) : <dt>Add Address here</dt>}
+                                { user.address!==[] ? user.address.map(e =>( <MenuItem><option>{e}</option></MenuItem> )) : <></>}
                             </MenuList>
                             </ClickAwayListener>
                         
