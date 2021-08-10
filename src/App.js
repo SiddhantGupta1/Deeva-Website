@@ -18,6 +18,7 @@ import ScrollToTop from './ScrollToTop'
 import Demo from './components/demo';
 import Image from './icons/Trend Image.svg'
 import TrendImage from './icons/Trend Image.svg'
+import Login from './components/Login/Login'
 
 
 function App() {
@@ -393,6 +394,8 @@ function App() {
               cards={cards}
               />
           </Route>
+
+            <Route path="/login" component={Login} />
 
         </Switch>
       </div>
