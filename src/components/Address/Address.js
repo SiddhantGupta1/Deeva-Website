@@ -30,12 +30,19 @@ const Address = () => {
         {
             id: 1,
             name: "Ankush",
-            address: " delhi street, europe city, vizag nagaram"
+            address: " 20/15 delhi street",
+            area: "Rajouri Nagar",
+            city: "Delhi",
+            state: "Delhi",
+            
         },
         {
             id: 2,
             name: "Siddhant",
-            address: " delhi street, europe city, vizag nagaram"
+            address: " 20/15 delhi street",
+            area: "Rajouri Nagar",
+            city: "Delhi",
+            state: "Delhi",
         },
     ];
     const [user, setUser] = useState(userArray)
@@ -119,7 +126,7 @@ const Address = () => {
                                     <div style={{display:"flex"}}>
                                         <div style={{display:"flex", flexDirection:"column", width:"77.5%"}}>
                                             <div className="addresses-name">{e.name}</div>
-                                            <div className="addresses-address">{e.address}</div>
+                                            <div className="addresses-address">{e.address}&nbsp;{e.area}&nbsp;{e.city}&nbsp;{e.state}</div>
                                         </div>
                                         <div style={{display:"flex", flexDirection:"column"}}>
                                             <button className="addresses-btn">Edit</button>

@@ -43,7 +43,7 @@ console.log(product)
                 <div style={{width:"100%"}}>
                     <div className="CartHanger">
                         
-                        {demo.slice(0,4).map((e,i) => (
+                        {demo.map((e,i) => (
                             <div key={i} className="CartHanger-list">
                                 <div className="CartHanger-list-img">
                                     <img src={e.image} alt="" style={{width:"76px", height:"77px", borderRadius:"13px", filter:"drop-shadow(0px 2.85504px 5.71007px rgba(71, 71, 71, 0.25))"}} />
@@ -74,7 +74,7 @@ console.log(product)
 
                     <div className="CartHanger-bill">
                         <div id="CartHanger-bill">Sub Total</div>
-                        {demo.slice(0,4).map((e,i) => (
+                        {demo.map((e,i) => (
                             <div key={i} className="CartHanger-bill-item">
                                 <dt>{e.name.split(' ').slice(0,2).join(' ')}</dt>
                                 <dt>&#8377;{e.price.toLocaleString("en-US")}</dt>
@@ -166,7 +166,7 @@ console.log(product)
                 <div className="CartBuyAgain-heading">Buy Again</div>
                 <div style={{width: "100%"}}>
                     <div className="CartHanger">
-                        {demo.slice(0,4).map((e,i) => (
+                        {demo.map((e,i) => (
                             <div key={i} className="CartHanger-list">
                                 <div className="CartHanger-list-img">
                                     <img src={e.image} alt="" style={{width:"76px", height:"77px", borderRadius:"13px", filter:"drop-shadow(0px 2.85504px 5.71007px rgba(71, 71, 71, 0.25))"}} />
@@ -195,7 +195,7 @@ console.log(product)
 
                     <div className="CartHanger-bill">
                         <div id="CartHanger-bill">Sub Total</div>
-                        {demo.slice(0,4).map((e,i) => (
+                        {demo.map((e,i) => (
                             <div key={i} className="CartHanger-bill-item">
                                 <dt>{e.name.split(' ').slice(0,2).join(' ')}</dt>
                                 <dt style={{float:"right"}}>&#8377;{e.price.toLocaleString("en-US")}</dt>

@@ -210,7 +210,9 @@
 	transform: translateX(0);
 	transition: transform 0.6s ease-in-out;
 }
-
+.active {
+	border: 2px solid white;
+  }
 .overlay-left {
 	transform: translateX(-20%);
 }

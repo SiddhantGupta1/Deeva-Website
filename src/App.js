@@ -19,6 +19,7 @@ import Demo from './components/demo';
 import Image from './icons/Trend Image.svg'
 import TrendImage from './icons/Trend Image.svg'
 import Login from './components/Login/Login'
+import axios from 'axios'
 
 
 function App() {
@@ -31,10 +32,28 @@ function App() {
     getProducts()
   },[])
   const getProducts = async () => {
-    const response = await fetch('https://deevabackend.herokuapp.com/api/getproduct')
+    /*const response = await fetch('https://thedeeva.in/thedeeva/Api/User/get_cart ')
     const products = await response.json()
 
-    setProduct(products.data)
+    console.log(products)
+    setProduct(products)*/
+    await axios({ 
+        url:'https://thedeeva.in/thedeeva/Api/User/user_profile',
+        method: 'POST',
+        header: {
+            'Content-Type': 'application/json'
+        },
+    }).then(function (response) {
+            // handle success
+            console.log(response);
+        })
+        .catch(function (error) {
+            // handle error
+            console.log(error);
+        })
+        .then(function () {
+            // always executed
+        });
   }
 
   const cards = [
@@ -313,6 +332,7 @@ function App() {
         dprice: 999,
         price: 1550,
         manufacturer: "Neeva, Maharashtra",
+        stock: true,
     },
     {
         id: 1,
@@ -322,6 +342,7 @@ function App() {
         dprice: 1099,
         price: 1550,
         manufacturer: "Neeva, Maharashtra",
+        stock: true,
     },
     {
         id: 2,
@@ -331,6 +352,7 @@ function App() {
         dprice: 999,
         price: 1550,
         manufacturer: "Neeva, Maharashtra",
+        stock: false,
     },
     {
         id: 3,
@@ -340,6 +362,7 @@ function App() {
         dprice: 999,
         price: 1550,
         manufacturer: "Neeva, Maharashtra",
+        stock: true,
     },
     {
         id: 4,
@@ -349,6 +372,7 @@ function App() {
         dprice: 999,
         price: 1550,
         manufacturer: "Neeva, Maharashtra",
+        stock: false,
     },
   ];
   const deliver = "Delivery by 1st December 2021"
@@ -391,7 +415,7 @@ function App() {
               setCart={setCart}
               like={like}
               setLike={setLike}
-              cards={cards}
+              cards={orders}
               />
           </Route>
 

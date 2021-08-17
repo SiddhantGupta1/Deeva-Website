@@ -4,7 +4,7 @@ import './Dropdowns.css';
 import DownArrow from './../../icons/Down Arrow.svg'
 import {Link} from 'react-router-dom'
 
-var userName = "Chandrashekhara Kumar Borjatu"
+var userName = "Siddhant Gupta"
 function Dropdowns(){
     
     const [open1, setOpen1] = useState(false);
@@ -98,7 +98,7 @@ function Dropdowns(){
                             <Link to="/profile"><MenuItem onClick={handleClose1} className="user-dropdown-content" >Your Profile</MenuItem></Link>
                             <Link to="/your orders"><MenuItem onClick={handleClose1} className="user-dropdown-content" >Your Orders</MenuItem></Link>
                             <Link to="/cart"><MenuItem onClick={handleClose1} className="user-dropdown-content" >Wishlist</MenuItem></Link>
-                            <MenuItem onClick={handleClose1} className="user-dropdown-content" >Signout</MenuItem>
+                            <Link to="/login"><MenuItem onClick={handleClose1} className="user-dropdown-content" >Signout</MenuItem></Link>
                         </MenuList>
                     </ClickAwayListener>
                 

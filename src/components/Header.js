@@ -71,7 +71,7 @@ function Header() {
     },
     {
       name: "Sign Out",
-      links: "wardrobe/Puja"
+      links: "login"
     },
 
   ];
@@ -101,7 +101,7 @@ function Header() {
       style={{backgroundImage:{MenuFrame}, height:"100%", width:"320px" }}
     >
       <div className="menu-text">
-        Hello Ankush
+        Hello Siddhant
       </div>
       <List>
         {link1.map((text) => (
@@ -134,7 +134,7 @@ function Header() {
           {['left'].map((anchor) => (
             <React.Fragment key={anchor}>
               <button onClick={toggleDrawer(anchor, true)} className="menu"> 
-                <img src={Menu} alt=""/> 
+                <img src={Menu} alt="menu"/> 
               </button>
               <Drawer anchor={anchor} open={state[anchor]} onClose={toggleDrawer(anchor, false)}>
                 {list(anchor)}

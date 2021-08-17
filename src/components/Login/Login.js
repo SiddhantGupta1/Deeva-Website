@@ -4,12 +4,14 @@ import Logo from '../../icons/Golden Logo.svg'
 
 const Login = () => {
 
-    const container = document.getElementById('login-container');
+    
     const loginbutton = () => {
+        const container = document.getElementById('login-container');
         container.classList.add('right-panel-active');
 
     }
     const signinbutton = () => {
+        const container = document.getElementById('login-container');
         container.classList.remove('right-panel-active');
 
     }
