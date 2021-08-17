@@ -34,11 +34,12 @@
     overflow: auto;
     overflow-y: hidden;
     margin: 15px 0 0 140px;
+    text-decoration: none;
 }
 .Section7-contents::-webkit-scrollbar{
     display: none;
 }
-
+.Section7-contents a{   text-decoration: none;}
 .Section7-img{
     float: left;
     width: 115.75px;

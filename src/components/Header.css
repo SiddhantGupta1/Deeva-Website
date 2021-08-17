@@ -12,14 +12,16 @@ header{
     margin: 0;
     top: 0;
     filter: drop-shadow(0px 1px 6px rgba(106, 91, 14, 0.24));
+    z-index: 1000;
 }
 
 .menu{
-    margin: 20px 0 0 1.7%;
+    margin: 20px 3% 0 2%;
     width: 25.6px;
     height: 13.24px;
     background: none;
     border: none;
+    padding: 2px;
 }
 .menu-text{
     font-style: normal;
@@ -38,11 +40,7 @@ header{
     color: #61420C;
     text-decoration: none;
     margin-bottom: 7px;
-}
-
-.deevaLogo{
-    margin: 0 0 0 4.2%;
-    padding: 0;
+    width: 280px;
 }
 
 .search-bar{
@@ -52,7 +50,7 @@ header{
     background: #FFFCF8;
     box-shadow: 0px 1.28443px 2.56886px rgba(71, 71, 71, 0.25);
     border-radius: 15px;
-    margin: 7.5px 0 0 2.9%;
+    margin: 7.5px 0 0 3%;
     display: flex;
     align-content: center;
     justify-content: left;
@@ -84,7 +82,7 @@ header{
     background: #FFFFFF;
     box-shadow: 0px 1.28px 2.57px rgba(71, 71, 71, 0.25);
     border-radius: 15px;
-    margin: 8.5px 0 0 0.5%;
+    margin: 8.5px 2% 0 0.5%;
 }
 
 .cart{

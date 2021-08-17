@@ -13,8 +13,8 @@ function ContactUs(){
 
 export default ContactUs;
 
-{/*
+/*
     <span>Email us:
         <a href="mailto:yourcompany@gmail.com">yourcompany@gmail.com</a>
     </span>
-*/}
+*/

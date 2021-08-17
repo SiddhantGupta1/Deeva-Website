@@ -1,0 +1,76 @@
+.Individual-product-rate, .Individual-product-review{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    height: 28px;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 38px;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 18px;
+}
+.Individual-product-rate{
+    width: 126px;
+    margin: 9px 0 0 5px;
+}
+.Individual-product-review{
+    width: 141px;
+    margin: 7px 0 0 5px;
+}
+
+.Individual-product-rate-dropdown, .Individual-product-review-dropdown{
+    width: 263px;
+    height: 303.65px;
+    background: white;
+    box-shadow: 0px 3.58636px 4.78182px rgba(0, 0, 0, 0.25);
+    border-radius: 21.5182px;
+    transform: translate(64px,10px);
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.Individual-product-rate-dropdown bold{
+    background-image: url(./../../icons/Cross.svg);
+    width: 13.43px;
+    height: 13.33px;    
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 12px;
+    right: 15px;
+}
+.Individual-product-rate-dropdown dt{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #000000;    
+}
+.Individual-product-rate-dropdown img{
+    width: 127.08px;
+    height: 115.84px;
+    margin: 22px 0 12px 0;
+}
+.Individual-product-rate-dropdown button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 11.9545px;
+    width: 95.64px;
+    height: 39.45px;
+    background: #FFA6C6;
+    box-shadow: 0px 1.19545px 2.39091px rgba(0, 0, 0, 0.25);
+    border-radius: 17.9318px;
+}
+
+.Individual-product-review-dropdown{
+    transform: translate(57px,6px);
+}

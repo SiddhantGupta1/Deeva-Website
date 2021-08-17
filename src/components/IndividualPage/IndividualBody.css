@@ -1,0 +1,316 @@
+.IndividualBody{
+    float: left;
+    width: 100%;
+}
+
+.Individual-1{
+    float: left;
+    width: 50%;
+    background: none;
+}
+
+.Individual-about-heading{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;   
+    display: flex;
+    align-items: center;
+    color: #000000;
+    margin: 30px 0 0 42px;
+}
+.Individual-about-1, .Individual-about-2, .Individual-about-3{
+    width: 393px;
+    height: 280px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 27px;
+    color: rgba(120, 78, 8, 0.8);
+    float: left;
+}
+.Individual-about-1{
+    margin: 24px 0 0 42px;
+}
+.Individual-about-2{
+    margin-top: 30px;
+}
+.Individual-about-3{
+    margin: 40px 0 0 42px;
+}
+.Individual-about-1-img, .Individual-about-2-img, .Individual-about-3-img{
+    height: 304px;
+    width: 300px;
+    float: left;
+}
+.Individual-about-3-img{
+    margin-bottom: 59px;
+}
+
+/*___________________________________________________________________________________________________________________*/
+/*___________________________________________________________________________________________________________________*/
+
+.Individual-2{
+    float: left;
+    width: 50%;
+    background: none;
+    padding: 0 26px 0 10px;
+}
+.Individual-product-heading{
+    font-weight: 500;
+    font-size: 34.0107px;
+    line-height: 51px;
+    color: #000000;
+    margin-top: 40px;
+}
+.Individual-product-sub-heading{
+    font-weight: 500;
+    font-size: 14.738px;
+    line-height: 22px;
+    color: #7B7A7A;  
+}
+.Individual-product-rating{
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    width: 49px;
+    height: 19px;
+    background: #FFDF37;
+    border-radius: 16px;
+    margin: 36px 35px 0 0;
+}
+#Individual-product-rating{
+    float: right;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    color: #000000;
+    margin: 0px 2px;
+}
+#Individual-product-rating-star{
+    float: right;
+    margin: -30px 0 0 0;
+}
+.Individual-product-reviews{
+    float: right;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 11px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #525151;
+    margin: -18px 16px 0 0;
+}
+.Individual-product-dprice{
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 48px;
+    color: #000000;
+    margin: 30px 0 0 0;
+}
+.Individual-product-price{
+    font-weight: 500;
+    font-size: 14.7px;
+    line-height: 22px;
+    text-decoration: line-through;
+    color: #707070;
+    margin-right: 20px;
+}
+.Individual-product-discount{
+    font-weight: 500;
+    font-size: 14.7px;
+    line-height: 22px;
+    color: #000000;
+    margin-right: 15px;
+}
+.Individual-product-30-return{
+    width: 79px;
+    height: 67px;
+    float: right;
+    margin: -45px 18px 0 0;
+}
+.Individual-product-assured{
+    width: 79px;
+    height: 67px;
+    float: right;
+    margin: 38px -80px 0 0;
+}
+.Individual-product-delivery-by{
+    font-weight: normal;
+    font-size: 14.7px;
+    line-height: 22px;
+    color: #000000;    
+    margin-top: 10px;
+}
+.Individual-product-list-heading{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: #000000;      
+    margin-top: 31px; 
+}
+
+#Individual-list{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.Individual-list::before{
+    content: url(./../../icons/List\ Points.svg);
+
+}
+.Individual-list{
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    color: #000000;
+    height: 35px;
+}
+
+.Individual-product-delivery-to{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: #000000;    
+    margin-top: 31px;
+}
+
+#Individual-product-delivery-to{
+    width: 300px;
+    height: 29px;
+    background: #EDE1CE;
+    border: 1px solid #BBB5AA;
+    box-sizing: border-box;
+    box-shadow: 0px 2px 4px rgba(71, 71, 71, 0.25);
+    border-radius: 9px;
+    margin: 9px 0 0 5px;
+    display: flex;
+    align-items: center;
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 4px;
+    color: #272727;
+    white-space: nowrap;
+    padding: 0 5px;
+    overflow: hidden;
+    text-overflow: clip;
+}
+#Individual-product-delivery-to article{
+    font-weight: 500;
+    float: left;
+}
+#Individual-product-delivery-to img{
+    position: absolute;
+    margin-left: 268px;
+    background: #EDE1CE;
+    padding: 7px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+#Individual-product-delivery-to span{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 29px;
+    width: 300px;
+}
+.Individual-product-delivery-dropdown{
+    background: #EDE1CE;
+    width: 300px;
+    opacity: 0.8;
+    border-radius: 10px;
+    padding: 0 !important;
+}
+.Individual-product-delivery-dropdown option{
+    font-size: 14px;
+    line-height: 12px;
+    opacity: 1;
+    margin: 2px 0 -2px 0;
+}
+
+.Individual-product-rate-review{
+    margin-top: 30px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: #000000;    
+}
+
+.Individual-product-experiences-heading{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: #000000;
+    margin-top: 30px;
+}
+.Individual-product-experiences{
+    width: 510px;
+    height: 161px;
+    border-radius: 15px;
+    background: #EDE1CE;
+    margin: 15px 0 0 5px;
+    border: 1px solid #BBB5AA;
+    box-sizing: border-box;
+    overflow: auto;
+    overflow-x: hidden;
+}
+.Individual-product-experiences::-webkit-scrollbar{
+    display: none;
+}
+
+.Individual-product-experiences article{
+    float: left;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    color: #000000;
+    margin: 10px 400px 10px 10px;
+}
+
+#Individual-product-experiences{
+    width: 278px;
+    height: 120px;
+    margin: 0 0 1px 10px;
+    float: left;
+}
+#Individual-product-experiences body{
+    float: left;
+    width: 25px;
+    height: 25px;
+    background: #C4C4C4;
+    border-radius: 50%;
+    
+}
+#Individual-product-experiences dt{
+    float: left;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 18p;
+    color: #000000;
+    margin: 2.5px 14px 0 8px;
+}
+#Individual-product-experiences p{
+    float: left;
+    font-weight: normal;
+    font-size: 10.5px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    color: #000000;
+    margin: 5px 0 0 33px;
+}
+
+
+#Individual-product-divider{
+    float: left;
+    width: 1111px;
+    height: 1px;
+    background: #5F5F5F;
+    margin-bottom: 20px;
+}

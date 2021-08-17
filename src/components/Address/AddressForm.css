@@ -1,0 +1,97 @@
+.AddressForm{
+    width: 700px;
+    height: 528px;
+    border-radius: 16.3456px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+#closeAddressForm{
+    width: 17px;
+    height: 17px;
+    position: absolute;
+    top: 13px;
+    right: 19px;
+}
+.AddressForm h1{
+    margin: 0 0 20px 0;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 27.7168px;
+}
+.AddressForm div{
+    display: flex;
+    align-items: center;
+    width: 500px;
+}
+
+.AddressForm div p{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 14px;
+    color: #000000;
+    width: 115px;
+    margin-right: 35px;
+}
+
+:is(.form-name, .form-phone, .form-area, .form-landmark, .form-address, .form-city) input{
+    width: 218.87px;
+    height: 27.72px;
+    background: #FFFFFF;
+    border: 0.955752px solid #43413D;
+    box-shadow: 0px 0px 3.82301px #FBD200;
+    border-radius: 8.60177px;    
+    padding: 0 5px 0 15px;
+}
+.form-address input{
+    width: 286.73px;
+}
+
+.form-timing button{
+    width: 150px;
+    height: 30px;
+    background: #F5F0E7;
+    border-radius: 13.8939px;
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 3px;
+    color: #272727;
+    margin: 0 20px 0 -5px;
+}
+
+.form-add-btn{
+    margin-top: 15px;
+    width: 237.03px;
+    height: 30.58px;
+    background: #221501;
+    border-radius: 13.0938px;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 2px;
+    color: #FFFFFF;
+    box-shadow: 0px 0.770224px 3.0809px rgba(0, 0, 0, 0.25);
+}
+
+#form-state{
+    width: 220px;
+    height: 29px;
+    background: #EDE1CE;
+    border: 0.955752px solid #BBB5AA;
+    box-shadow: 0px 1.9115px 3.82301px rgba(71, 71, 71, 0.25);
+    border-radius: 8.60177px;
+}
+.form-state-dropdown{
+    background: rgba(237, 225, 206, 0.8);
+    width: 200px;
+    height: 125px;
+    border-radius: 8.6px;
+    overflow: auto;
+    padding: 0 !important;
+    left: 150px;
+}
+.form-state-dropdown::-webkit-scrollbar{
+    display: none;
+}

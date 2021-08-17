@@ -31,12 +31,13 @@
     display: none;
 }
 .Section5-rope{
+    position: absolute;
     display: flex;
     float: left;
-    width: 248%;
-    border: 1.1037px solid #FFC056;
+    width: 1294px;
+    border: 1.2px solid #FFC056;
     background-color: #FFC056;
-    margin: 16.31px 0 0 0;
+    margin: 25px 0 0 128px;
 }
 .Section5-content{
     float: left;
@@ -46,16 +47,18 @@
     padding: 0 0 0 14.85px;
 }
 .Section5-hanger{
+    position: relative;
     float: left;
     width: 102.3px;
     height: 52.97px;
-    transform: translate(0,-6.5px);
+    margin-top: 10px;
+    z-index: 1;
 }
 .Section5-img{
     float: left;
     width: 115.75px;
     height: 146.15px;
-    transform: translate(-7px,-15px);
+    margin: -11px 0 0 -6.5px;
     filter: drop-shadow(0px 1.96178px 3.92357px rgba(71, 71, 71, 0.25));
     border-radius: 9.80892px;
     z-index: -1;

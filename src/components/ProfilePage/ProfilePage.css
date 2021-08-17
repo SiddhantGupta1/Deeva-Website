@@ -1,0 +1,194 @@
+.ProfilePage{
+    margin: 0;
+    box-sizing: border-box;
+    position: absolute;
+    background-image: url(../../Frame.png);
+    background-size: cover;
+    background-repeat: repeat-y;
+    background-color: #F8F6ED;
+    width: 100%;
+    
+    padding: 53px 0 19px 0;
+}
+
+.ProfilePage section{
+    width: 100%;
+    height: 100px;
+    background: #FFD706;
+}
+.ProfileSection1{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: -60px;
+}
+.ProfileSection1 img{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25);
+}
+.Profile-name{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.Profile-name dt{
+    font-weight: 500;
+    font-size: 25px;
+    color: #202020;    
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: -60px;
+}
+.ProfilePage-edit{
+    color: #FFD600;
+    font-size: 17px;
+    line-height: 27px;
+    display: flex;
+    align-items: center;
+    float: left;
+    padding: 2px 0 0 15px;
+}
+.ProfilePage-edit:hover{
+    text-decoration: underline;
+}
+.Profile-name article{
+    font-weight: 500;
+    font-size: 14.4615px;
+    line-height: 22px;
+    background: #FFFFFF;
+    border-radius: 30.1282px;
+    padding: 2px 20px;
+    float: left;
+    position: relative;
+    top: -57px;
+}
+.Profile-name article::before{
+    content: url(../../icons/Profile\ Location.svg);
+    position: relative;
+    top: 2px;
+    left: -5px;
+}
+
+.ProfileSection2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+
+.ProfilePage-details{
+    width: 420px;
+    height: 238px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.ProfilePage-details button:nth-child(4){
+    width: 252px;
+}
+.ProfilePage-details > button, .ProfilePage-details a{
+    width: 113px;
+    height: 113px;
+    background: #FFFFFF;
+    box-shadow: 0px 28px 65px rgba(0, 0, 0, 0.0282725), 0px 6.25417px 14.5186px rgba(0, 0, 0, 0.0417275), 0px 1.86203px 4.32257px rgba(0, 0, 0, 0.07);
+    border-radius: 10px;
+    margin: 0 13px 12px 13px;
+    position: relative;
+}
+.ProfilePage-details a{
+    display: flex;
+    align-items: center;
+    padding-left: 5px;
+}
+:is(.ProfilePage-details > button, .ProfilePage-details a):hover{
+    box-shadow: 0px 28px 65px rgba(0, 0, 0, 0.0452935), 0px 8.44118px 19.5956px rgba(0, 0, 0, 0.065), 0px 3.50603px 8.13901px rgba(0, 0, 0, 0.0847066), 0px 1.26806px 2.94372px rgba(0, 0, 0, 0.13);
+}
+.ProfilePage-details > button dt, .ProfilePage-details a dt{
+    position: relative;
+    z-index: 10;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: #464646;
+    text-align: left;
+    margin-left: 8px;
+}
+.ProfilePage-details > button img, .ProfilePage-details a img{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-bottom-right-radius: 10px;
+}
+
+.ProfilePage-recent-orders h1{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    color: #464646;
+    margin: -10px 0 15px 0;
+}
+
+.ProfilePage-recent-orders-list{
+    background: #FFFFFF;
+    box-shadow: 0px 1.78788px 3.57576px rgba(71, 71, 71, 0.25);
+    border-radius: 8.04545px;
+    width: 443px;
+    height: 55px;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+}
+
+.ProfilePage-recent-orders-list-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 39px;
+    height: 42px;
+    background: #FFFFFF;
+    border: 0.507371px solid #F0E4D0;
+    border-radius: 4.56634px;
+    margin: 0 13px;    
+}
+.ProfilePage-recent-orders-list-img img{
+    width: 32px;
+    height: 32px;
+    filter: drop-shadow(0px 1.01474px 2.02948px rgba(71, 71, 71, 0.25));
+    border-radius: 4.56634px;
+}
+
+.ProfilePage-recent-orders-list-name{
+    width: 305px;
+}
+.ProfilePage-recent-orders-list-name h2{
+    font-weight: 500;
+    font-size: 16.0909px;
+    line-height: 24px;
+    margin: 0;
+}
+.ProfilePage-recent-orders-list-name p{
+    font-weight: 500;
+    font-size: 8.93939px;
+    line-height: 13px;
+    color: #7B7A7A;
+    margin: 0;
+}
+
+.ProfilePage-recent-orders-list abbr{
+    width: 55px;
+    height: 30px;
+    font-size: 8px;
+    line-height: 10px;
+    position: relative;
+}
+.ProfilePage-recent-orders-list abbr span{
+    font-size: 20px;
+    font-weight: 200;
+    position: absolute;
+    right: 0;
+    top: 28px;
+}

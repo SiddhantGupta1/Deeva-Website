@@ -1,0 +1,316 @@
+.PaymentPage{
+    margin: 0;
+    box-sizing: border-box;
+    position: absolute;
+    background-image: url(../../Frame.png);
+    background-size: cover;
+    background-repeat: repeat-y;
+    background-color: #F8F6ED;
+    width: 100%;
+    min-width: 1440px;
+    display: flex;
+    padding: 22px 34px 0 34px;
+}
+.PaymentPage-path{
+    position: absolute;
+    margin: 24px 0 0 55px;
+    font-size: 14px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    color: #7B7A7A;    
+    float: left;
+}
+.PaymentPage-heading{
+    margin: 54px 0 24px 0;
+    font-size: 29px;
+    line-height: 43px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.Payment-card{
+    width: 849px;
+    background: #FFFFFF;
+    box-shadow: 0px 0.817278px 3.26911px rgba(0, 0, 0, 0.25);
+    border-radius: 16.3456px;
+    margin: 0 50px 0 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    float: left;
+}
+.PaymentPage-instructions{
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    color: #545352;   
+    margin: 24px 0 38px 0; 
+}
+.saved-cards{
+    font-size: 16.3759px;
+    line-height: 25px;
+    text-decoration: underline;
+    text-decoration-color: #FBD200;
+    text-decoration-thickness: 3px;
+    margin-bottom: 35px;
+}
+.saved-cards-card{
+    width: 688px;
+    height: 124px;
+    background: #EDE1CE;
+    border: 1px solid #43413D;
+    box-shadow: 0px 2px 4px rgba(71, 71, 71, 0.25);
+    border-radius: 9px;    
+    margin: 0 0 20px 20px;
+}
+
+
+
+.add-card-btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    width: 170px;
+    height: 40px;
+    background: #FFD706;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 17px;
+    font-size: 14.555px;
+    line-height: 3px;
+    margin: 15px 0 40px 80px;
+}
+.add-card-btn:hover{
+    filter: drop-shadow(0px 1px 4px rgba(0, 0, 0, 0.25));
+}
+.add-card-btn span{
+    font-size: 25px;
+}
+
+.other-payment-modes{
+    font-size: 16.3759px;
+    line-height: 25px;
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: #FBD200;
+    text-decoration-thickness: 3px;
+    margin-bottom: 30px;
+}
+.other-payment-modes-container{
+    width: 778px;
+    height: 110px;
+    background: #EDE1CE;
+    border: 1px solid #43413D;
+    border-radius: 17px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding: 15px 0 10px 0;
+}
+.gpay, .paytm, .phonepe{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.gpay div, .paytm div, .phonepe div{
+    float: left;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 9px;
+    margin: 0 2.5px;
+}
+#gpay-input, #paytm-input, #phonepe-input{
+    display: flex;
+    align-items: center;
+    padding: 10px 10px 10px 20px;
+    width: 229px;
+    height: 34px;
+    border: 1px solid #43413D;
+    box-shadow: 0px 0px 4px #FBD200;
+    border-radius: 26px;
+    margin-top: 12px;
+}
+input:focus{    outline: none;}
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button{
+  -webkit-appearance: none;
+  margin: 0;
+}
+input{
+    -moz-appearance: textfield;
+}
+
+
+.pay-on-delivery{
+    display: flex;
+    align-self: start;
+    margin: 35px 0 0 45px;
+    flex-direction: column;
+}
+.pay-on-delivery-text{
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 9px;
+    display: flex;
+    align-items: center;
+    color: #272727;    
+}
+.pay-on-delivery article{
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 17px;
+    color: #545352;
+    margin: 0 0 50px 45px;
+}
+
+
+
+
+
+
+
+
+
+.OrderDetails-card{
+    width: 359px;
+    background: #FFFFFF;
+    box-shadow: 0px 0.817278px 3.26911px rgba(0, 0, 0, 0.25);
+    border-radius: 16.3456px;
+    padding: 30px 29px 0 29px;
+    float: left;
+}
+.OrderDetails-card dt{
+    font-size: 21px;
+    line-height: 31px;
+    text-decoration: underline;
+    text-decoration-color: #FBD200;
+    text-decoration-thickness: 3px;
+}
+.OrderDetails-content{
+    margin-top: 24px;
+    width: 100%;
+    height: 43px;
+    display: flex;
+    align-items: center;
+}
+.OrderDetails-img{
+    width: 41.43px;
+    height: 42px;
+    background: #FFFFFF;
+    border: 0.567568px solid #F0E4D0;
+    border-radius: 5.10811px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: left; 
+}
+.OrderDetails-content article{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    margin: 0 0 0 10px;
+}
+.OrderDetails-content dt{
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 15px;
+    color: #7B7A7A;
+    text-decoration: none;
+    margin: 0 0 0 10px;
+}
+.OrderDetails-qty-btn{
+    background: #FFFFFF;
+    border: 1.1129px solid #F0E4D0;
+    box-shadow: 0px 0.896104px 3.58442px rgba(71, 71, 71, 0.25);
+    border-radius: 20px;
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.OrderDetails-qty-btn button{
+    font-weight: 500;
+    font-size: 19.7143px;
+    line-height: 30px;
+    color: #7B7A7A;    
+}
+.OrderDetails-qty-btn dt{
+    font-weight: 500;
+    font-size: 12.5455px;
+    line-height: 19px;
+    color: black;
+    margin: 0;
+    padding: 0 2px;
+}
+
+.OrderDetails-qty, .OrderDetails-subtotal, .OrderDetails-delivery{
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 19px;
+    color: #9A9A9A;
+}
+#OrderDetails-qty, #OrderDetails-subtotal{
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    color: #626262;
+}
+#OrderDetails-delivery{
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    color: #5FC656;
+}
+#OrderDetails-total{
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 33px;    
+}
+.OrderDetails-divider{
+    width: 100%;
+    height: 0.5px;
+    background-color: #9A9A9A;
+    margin: 13px 0 16px 0;
+}
+
+.OrderDetails-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    width: 294px;
+    height: 39px;
+    background: #FFD706;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 7.42px;    
+    font-size: 16px;
+    line-height: 19px;
+    margin: 25px 0 30px 0;
+}
+.OrderDetails-btn:hover{
+    filter: drop-shadow(0px 1px 4px rgba(0, 0, 0, 0.25));
+}
+
+
+
+
+.PaymentPage-footer{
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 16px;
+    text-align: center;    
+    margin: 45px 0 45px 0;
+}
+
+.PrivateRadioButtonIcon-root-5{
+    background-color: rgba(255, 215, 6, 0.5);
+    border-radius: 50%;
+    width: 18.2px;
+    height: 18.5px;
+}
+.PrivateRadioButtonIcon-layer-6, .MuiSvgIcon-root{
+    margin: -2px;
+}

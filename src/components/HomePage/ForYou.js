@@ -1,4 +1,4 @@
-import React,{useState, useEffect} from 'react'
+import React from 'react'
 import './ForYou.css'
 import Demo from './../../icons/Saree Pic.svg'
 import Hanger from './../../icons/Golden Hanger.svg'
@@ -115,15 +115,15 @@ function ForYou() {
             <div className="ForYou">
                 <div className="ForYou-rope"></div>
                 <div className="ForYou-content">
-                    {items.map(e => (
-                        <div style={{margin:"0 46px 0 0"}}>
-                            <img className="ForYou-hanger" src={Hanger} />
-                            <img className="ForYou-img" src={e.img} />
+                    {items.map((e,i) => (
+                        <a href={`/others/For You#Product${i}`} key={i} style={{margin:"0 46px 0 0"}}>
+                            <img className="ForYou-hanger" src={Hanger} alt="Golden Hanger"/>
+                            <img className="ForYou-img" src={e.img} alt="Product"/>
                             <div className="ForYou-prices">
                                 <div className="ForYou-price">&#8377;{e.price}</div>
                                 <div className="ForYou-Dprice">&#8377;{e.dprice}</div>
                             </div>
-                        </div>
+                        </a>
                     ))
                     }
                 </div>    

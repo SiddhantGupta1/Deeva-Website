@@ -1,0 +1,59 @@
+.Trending{
+    margin: 0;
+    position: absolute;
+    background-image: url(../../Frame.png);
+    background-size: cover;
+    background-repeat: repeat-y;
+    background-color: #F8F6ED;
+}
+
+.Trend-headings{
+    float: left;
+    min-width: 1440px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 62px 0 15px 0;
+    padding: 0 300px 0 288px;
+}
+.Trend-heading{
+    width: 80px;
+    height: 24px;
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #000000;
+    font-weight: 600;
+}
+
+.Trend-help{
+    float: left;
+    width: 82%;
+    height: 60px;
+    background: #FCFCFC;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    margin: 20px 0 0 0;
+    display: flex;
+    align-items: center;
+}
+
+.trend-help-heading{
+    margin: 0 33px 0 50px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: #000000;
+}
+.trend-help-link{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    color: #000000;
+}

@@ -3,6 +3,10 @@
     position: absolute;
     width: 100%;
     min-width: 1440px;
+    background-image: url(./../../Frame.png);
+    background-size: cover;
+    background-repeat: repeat-y;
+    background-color: #F8F6ED;
 }
 
 .carousel{
@@ -44,17 +48,12 @@
 
 .wardrobe-frame{
     float: left;
-    width: 1454px;
-    min-width: 1440px;
     height: 205px;
     background: #FFFEFD;
     mix-blend-mode: normal;
     margin: 18px 30px 0 30px;
     filter: drop-shadow(0px 1px 6px rgba(0, 0, 0, 0.15));
     border-radius: 5px;
-    padding: 0;
-    overflow: auto;
-    overflow-y: hidden;
 }
 /*_____________________________________________________________________________*/
 .Section2{
@@ -64,6 +63,7 @@
     height: 261px;
     display: flex;
     margin: 18px 0 0 0;
+    justify-content: space-between;
 }
 .User{
     float: left;
@@ -88,6 +88,7 @@
     height: 85.43px;
     background: #F8DB54;
     margin: 13.2px -14.9px -6.57px 23.35px;
+    text-decoration: none;
 }
 .User-content-text{
     width: 100%;

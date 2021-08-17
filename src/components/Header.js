@@ -1,4 +1,4 @@
-import React,{useState, useRef, useEffect} from 'react';
+import React from 'react';
 import './Header.css'
 import DeevaLogo from './../icons/deeva purple 1.svg'
 import Menu from './../icons/Union.svg'
@@ -31,11 +31,11 @@ function Header() {
     },
     {
       name: "Categories",
-      links: "ethnic"
+      links: "category/Taant"
     },
     {
       name: "Wardrobe",
-      links: "trending"
+      links: "wardrobe/Trending"
     },
 
   ];
@@ -43,15 +43,15 @@ function Header() {
   const link2 = [
     {
       name: "Your Orders",
-      links: "party"
+      links: "your orders"
     },
     {
       name: "My Hanger",
       links: "cart"
     },
     {
-      name: "Profile",
-      links: "puja"
+      name: "Profile & Settings",
+      links: "profile"
     },
 
   ];
@@ -59,15 +59,11 @@ function Header() {
   const link3 = [
     {
       name: "Login",
-      links: "party"
+      links: "login"
     },
     {
       name: "Register",
-      links: "cart"
-    },
-    {
-      name: "Settings",
-      links: "puja"
+      links: "your orders/delivery"
     },
     {
       name: "Help and Contact",
@@ -75,7 +71,7 @@ function Header() {
     },
     {
       name: "Sign Out",
-      links: "puja"
+      links: "login"
     },
 
   ];
@@ -105,24 +101,24 @@ function Header() {
       style={{backgroundImage:{MenuFrame}, height:"100%", width:"320px" }}
     >
       <div className="menu-text">
-        Hello Ankush
+        Hello Siddhant
       </div>
       <List>
-        {link1.map((text, index) => (
+        {link1.map((text) => (
           <ListItem style={{padding:"0 16px"}} button key={text.name}>
             <Link className="menu-text-links" to={`/${text.links}`}> {text.name} </Link>
           </ListItem>
         ))}
       </List>
       <List>
-        {link2.map((text, index) => (
+        {link2.map((text) => (
           <ListItem style={{padding:"0 16px"}} button key={text.name}>
             <Link className="menu-text-links" to={`/${text.links}`}>{text.name} </Link>
           </ListItem>
         ))}
       </List>
       <List>
-        {link3.map((text, index) => (
+        {link3.map((text) => (
           <ListItem style={{padding:"0 16px"}} button key={text.name}>
             <Link className="menu-text-links" to={`/${text.links}`}> {text.name} </Link>
           </ListItem>
@@ -138,7 +134,7 @@ function Header() {
           {['left'].map((anchor) => (
             <React.Fragment key={anchor}>
               <button onClick={toggleDrawer(anchor, true)} className="menu"> 
-                <img src={Menu} /> 
+                <img src={Menu} alt="menu"/> 
               </button>
               <Drawer anchor={anchor} open={state[anchor]} onClose={toggleDrawer(anchor, false)}>
                 {list(anchor)}
@@ -146,20 +142,22 @@ function Header() {
             </React.Fragment>
           ))}
         </StylesProvider>
-
-        <img className="deevaLogo" src={DeevaLogo}/>
+        
+        <Link to="/">
+          <img src={DeevaLogo} alt="" style={{marginTop:"3px"}}/>
+        </Link>
         <div className="search-bar">
-          <img className="search" src={Search}/>
+          <img className="search" src={Search} alt=""/>
           <input className="searching" type="text" placeholder="Search" />
         </div>
         <button className="voice-search">
-            <img src={Mic} />
+            <img src={Mic} alt=""/>
         </button>
         
         <Dropdowns />
             
         <Link to='/cart' className="cart">
-            <img src={Cart} />
+            <img src={Cart} alt=""/>
             <p className="cart-items">2</p>
         </Link>
 

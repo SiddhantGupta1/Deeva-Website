@@ -3,11 +3,13 @@
 *{
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+    text-decoration: none;
 }
+
 .frame{
     width: 100%;
     min-width: 1440px;
-    height: 555%;
     position: absolute;
     background: #F6F6F6;
 }
